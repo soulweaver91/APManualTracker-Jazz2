@@ -25,7 +25,8 @@ No AI tools have been used in any part of the development of the parts
 specific to this pack impementation, including for code or asset generation,
 consulting, analysis, or for any other reason. The base template for it was,
 however, generated with the [Ars-Ignis/ap-manual-to-poptracker](
-  https://github.com/Ars-Ignis/ap-manual-to-poptracker) tool, which
-doesn't seem to have an AI disclosure available at the moment.
-Thus, it's not possible at this time to say that this repository is AI-free
-with full certainty.
+  https://github.com/Ars-Ignis/ap-manual-to-poptracker) tool. Moreover,
+the GitHub release workflow template is also based on the one from the Manual
+template. Neither of these seems to have an AI disclosure available at the
+moment. Thus, it's not possible at this time to say that this repository is
+AI-free with full certainty.

@@ -1,0 +1,53 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      changelog:
+        description: 'Changelog'
+        required: true
+        type: string
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  create-release:
+    name: Create new pack release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Format changelog input as multiline string and put into env
+        run: |
+          echo 'CHANGELOG<<EOF' >> "$GITHUB_ENV"
+          echo "${{ github.event.inputs.changelog }}" >> "$GITHUB_ENV"
+          echo 'EOF' >> "$GITHUB_ENV"
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Set current version to env
+        run: |
+          echo "PACK_VERSION=$(jq -r '.package_version' manifest.json)" >> "$GITHUB_ENV"
+          echo "BASENAME=JJ2-AP-Tracker-${{ env.PACK_VERSION }} >> "$GITHUB_ENV"
+      - name: Create pack file
+        run: |
+          rm -rf ./dev
+          zip -r ${{ env.BASENAME }}.zip ./*
+      - name: Upload apworld as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.BASENAME }}.zip
+          path: ${{ env.BASENAME }}.zip
+          if-no-files-found: error
+      - name: Add Changelog text to a file for release body, to preserve newlines
+        run: echo -en "${{ env.CHANGELOG }}" > bodyFile.md
+      - name: Create a stable release
+        uses: ncipollo/release-action@v1
+        with:
+          name: "v${{ env.PACK_VERSION }}"
+          bodyFile: bodyFile.md
+          tag: "v${{ env.PACK_VERSION }}"
+          commit: ${{ env.GITHUB_REF }}
+          artifacts: "${{ env.BASENAME }}.zip"
+          # Temporary while testing is underway
+          prerelease: true
