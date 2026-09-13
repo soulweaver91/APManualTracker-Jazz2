@@ -1,15 +1,17 @@
 {
-    "name": "Jazz Jackrabbit 2 Archipelago Manual",
-    "game_name": "Manual_Jazz Jackrabbit 2_Soulweaver",
-    "package_version": "0.0.1",
-    "package_uid": "Manual_Jazz Jackrabbit 2_Soulweaver",
-    "variants": {
-        "tracker": {
-            "display_name": "Map Tracker",
-            "flags": [
-                "ap",
-                "apmanual"
-            ]
-        }
+  "name": "Jazz Jackrabbit 2 Archipelago Manual",
+  "game_name": "Manual_Jazz Jackrabbit 2_Soulweaver",
+  "package_version": "0.0.1",
+  "package_uid": "Manual_Jazz Jackrabbit 2_Soulweaver",
+  "variants": {
+    "tracker": {
+      "display_name": "Map Tracker",
+      "flags": [
+        "ap",
+        "apmanual"
+      ]
     }
+  },
+  "versions_url": "https://raw.githubusercontent.com/soulweaver91/APManualTracker-Jazz2/refs/heads/stable/versions.json",
+  "target_poptracker_version": "0.35.4"
 }

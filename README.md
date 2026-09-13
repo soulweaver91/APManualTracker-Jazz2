@@ -16,10 +16,6 @@ same way as any other package. You can either drag a release into the
 PopTracker window or place it manually into the same folder where your other
 installed packs reside.
 
-The package doesn't currently have automatic updates set up, so for now
-you'll need to check back here to get the newest version if one is released.
-This, too, will hopefully be rectified in the near future.
-
 ## AI usage disclosure
 No AI tools have been used in any part of the development of the parts
 specific to this pack impementation, including for code or asset generation,
