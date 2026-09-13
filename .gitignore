@@ -1,0 +1,8 @@
+**/__pycache__
+.vscode/
+.vs/
+/*.code-workspace
+.idea
+
+dev/location_gen
+dev/**/*.json
