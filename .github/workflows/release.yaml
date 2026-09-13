@@ -51,5 +51,3 @@ jobs:
           tag: "v${{ env.PACK_VERSION }}"
           commit: ${{ env.GITHUB_REF }}
           artifacts: "${{ env.BASENAME }}.zip"
-          # Temporary while testing is underway
-          prerelease: true
