@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Marinated Rabbit",
+    "access_rules": [
+      "marinated_rabbit_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "marinated_rabbit_unlock, $YamlDisabled|allow_levels_out_of_order, @Beach Bunny Bingo/Exit",
+      "jazz_in_time_progressive_level_unlock:6, @Beach Bunny Bingo/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Water Section Before Strong Current",
+        "access_rules": [
+          "$canSwim"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Main Water Section",
+        "access_rules": [
+          "@Marinated Rabbit/Water Section Before Strong Current"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Detour After Strong Current",
+        "access_rules": [
+          "@Marinated Rabbit/Main Water Section"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Marinated Rabbit|20, @Marinated Rabbit/Main Water Section"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Cavern Between Water Sections",
+        "access_rules": [
+          "@Marinated Rabbit/Main Water Section"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Water Section Near End of Level",
+        "access_rules": [
+          "@Marinated Rabbit/Main Water Section, $canSwim"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Final Section Before Boss",
+        "access_rules": [
+          "@Marinated Rabbit/Water Section Near End of Level"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Boss Arena",
+        "access_rules": [
+          "@Marinated Rabbit/Water Section Near End of Level"
+        ],
+        "comment": "R:M5"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Marinated Rabbit/Main Water Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l6_map",
+            "x": 3896,
+            "y": 200
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (80, 28)",
+        "access_rules": [
+          "@Marinated Rabbit/Water Section Before Strong Current"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l6_map",
+            "x": 1288,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (196, 59)",
+        "access_rules": [
+          "@Marinated Rabbit/Main Water Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l6_map",
+            "x": 3144,
+            "y": 952
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Marinated Rabbit/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l6_map",
+            "x": 3512,
+            "y": 968
+          }
+        ]
+      },
+      {
+        "name": "Uterus",
+        "access_rules": [
+          "@Marinated Rabbit/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/uterus.png",
+            "chest_opened_img": "images/locations/uterus_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l6_map",
+            "x": 3864,
+            "y": 200
+          }
+        ]
+      }
+    ]
+  }
+]

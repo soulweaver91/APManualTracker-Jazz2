@@ -1,0 +1,189 @@
+[
+  {
+    "name": "A Cold Day in Heck",
+    "access_rules": [
+      "a_cold_day_in_heck_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "a_cold_day_in_heck_unlock, $YamlDisabled|allow_levels_out_of_order, @Jungle Jump/Exit",
+      "funky_monkeys_progressive_level_unlock:3, @Jungle Jump/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Extra Life Behind Frozen Blocks Secret",
+        "access_rules": [
+          "$canDestroyWeaponBlocks|Toaster"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Near Save Point",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Four Silver Coins Behind Frozen Blocks Secret",
+        "access_rules": [
+          "@A Cold Day in Heck/Near Save Point, $canDestroyWeaponBlocks|Toaster"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|A Cold Day in Heck|20, @A Cold Day in Heck/Near Save Point"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Room with Large Skull",
+        "access_rules": [
+          "@A Cold Day in Heck/Near Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Fire Shield Secret",
+        "access_rules": [
+          "@A Cold Day in Heck/Room with Large Skull"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Bottom Level Section Before One Ways",
+        "access_rules": [
+          "@A Cold Day in Heck/Room with Large Skull"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Green Gems Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@A Cold Day in Heck/Room with Large Skull, $canDestroySpecialMoveBlocks|A Cold Day in Heck|below"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "After One Ways",
+        "access_rules": [
+          "@A Cold Day in Heck/Room with Large Skull"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Boss Room",
+        "access_rules": [
+          "@A Cold Day in Heck/Room with Large Skull, $canDestroySpecialMoveBlocks|A Cold Day in Heck|above"
+        ],
+        "comment": "R:M4"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@A Cold Day in Heck/Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l3_map",
+            "x": 1864,
+            "y": 936
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (193, 41)",
+        "access_rules": [
+          "@A Cold Day in Heck/Near Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l3_map",
+            "x": 3096,
+            "y": 664
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (111, 5)",
+        "access_rules": [
+          "@A Cold Day in Heck/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l3_map",
+            "x": 1784,
+            "y": 88
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@A Cold Day in Heck/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l3_map",
+            "x": 3256,
+            "y": 792
+          }
+        ]
+      },
+      {
+        "name": "Bubba",
+        "access_rules": [
+          "@A Cold Day in Heck/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/bubba.png",
+            "chest_opened_img": "images/locations/bubba_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l3_map",
+            "x": 1832,
+            "y": 936
+          }
+        ]
+      }
+    ]
+  }
+]

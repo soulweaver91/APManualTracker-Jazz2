@@ -1,0 +1,14 @@
+{
+  "playable_character": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 56,
+    "item_margin": "0,0",
+    "rows": [
+      [
+        "jazz_unlock",
+        "spaz_unlock"
+      ]
+    ]
+  }
+}

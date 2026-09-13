@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Thriller Gorilla",
+    "access_rules": [
+      "thriller_gorilla_unlock",
+      "funky_monkeys_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz Between First Two Trees",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz Start, $canGrabVines"
+        ],
+        "comment": "R:J1"
+      },
+      {
+        "name": "Jazz Only Gold Coin Secret",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz Between First Two Trees"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Jazz After Second Tree",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz Between First Two Trees"
+        ],
+        "comment": "R:J2"
+      },
+      {
+        "name": "Jazz Only Detour Above Destructible Blocks Start",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz After Second Tree, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Jazz Only Detour Above Destructible Blocks After Vine",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz Only Detour Above Destructible Blocks Start, $canGrabVines"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Only Four Silver Coins Above Vine Secret",
+        "access_rules": [
+          "@Thriller Gorilla/Spaz Start, $canGrabVines"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz After Second Tree",
+          "@Thriller Gorilla/Spaz Start"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After First Destructible Blocks in Rolling Rock Tunnel",
+        "access_rules": [
+          "@Thriller Gorilla/Shared Path Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "After Second Destructible Blocks in Rolling Rock Tunnel",
+        "access_rules": [
+          "@Thriller Gorilla/After First Destructible Blocks in Rolling Rock Tunnel, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Around First Save Point",
+        "access_rules": [
+          "@Thriller Gorilla/After Second Destructible Blocks in Rolling Rock Tunnel",
+          "@Thriller Gorilla/Jazz Only Detour Above Destructible Blocks After Vine"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Bonus Warp Behind Destructible Blocks",
+        "access_rules": [
+          "@Thriller Gorilla/Around First Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Thriller Gorilla|10, @Thriller Gorilla/Bonus Warp Behind Destructible Blocks"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Extra Life Crate Between Trees Secret",
+        "access_rules": [
+          "@Thriller Gorilla/Around First Save Point"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Near Water Pool",
+        "access_rules": [
+          "@Thriller Gorilla/Around First Save Point"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "After Second Save Point",
+        "access_rules": [
+          "@Thriller Gorilla/Near Water Pool"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Exit Room",
+        "access_rules": [
+          "@Thriller Gorilla/After Second Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M7"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Thriller Gorilla/Exit Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 3688,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (208, 46)",
+        "access_rules": [
+          "@Thriller Gorilla/Around First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 3336,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (157, 18)",
+        "access_rules": [
+          "@Thriller Gorilla/After Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 2520,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (12, 41)",
+        "access_rules": [
+          "@Thriller Gorilla/Jazz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 200,
+            "y": 664
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (5, 57)",
+        "access_rules": [
+          "@Thriller Gorilla/Spaz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 88,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (111, 50)",
+        "access_rules": [
+          "@Thriller Gorilla/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 1784,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Thriller Gorilla/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l1_map",
+            "x": 2232,
+            "y": 760
+          }
+        ]
+      }
+    ]
+  }
+]

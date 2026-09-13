@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Double Jump Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/double_jump_unlock.png",
+    "codes": "double_jump_unlock"
+  },
+  {
+    "name": "Copter Ears Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/copter_ears_unlock_lori.png",
+    "codes": "copter_ears_unlock"
+  },
+  {
+    "name": "Uppercut Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/uppercut_unlock.png",
+    "codes": "uppercut_unlock"
+  },
+  {
+    "name": "Sidekick Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/sidekick_unlock_lori.png",
+    "codes": "sidekick_unlock"
+  },
+  {
+    "name": "Buttstomp Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/buttstomp_unlock_lori.png",
+    "codes": "buttstomp_unlock"
+  },
+  {
+    "name": "Swimming Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/swimming_unlock.png",
+    "codes": "swimming_unlock"
+  },
+  {
+    "name": "Vine Traversal",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/vine_traversal.png",
+    "codes": "vine_traversal"
+  },
+  {
+    "name": "Hook Traversal",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/hook_traversal.png",
+    "codes": "hook_traversal"
+  }
+]

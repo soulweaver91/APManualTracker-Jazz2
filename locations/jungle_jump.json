@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Jungle Jump",
+    "access_rules": [
+      "jungle_jump_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "jungle_jump_unlock, $YamlDisabled|allow_levels_out_of_order, @Thriller Gorilla/Exit",
+      "funky_monkeys_progressive_level_unlock:2, @Thriller Gorilla/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Climb After Destructible Blocks Near Start",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Extra Life and Bomb Crates Above Totems Secret",
+        "access_rules": [
+          "@Jungle Jump/Climb After Destructible Blocks Near Start, $canGrabVines",
+          "@Jungle Jump/Climb After Destructible Blocks Near Start, $canUppercut",
+          "@Jungle Jump/Climb After Destructible Blocks Near Start, $canDoubleJump"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Room with Rolling Rock After Super Gem",
+        "access_rules": [
+          "@Jungle Jump/Climb After Destructible Blocks Near Start"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Rolling Rock Tunnel After First Destructible Blocks",
+        "access_rules": [
+          "@Jungle Jump/Climb After Destructible Blocks Near Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Rolling Rock Tunnel After Second Destructible Blocks",
+        "access_rules": [
+          "@Jungle Jump/Rolling Rock Tunnel After First Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Spring Section After Rolling Rock Tunnel",
+        "access_rules": [
+          "@Jungle Jump/Rolling Rock Tunnel After Second Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Warp Room Before Save Point",
+        "access_rules": [
+          "@Jungle Jump/Spring Section After Rolling Rock Tunnel"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Around Save Point",
+        "access_rules": [
+          "@Jungle Jump/Warp Room Before Save Point"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "After Chute After Save Point",
+        "access_rules": [
+          "@Jungle Jump/Around Save Point"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Jungle Jump|20, @Jungle Jump/After Chute After Save Point"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Middle Level Section Near Exit",
+        "access_rules": [
+          "@Jungle Jump/Around Save Point"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Green Gems High Above Secret",
+        "access_rules": [
+          "@Jungle Jump/Around Save Point, $canDestroySpecialMoveBlocks|Jungle Jump|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Jungle Jump/Around Save Point"
+        ],
+        "comment": "R:M10"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Jungle Jump/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l2_map",
+            "x": 4008,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (170, 34)",
+        "access_rules": [
+          "@Jungle Jump/Around Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l2_map",
+            "x": 2728,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Jungle Jump/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l2_map",
+            "x": 3112,
+            "y": 680
+          }
+        ]
+      }
+    ]
+  }
+]

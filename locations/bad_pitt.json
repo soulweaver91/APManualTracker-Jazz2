@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Bad Pitt",
+    "access_rules": [
+      "bad_pitt_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "bad_pitt_unlock, $YamlDisabled|allow_levels_out_of_order, @Burnin Biscuits/Exit",
+      "funky_monkeys_progressive_level_unlock:6, @Burnin Biscuits/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "After Buttstomp Blocks Near Start",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Bad Pitt@0|above"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Destructible Blocks Near Start",
+        "access_rules": [
+          "@Bad Pitt/After Buttstomp Blocks Near Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Room With Several Spring Platforms",
+        "access_rules": [
+          "@Bad Pitt/After Destructible Blocks Near Start"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "After Upwards Destructible Blocks",
+        "access_rules": [
+          "@Bad Pitt/After Destructible Blocks Near Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "After Destructible Blocks Obstructing Spring",
+        "access_rules": [
+          "@Bad Pitt/After Upwards Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Gold Coin Below Broken Bridge Secret",
+        "access_rules": [
+          "@Bad Pitt/After Destructible Blocks Obstructing Spring"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Red Gems Behind Destructible Blocks Secret",
+        "access_rules": [
+          "@Bad Pitt/After Destructible Blocks Obstructing Spring, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Room With Several Lava Pools",
+        "access_rules": [
+          "@Bad Pitt/After Destructible Blocks Obstructing Spring, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Large Destructible Block Section",
+        "access_rules": [
+          "@Bad Pitt/Room With Several Lava Pools, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Around First Save Point",
+        "access_rules": [
+          "@Bad Pitt/Large Destructible Block Section, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Around Bonus Warp and Second Save Point",
+        "access_rules": [
+          "@Bad Pitt/Around First Save Point"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Burnin Biscuits|20, @Bad Pitt/Around Bonus Warp and Second Save Point"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Before Boss Room",
+        "access_rules": [
+          "@Bad Pitt/Around Bonus Warp and Second Save Point"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Boss Room",
+        "access_rules": [
+          "@Bad Pitt/Around Bonus Warp and Second Save Point"
+        ],
+        "comment": "R:M11"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Bad Pitt/Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l6_map",
+            "x": 4040,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (193, 56)",
+        "access_rules": [
+          "@Bad Pitt/Around First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l6_map",
+            "x": 3096,
+            "y": 904
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (225, 37)",
+        "access_rules": [
+          "@Bad Pitt/Around Bonus Warp and Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l6_map",
+            "x": 3608,
+            "y": 600
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Bad Pitt/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l6_map",
+            "x": 3640,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Devil Devan",
+        "access_rules": [
+          "@Bad Pitt/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/devil_devan.png",
+            "chest_opened_img": "images/locations/devil_devan_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l6_map",
+            "x": 4008,
+            "y": 920
+          }
+        ]
+      }
+    ]
+  }
+]

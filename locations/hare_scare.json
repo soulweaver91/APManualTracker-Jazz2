@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Hare Scare",
+    "access_rules": [
+      "hare_scare_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "hare_scare_unlock, $YamlDisabled|allow_levels_out_of_order, @Medieval Kineval/Exit",
+      "flashback_progressive_level_unlock:6, @Medieval Kineval/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "First Climb RF Ammo Over Spikes Section",
+        "access_rules": [
+          "$canGrabVines"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "First Climb Windowsills Section",
+        "access_rules": [
+          "@Hare Scare/First Climb RF Ammo Over Spikes Section"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Two Silver Coins Below Vines Secret",
+        "access_rules": [
+          "@Hare Scare/First Climb Windowsills Section, $canGrabVines"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Two Silver Coins High Above Room Secret",
+        "access_rules": [
+          "@Hare Scare/First Climb Windowsills Section, $canGrabVines"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "First Climb Red Spring and Helmuts Section",
+        "access_rules": [
+          "@Hare Scare/First Climb Windowsills Section, $canGrabVines"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "First Climb Top Room",
+        "access_rules": [
+          "@Hare Scare/First Climb Red Spring and Helmuts Section, $canGrabVines"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "First Drop Near First Save Point",
+        "access_rules": [
+          "@Hare Scare/First Climb Top Room"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "First Drop Between Vines",
+        "access_rules": [
+          "@Hare Scare/First Climb Top Room, $canGrabVines"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Second Climb Windowsills Near Bottom Section",
+        "access_rules": [
+          "@Hare Scare/First Drop Between Vines"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Second Climb 3D Boll Room",
+        "access_rules": [
+          "@Hare Scare/Second Climb Windowsills Near Bottom Section, $canGrabVines"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Second Climb Top Room to Second Fall to Third Climb First Windowsills Section",
+        "access_rules": [
+          "@Hare Scare/Second Climb 3D Boll Room, $canGrabVines"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Hare Scare|10, @Hare Scare/Second Climb Top Room to Second Fall to Third Climb First Windowsills Section"
+        ],
+        "comment": "(auto generated region entry)"
+      },
+      {
+        "name": "Third Climb Gem Crate Section",
+        "access_rules": [
+          "@Hare Scare/Second Climb Top Room to Second Fall to Third Climb First Windowsills Section, $canGrabVines"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Third Climb Second Windowsills Section",
+        "access_rules": [
+          "@Hare Scare/Third Climb Gem Crate Section"
+        ],
+        "comment": "R:M11"
+      },
+      {
+        "name": "Boss Room",
+        "access_rules": [
+          "@Hare Scare/Third Climb Gem Crate Section"
+        ],
+        "comment": "R:M12"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Hare Scare/Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l6_map",
+            "x": 2896,
+            "y": 880
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (19, 25)",
+        "access_rules": [
+          "@Hare Scare/First Drop Near First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l6_map",
+            "x": 624,
+            "y": 816
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (34, 8)",
+        "access_rules": [
+          "@Hare Scare/Second Climb Top Room to Second Fall to Third Climb First Windowsills Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l6_map",
+            "x": 1104,
+            "y": 272
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Hare Scare/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l6_map",
+            "x": 1584,
+            "y": 1968
+          }
+        ]
+      },
+      {
+        "name": "Bolly",
+        "access_rules": [
+          "@Hare Scare/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/bolly.png",
+            "chest_opened_img": "images/locations/bolly_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l6_map",
+            "x": 2832,
+            "y": 880
+          }
+        ]
+      }
+    ]
+  }
+]

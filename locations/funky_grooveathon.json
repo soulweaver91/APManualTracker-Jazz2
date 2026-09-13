@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Funky Grooveathon",
+    "access_rules": [
+      "funky_grooveathon_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "funky_grooveathon_unlock, $YamlDisabled|allow_levels_out_of_order, @Purple Haze Maze/Exit",
+      "jazz_in_time_progressive_level_unlock:4, @Purple Haze Maze/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "TNT Ammo Above Vine Near Start",
+        "access_rules": [
+          "$canGrabVines"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Bouncer Ammo on High Ledge",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canUppercut",
+          "$canCopter"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Between Hats",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Carrot Above Cheshire Cat Hook",
+        "access_rules": [
+          "$canGrabHooks"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Main Section",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Funky Grooveathon|10, @Funky Grooveathon/Main Section"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Bouncer Ammo Behind Stomp Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Funky Grooveathon|sides"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Five Sandwiches Behind Destructible Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Five Silver Coins Behind Destructible Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Three Green Gems Behind Stomp Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Funky Grooveathon|below"
+        ],
+        "comment": "R:A7"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Funky Grooveathon/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l4_map",
+            "x": 2088,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (164, 57)",
+        "access_rules": [
+          "@Funky Grooveathon/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l4_map",
+            "x": 2632,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Funky Grooveathon/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l4_map",
+            "x": 3576,
+            "y": 680
+          }
+        ]
+      }
+    ]
+  }
+]

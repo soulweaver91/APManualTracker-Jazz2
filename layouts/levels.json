@@ -1,0 +1,138 @@
+{
+  "level_unlock": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 64,
+    "item_margin": "2,2",
+    "rows": [
+      [
+        "rabbit_in_training_unlock",
+        "dungeon_dilemma_unlock",
+        "knight_cap_unlock",
+        "tossed_salad_unlock",
+        "carrot_juice_unlock",
+        "weirder_science_unlock",
+        "loose_screws_unlock"
+      ],
+      [
+        "",
+        "victorian_secret_unlock",
+        "colonial_chaos_unlock",
+        "purple_haze_maze_unlock",
+        "funky_grooveathon_unlock",
+        "beach_bunny_bingo_unlock",
+        "marinated_rabbit_unlock"
+      ],
+      [
+        "",
+        "a_diamondus_forever_unlock",
+        "fourteen_carrot_unlock",
+        "electric_boogaloo_unlock",
+        "voltage_village_unlock",
+        "medieval_kineval_unlock",
+        "hare_scare_unlock",
+        "gargoyles_lair_unlock"
+      ],
+      [
+        "",
+        "thriller_gorilla_unlock",
+        "jungle_jump_unlock",
+        "a_cold_day_in_heck_unlock",
+        "rabbit_roast_unlock",
+        "burnin_biscuits_unlock",
+        "bad_pitt_unlock"
+      ],
+      [
+        "",
+        "darn_ratz_unlock",
+        "retro_rabbit_unlock",
+        "frog_stomp_unlock"
+      ]
+    ]
+  },
+  "the_secret_files_content": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 64,
+    "item_margin": "2,2",
+    "margin": "0",
+    "rows": [
+      [
+        "easter_bunny_unlock",
+        "spring_chickens_unlock",
+        "scrambled_eggs_unlock",
+        "ghostly_antics_unlock",
+        "skeletons_turf_unlock",
+        "graveyard_shift_unlock",
+        "turtle_town_unlock",
+        "suburbia_commando_unlock",
+        "urban_brawl_unlock"
+      ]
+    ]
+  },
+  "christmas_chronicles_content": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 64,
+    "item_margin": "2,2",
+    "margin": "0",
+    "rows": [
+      [
+        "snow_bunnies_unlock",
+        "dashing_thru_the_snow.._unlock",
+        "tinsel_town_unlock"
+      ]
+    ]
+  },
+  "tracker_levels_left": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "level_unlock"
+      }
+    ]
+  },
+  "tracker_levels_right": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "0",
+    "margin": "20,0,0,0",
+    "content": [
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "the_secret_files_content"
+      },
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "christmas_chronicles_content"
+      }
+    ]
+  },
+  "tracker_levels": {
+    "type": "array",
+    "orientation": "horizontal",
+    "item_margin": "0",
+    "content": [
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "tracker_levels_left"
+      },
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "tracker_levels_right"
+      }
+    ]
+  }
+}

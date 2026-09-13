@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Dashing thru the snow..",
+    "visibility_rules": [
+      "enable_cc",
+      "enable_hh"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_cc, dashing_thru_the_snow.._unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_hh, dashing_thru_the_snow.._unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_cc, dashing_thru_the_snow.._unlock, $YamlDisabled|allow_levels_out_of_order, @Snow Bunnies/Exit",
+      "$YamlEnabled|enable_hh, dashing_thru_the_snow.._unlock, $YamlDisabled|allow_levels_out_of_order, @Snow Bunnies/Exit",
+      "$YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:2, @Snow Bunnies/Exit",
+      "$YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:2, @Snow Bunnies/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Blue Gem High Above Climbable Trees Secret",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canUppercut"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Five Silver Coins in Sucker Tube Secret",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canUppercut"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Upper Path Near Start",
+        "access_rules": [],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Lower Path Near Start After Trigger Crate on Upper Path",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Middle Path Near Start First Room",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Middle Path Near Start Second Room",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Middle Path Near Start Third Room",
+        "access_rules": [
+          "@Dashing thru the snow../Middle Path Near Start Second Room, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Main Section",
+        "access_rules": [
+          "@Dashing thru the snow../Upper Path Near Start",
+          "@Dashing thru the snow../Lower Path Near Start After Trigger Crate on Upper Path",
+          "@Dashing thru the snow../Middle Path Near Start Third Room, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Green Gems Above Uppercut Block Secret",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section, $canDestroySpecialMoveBlocks|Dashing thru the snow..|below"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Red Gems in Diamond Shape High Up Secret",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Bouncer Power Up High Above Accessed With Lizard Copter Secret",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Green Gems Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section, $canDestroySpecialMoveBlocks|Dashing thru the snow..|sides"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Trigger Crate Chain Room After First Crate",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Trigger Crate Chain Room After Second Crate",
+        "access_rules": [
+          "@Dashing thru the snow../Trigger Crate Chain Room After First Crate, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Trigger Crate Chain Room After Third Crate",
+        "access_rules": [
+          "@Dashing thru the snow../Trigger Crate Chain Room After Second Crate, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "After Trigger Crate Chain Room",
+        "access_rules": [
+          "@Dashing thru the snow../Trigger Crate Chain Room After Third Crate, $canDestroyTriggerCrates|Dashing thru the snow..|above/sides"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Chute Near Exit",
+        "access_rules": [
+          "@Dashing thru the snow../After Trigger Crate Chain Room"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Dashing thru the snow../After Trigger Crate Chain Room"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Dashing thru the snow..|20, @Dashing thru the snow../Final Section"
+        ],
+        "comment": "R:B1"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Dashing thru the snow../Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2c_map",
+            "x": 3912,
+            "y": 520
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (293, 49)",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2b_map",
+            "x": 600,
+            "y": 792
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (515, 39)",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2c_map",
+            "x": 56,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (101, 28)",
+        "access_rules": [
+          "@Dashing thru the snow../Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2a_map",
+            "x": 1624,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (157, 43)",
+        "access_rules": [
+          "@Dashing thru the snow../Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2a_map",
+            "x": 2520,
+            "y": 696
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (173, 4)",
+        "access_rules": [
+          "@Dashing thru the snow../Upper Path Near Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2a_map",
+            "x": 2776,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (242, 18)",
+        "access_rules": [
+          "@Dashing thru the snow../Upper Path Near Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2a_map",
+            "x": 3880,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (289, 30)",
+        "access_rules": [
+          "@Dashing thru the snow../Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2b_map",
+            "x": 536,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Dashing thru the snow../Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l2c_map",
+            "x": 3096,
+            "y": 1000
+          }
+        ]
+      }
+    ]
+  }
+]

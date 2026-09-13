@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Darn Ratz",
+    "access_rules": [
+      "darn_ratz_unlock",
+      "shareware_demo_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Red Gems Above Vine Secret",
+        "access_rules": [
+          "$canGrabVines"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Four Silver Coins and Gem Crate Secret",
+        "access_rules": [],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Room With Wildcard Destructible Block Tutorial",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Wildcard Destructible Block Tutorial",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Section Before Buttstomp Tutorial",
+        "access_rules": [
+          "@Darn Ratz/After Wildcard Destructible Block Tutorial"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Between Buttstomp and Speed Blocks",
+        "access_rules": [
+          "@Darn Ratz/Section Before Buttstomp Tutorial, $canDestroySpecialMoveBlocks|Darn Ratz|above"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "After Speed Blocks",
+        "access_rules": [
+          "@Darn Ratz/Between Buttstomp and Speed Blocks, $canDestroySpeedBlocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Six Silver Coins Only Accessible Before Trigger Crate Secret",
+        "access_rules": [
+          "@Darn Ratz/After Speed Blocks"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "After Trigger Crate Bridge",
+        "access_rules": [
+          "@Darn Ratz/After Speed Blocks, $canDestroyTriggerCrates|Darn Ratz|above/sides"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Extra Life Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "@Darn Ratz/After Trigger Crate Bridge, $canDestroySpecialMoveBlocks|Darn Ratz|sides"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Triple Sucker Tube Middle Path",
+        "access_rules": [
+          "@Darn Ratz/After Trigger Crate Bridge, $canDestroySpecialMoveBlocks|Darn Ratz|above"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Triple Sucker Tube Left Path",
+        "access_rules": [
+          "@Darn Ratz/After Trigger Crate Bridge, $canDestroySpecialMoveBlocks|Darn Ratz|above"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Triple Sucker Tube Right Path",
+        "access_rules": [
+          "@Darn Ratz/After Trigger Crate Bridge, $canDestroySpecialMoveBlocks|Darn Ratz|above"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Around Save Point",
+        "access_rules": [
+          "@Darn Ratz/Triple Sucker Tube Middle Path",
+          "@Darn Ratz/Triple Sucker Tube Right Path",
+          "@Darn Ratz/Triple Sucker Tube Left Path"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "After Hooks",
+        "access_rules": [
+          "@Darn Ratz/Around Save Point, $canGrabHooks"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Darn Ratz|20, @Darn Ratz/After Hooks"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "After First Fall After Bonus Warp",
+        "access_rules": [
+          "@Darn Ratz/After Hooks"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Blue Gems Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@Darn Ratz/After First Fall After Bonus Warp, $canDestroySpecialMoveBlocks|Darn Ratz|below"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Extra Life and Apples Above Vine",
+        "access_rules": [
+          "@Darn Ratz/After First Fall After Bonus Warp, $canGrabVines"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "After Second Fall After Bonus Warp",
+        "access_rules": [
+          "@Darn Ratz/After Hooks"
+        ],
+        "comment": "R:M11"
+      },
+      {
+        "name": "After Third Fall After Bonus Warp",
+        "access_rules": [
+          "@Darn Ratz/After Hooks, $canDestroySpecialMoveBlocks|Darn Ratz|above"
+        ],
+        "comment": "R:M12"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Darn Ratz/After Third Fall After Bonus Warp"
+        ],
+        "comment": "R:M13"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Darn Ratz/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 3256,
+            "y": 824
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (121, 39)",
+        "access_rules": [
+          "@Darn Ratz/Around Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 1944,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (59, 35)",
+        "access_rules": [
+          "@Darn Ratz/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 952,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (82, 43)",
+        "access_rules": [
+          "@Darn Ratz/Room With Wildcard Destructible Block Tutorial"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 1320,
+            "y": 696
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (50, 25)",
+        "access_rules": [
+          "@Darn Ratz/Section Before Buttstomp Tutorial"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 808,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (106, 17)",
+        "access_rules": [
+          "@Darn Ratz/After Speed Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 1704,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (118, 27)",
+        "access_rules": [
+          "@Darn Ratz/Six Silver Coins Only Accessible Before Trigger Crate Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 1896,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Sign 6 (176, 18)",
+        "access_rules": [
+          "@Darn Ratz/After Hooks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 2824,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Sign 7 (179, 58)",
+        "access_rules": [
+          "@Darn Ratz/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 2872,
+            "y": 936
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Darn Ratz/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l1_map",
+            "x": 2872,
+            "y": 296
+          }
+        ]
+      }
+    ]
+  }
+]

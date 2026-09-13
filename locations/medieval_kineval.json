@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Medieval Kineval",
+    "access_rules": [
+      "medieval_kineval_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "medieval_kineval_unlock, $YamlDisabled|allow_levels_out_of_order, @Voltage Village/Exit",
+      "flashback_progressive_level_unlock:5, @Voltage Village/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Two Gold Coins Behind Destructible Pillar Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks",
+          "$canCopter"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Birdy and Two Gold Coins Below Rope Bridge Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Medieval Kineval|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "After Either Trigger Crate or Vine",
+        "access_rules": [
+          "$canGrabVines",
+          "$canDestroyTriggerCrates|Medieval Kineval|above/sides",
+          "$canDestroyTriggerCrates|Medieval Kineval|above/below/sides, $canDestroyWildcardBlocks"
+          ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Electro Blaster Ammo Above Vine",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine, $canGrabVines"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Green Gems Extra Life Crate and Gem Crate Behind Blocks Secret",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Around Save Point",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Trigger Crate Detour First Room",
+        "access_rules": [
+          "@Medieval Kineval/Around Save Point"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Trigger Crate Detour First Room After First Trigger Crate",
+        "access_rules": [
+          "@Medieval Kineval/Around Save Point, $canDestroyTriggerCrates|Medieval Kineval|above/sides"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Trigger Crate Detour Second Room",
+        "access_rules": [
+          "@Medieval Kineval/Trigger Crate Detour First Room After First Trigger Crate, $canDestroyTriggerCrates|Medieval Kineval|above/sides"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Gold Coins After Trigger Crate Detour Secret",
+        "access_rules": [
+          "@Medieval Kineval/Trigger Crate Detour Second Room, $canDestroyTriggerCrates|Medieval Kineval|above/sides"
+          ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Secret Level Exit",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "After Return From Secret Level",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          ],
+        "comment": "R:C1"
+      },
+      {
+        "name": "Hooks Near Bonus Warp",
+        "access_rules": [
+          "@Medieval Kineval/Around Save Point, $canGrabHooks"
+          ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Medieval Kineval|100, @Medieval Kineval/Around Save Point"
+          ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Triple Crates Behind Blocks Secret",
+        "access_rules": [
+          "@Medieval Kineval/Hooks Near Bonus Warp"
+          ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Room With Double Warp Entrance",
+        "access_rules": [
+          "@Medieval Kineval/Hooks Near Bonus Warp"
+          ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Room with Gargoyle Statue Between Warps",
+        "access_rules": [
+          "@Medieval Kineval/Hooks Near Bonus Warp"
+          ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "After Double Warp",
+        "access_rules": [
+          "@Medieval Kineval/Room with Gargoyle Statue Between Warps",
+          "@Medieval Kineval/Bonus Warp Area"
+          ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Above Hooks and Alternating Platforms",
+        "access_rules": [
+          "@Medieval Kineval/After Double Warp, $canGrabHooks"
+          ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Between Ascending Vines",
+        "access_rules": [
+          "@Medieval Kineval/Above Hooks and Alternating Platforms, $canGrabVines"
+          ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Above Ascending Vines",
+        "access_rules": [
+          "@Medieval Kineval/Above Hooks and Alternating Platforms, $canGrabVines"
+          ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Medieval Kineval/Above Ascending Vines"
+          ],
+        "comment": "R:M10"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Medieval Kineval/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 1816,
+            "y": 344
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (184, 52)",
+        "access_rules": [
+          "@Medieval Kineval/Around Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 2952,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (178, 52)",
+        "access_rules": [
+          "@Medieval Kineval/After Either Trigger Crate or Vine"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 2856,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (176, 30)",
+        "access_rules": [
+          "@Medieval Kineval/Gold Coins After Trigger Crate Detour Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 2824,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (206, 24)",
+        "access_rules": [
+          "@Medieval Kineval/Secret Level Exit"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 3304,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Medieval Kineval/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l5_map",
+            "x": 3320,
+            "y": 856
+          }
+        ]
+      }
+    ]
+  }
+]

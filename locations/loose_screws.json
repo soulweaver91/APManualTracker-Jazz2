@@ -1,0 +1,285 @@
+[
+  {
+    "name": "Loose Screws",
+    "access_rules": [
+      "loose_screws_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "loose_screws_unlock, $YamlDisabled|allow_levels_out_of_order, @Weirder Science/Exit",
+      "formerly_a_prince_progressive_level_unlock:7, @Weirder Science/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "After Speed Blocks",
+        "access_rules": [
+          "$canDestroySpeedBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Gems Behind Destructible Wall Secret",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Gold Coin Behind Vine and Buttstomp Block Secret",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks, $canGrabVines, $canDestroySpecialMoveBlocks|Loose Screws|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "After First Spring Sequence",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Silver Coins Behind Destructible Wall and Springs Secret",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "After One Way Near First Save Point",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "After Main Path Destructible Blocks",
+        "access_rules": [
+          "@Loose Screws/After Speed Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Carrots and Lab Rat Behind Destructible Blocks Secret",
+        "access_rules": [
+          "@Loose Screws/After Main Path Destructible Blocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "After Second Spring Sequence",
+        "access_rules": [
+          "@Loose Screws/After Main Path Destructible Blocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Airboard Section",
+        "access_rules": [
+          "@Loose Screws/After Main Path Destructible Blocks"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Airboard Backtrack Silver Coins Behind Blocks Secret",
+        "access_rules": [
+          "@Loose Screws/After Main Path Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "After Airboard Section",
+        "access_rules": [
+          "@Loose Screws/Airboard Backtrack Silver Coins Behind Blocks Secret"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Gold Coins Above Second Save Point Secret",
+        "access_rules": [
+          "@Loose Screws/After Airboard Section, $canGrabVines"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Downward Vine Sequence",
+        "access_rules": [
+          "@Loose Screws/After Airboard Section, $canGrabVines"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Loose Screws|20, @Loose Screws/After Downward Vine Sequence"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Before Final Speed Blocks",
+        "access_rules": [
+          "@Loose Screws/After Downward Vine Sequence"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "After Final Speed Blocks",
+        "access_rules": [
+          "@Loose Screws/After Downward Vine Sequence, $canDestroySpeedBlocks"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Boss Area",
+        "access_rules": [
+          "@Loose Screws/After Final Speed Blocks"
+        ],
+        "comment": "R:M11"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Loose Screws/Boss Area"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 3832,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (51, 20)",
+        "access_rules": [
+          "@Loose Screws/After One Way Near First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 824,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (183, 41)",
+        "access_rules": [
+          "@Loose Screws/After Airboard Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 2936,
+            "y": 664
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (234, 40)",
+        "access_rules": [
+          "@Loose Screws/After Final Speed Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 3752,
+            "y": 648
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (69, 59)",
+        "access_rules": [
+          "@Loose Screws/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 1112,
+            "y": 952
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Loose Screws/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 3544,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Superbot",
+        "access_rules": [
+          "@Loose Screws/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/superbot.png",
+            "chest_opened_img": "images/locations/superbot_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l6_map",
+            "x": 3800,
+            "y": 408
+          }
+        ]
+      }
+    ]
+  }
+]

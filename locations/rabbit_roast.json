@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Rabbit Roast",
+    "access_rules": [
+      "rabbit_roast_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "rabbit_roast_unlock, $YamlDisabled|allow_levels_out_of_order, @A Cold Day in Heck/Exit",
+      "funky_monkeys_progressive_level_unlock:4, @A Cold Day in Heck/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Plasma Shield Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Rabbit Roast|above/below/sides"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "After First Save Point",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Rabbit Roast|above/below/sides"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Destructible Blocks",
+        "access_rules": [
+          "@Rabbit Roast/After First Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Around Second and Third Save Points",
+        "access_rules": [
+          "@Rabbit Roast/After Destructible Blocks, $canDestroyTriggerCrates|Rabbit Roast|above/below/sides"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Rabbit Roast|20, @Rabbit Roast/Around Second and Third Save Points"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Final Section After First Drop",
+        "access_rules": [
+          "@Rabbit Roast/Around Second and Third Save Points, $canDestroySpecialMoveBlocks|Rabbit Roast|above"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Final Section After Second Drop",
+        "access_rules": [
+          "@Rabbit Roast/Final Section After First Drop"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Final Section After Final Drop",
+        "access_rules": [
+          "@Rabbit Roast/Final Section After First Drop"
+        ],
+        "comment": "R:M5"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Rabbit Roast/Final Section After Final Drop"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l4_map",
+            "x": 2408,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (13, 56)",
+        "access_rules": [
+          "@Rabbit Roast/After First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l4_map",
+            "x": 216,
+            "y": 904
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (101, 27)",
+        "access_rules": [
+          "@Rabbit Roast/Around Second and Third Save Points"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l4_map",
+            "x": 1624,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (140, 10)",
+        "access_rules": [
+          "@Rabbit Roast/Around Second and Third Save Points"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l4_map",
+            "x": 2248,
+            "y": 168
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Rabbit Roast/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l4_map",
+            "x": 1256,
+            "y": 328
+          }
+        ]
+      }
+    ]
+  }
+]

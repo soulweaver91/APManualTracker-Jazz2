@@ -1,0 +1,307 @@
+[
+  {
+    "name": "Suburbia Commando",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, suburbia_commando_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, suburbia_commando_unlock, $YamlDisabled|allow_levels_out_of_order, @Turtle Town/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:8, @Turtle Town/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Gems in House Near Start Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Suburbia Commando|sides"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Gem Crate in House Basement Near Start Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Topmost Section After First Three Buildings",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Rooftop With Green Gems Secret",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canCopter"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Room at the End of Topmost Section",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Gold Coin High Above End of Topmost Section Secret",
+        "access_rules": [
+          "@Suburbia Commando/Room at the End of Topmost Section, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Rooftop After Entering Section With Huge Upward Slope",
+        "access_rules": [
+          "@Suburbia Commando/Room at the End of Topmost Section, $canDestroySpecialMoveBlocks|Suburbia Commando|above"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Section With Huge Upward Slope",
+        "access_rules": [
+          "@Suburbia Commando/Rooftop After Entering Section With Huge Upward Slope"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Fast Fires in Building Wall Secret",
+        "access_rules": [
+          "@Suburbia Commando/Section With Huge Upward Slope, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Zigzagging Tube Chute",
+        "access_rules": [
+          "@Suburbia Commando/Section With Huge Upward Slope"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Tall Aircon Climb Building Room",
+        "access_rules": [
+          "@Suburbia Commando/Section With Huge Upward Slope"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Sixteen Green Gems Behind Trigger Scenery Blocks",
+        "access_rules": [
+          "@Suburbia Commando/Tall Aircon Climb Building Room, $canDestroyTriggerCrates|Suburbia Commando|above/sides"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Tall Building",
+        "access_rules": [
+          "@Suburbia Commando/Tall Aircon Climb Building Room"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Rooftop After Destroying Trigger Crate",
+        "access_rules": [
+          "@Suburbia Commando/After Tall Building, $canDestroySpecialMoveBlocks|Suburbia Commando|above, $canDestroyTriggerCrates|Suburbia Commando|above/sides"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Ten Coin Bonus Warp Room",
+        "access_rules": [
+          "@Suburbia Commando/After Tall Building, $canDestroySpecialMoveBlocks|Suburbia Commando|above"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Ten Coin Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Suburbia Commando|10, @Suburbia Commando/Ten Coin Bonus Warp Room",
+          "@Suburbia Commando/Twenty Coin Bonus Warp Area"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Twenty Coin Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Suburbia Commando|20, @Suburbia Commando/Rooftop After Destroying Trigger Crate"
+        ],
+        "comment": "R:B2"
+      },
+      {
+        "name": "Exit Stretch Next to TNT",
+        "access_rules": [
+          "@Suburbia Commando/After Tall Building"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Exit Stretch Final Room",
+        "access_rules": [
+          "@Suburbia Commando/After Tall Building, $canDestroyWeaponBlocks|TNT"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Green Gems Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@Suburbia Commando/Exit Stretch Final Room, $canDestroySpecialMoveBlocks|Suburbia Commando@1|below"
+        ],
+        "comment": "R:A9"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Suburbia Commando/Exit Stretch Final Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8a_map",
+            "x": 1816,
+            "y": 2024
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (252, 126)",
+        "access_rules": [
+          "@Suburbia Commando/Tall Aircon Climb Building Room"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8b_map",
+            "x": 680,
+            "y": 2024
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (199, 22) - Hard Difficulty Only",
+        "access_rules": [
+          "@Suburbia Commando/Section With Huge Upward Slope"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8a_map",
+            "x": 3192,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (270, 122)",
+        "access_rules": [
+          "@Suburbia Commando/Tall Aircon Climb Building Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8b_map",
+            "x": 968,
+            "y": 1960
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (10, 114)",
+        "access_rules": [
+          "@Suburbia Commando/After Tall Building"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8a_map",
+            "x": 168,
+            "y": 1832
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp (10 Coins)",
+        "access_rules": [
+          "@Suburbia Commando/Ten Coin Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Ten Coin Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8a_map",
+            "x": 104,
+            "y": 1896
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp (20 Coins)",
+        "access_rules": [
+          "@Suburbia Commando/Twenty Coin Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Twenty Coin Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          },
+          {
+            "name": "Ten Coin Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l8a_map",
+            "x": 264,
+            "y": 1608
+          }
+        ]
+      }
+    ]
+  }
+]

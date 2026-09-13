@@ -1,0 +1,36 @@
+{
+    "settings_popup": {
+        "type": "array",
+        "orientation": "horizontal",
+        "v_alignment": "top",
+        "min_width": 300,
+        "min_height": 400,
+        "content": {
+            "type": "itemgrid",
+            "item_width": 80,
+            "item_height": 80,
+            "v_alignment": "center",
+            "h_alignment": "left",
+            "dropshadow": false,
+            "margin": 2,
+            "rows": [
+                [
+                    "enable_hh",
+                    "enable_cc",
+                    "enable_tsf"
+                ],
+                [
+                    "individual_level_unlock_keys",
+                    "allow_levels_out_of_order"
+                ],
+                [
+                    "basic_movement_in_pool",
+                    "block_destruction_in_pool"
+                ],
+                [
+                    "exclude_hard_difficulty_checks"
+                ]
+            ]
+        }
+    }
+}

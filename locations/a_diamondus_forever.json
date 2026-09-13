@@ -1,0 +1,430 @@
+[
+  {
+    "name": "A Diamondus Forever",
+    "access_rules": [
+      "a_diamondus_forever_unlock",
+      "flashback_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz Toaster Ammo and Gold Coin Below Start Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Start"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Jazz Lower Path Middle Part",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Start"
+        ],
+        "comment": "R:J1"
+      },
+      {
+        "name": "Jazz Lower Path Lower Part",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Start"
+        ],
+        "comment": "R:J2"
+      },
+      {
+        "name": "Jazz Spring Tunnel Behind Destructible Blocks",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:J3"
+      },
+      {
+        "name": "Jazz After Spring Tunnel",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Spring Tunnel Behind Destructible Blocks"
+        ],
+        "comment": "R:J4"
+      },
+      {
+        "name": "Jazz Silly Sign Detour First Room",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Spring Tunnel Behind Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Jazz Silly Sign Detour Second Room",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Silly Sign Detour First Room"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Jazz Silly Sign Detour Third Room",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Silly Sign Detour First Room"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Jazz Silly Sign Detour Fourth Room",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Silly Sign Detour First Room, $canDestroyTriggerCrates|Weirder Science|above/sides"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Jazz Lower Path Upper Part",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Spring Tunnel Behind Destructible Blocks",
+          "@A Diamondus Forever/Jazz Lower Path Middle Part, toaster_permit"
+        ],
+        "comment": "R:J5"
+      },
+      {
+        "name": "Jazz Upper to Lower Path Alternate Chute",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Spring Tunnel Behind Destructible Blocks",
+          "@A Diamondus Forever/Jazz Lower Path Lower Part, $canUppercut"
+        ],
+        "comment": "R:J6"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Vines Below First Room",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Start, $canGrabVines"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Spaz Buttstomp Cavern Below First Room",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Vines Below First Room, $canDestroySpecialMoveBlocks|A Diamondus Forever|above"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Spaz Cave Upper Section",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Start"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Spaz Cave Middle Section",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Start"
+        ],
+        "comment": "R:S2"
+      },
+      {
+        "name": "Spaz Final Part",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Start, $canDestroySpecialMoveBlocks|A Diamondus Forever|above"
+        ],
+        "comment": "R:S3"
+      },
+      {
+        "name": "Spaz Fruit Gems and Two Gold Coins Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Final Part, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Lower Path Lower Part",
+          "@A Diamondus Forever/Spaz Final Part"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Extra Life Behind Uppercut Blocks Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start, $canDestroySpecialMoveBlocks|A Diamondus Forever|below"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Carrot Crates and Two Gold Coins Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Around Second Shared Save Point",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Freezer Ammo Above Trigger Scenery Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start, $canDestroyTriggerCrates|A Diamondus Forever|above/sides"
+        ],
+        "comment": "R:A11"
+      },
+      {
+        "name": "Near Bonus Warp",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Gold Coins Beneath Horizontal Spring Secret",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start, freezer_permit, $hasWeaponAccess|A Diamondus Forever|Freezer",
+          "@A Diamondus Forever/Shared Path Start, freezer_permit, @A Diamondus Forever/Freezer Ammo Above Trigger Scenery Secret"
+        ],
+        "comment": "R:A12"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "After Destructible Blocks Near Bonus Warp",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start, $canDestroyWildcardBlocks",
+          "@A Diamondus Forever/Bonus Warp Area"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Two Green Gems Accessible With Pushable Rock Secret",
+        "access_rules": [
+          "@A Diamondus Forever/After Destructible Blocks Near Bonus Warp, $canUppercut",
+          "@A Diamondus Forever/After Destructible Blocks Near Bonus Warp, $canDoubleJump"
+        ],
+        "comment": "R:A13"
+      },
+      {
+        "name": "Final Room",
+        "access_rules": [
+          "@A Diamondus Forever/After Destructible Blocks Near Bonus Warp"
+        ],
+        "comment": "R:M5"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@A Diamondus Forever/Final Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 2920,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (80, 33)",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Cave Upper Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 1288,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (133, 23)",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 2136,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (228, 35)",
+        "access_rules": [
+          "@A Diamondus Forever/Around Second Shared Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 3656,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (118, 20)",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Silly Sign Detour Third Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 1896,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (106, 4)",
+        "access_rules": [
+          "@A Diamondus Forever/Jazz Silly Sign Detour Fourth Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 1704,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (38, 50)",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Buttstomp Cavern Below First Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 616,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (111, 62)",
+        "access_rules": [
+          "@A Diamondus Forever/Spaz Fruit Gems and Two Gold Coins Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 1784,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (155, 30)",
+        "access_rules": [
+          "@A Diamondus Forever/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 2488,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@A Diamondus Forever/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l1_map",
+            "x": 3704,
+            "y": 856
+          }
+        ]
+      }
+    ]
+  }
+]

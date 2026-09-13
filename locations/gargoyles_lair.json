@@ -1,0 +1,231 @@
+[
+  {
+    "name": "Gargoyles Lair",
+    "access_rules": [
+      "gargoyles_lair_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "gargoyles_lair_unlock, $YamlDisabled|allow_levels_out_of_order, @Medieval Kineval/Secret Level Exit",
+      "flashback_progressive_level_unlock:7, @Medieval Kineval/Secret Level Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Cakes Above Vine",
+        "access_rules": [],
+        "comment": "R:A1"
+      },
+      {
+        "name": "First Trigger Crate Enclave",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Second Trigger Crate Enclave",
+        "access_rules": [
+          "@Gargoyles Lair/First Trigger Crate Enclave, $canDestroyTriggerCrates|Gargoyles Lair|above/sides"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Tunnel After Trigger Crates",
+        "access_rules": [
+          "@Gargoyles Lair/Second Trigger Crate Enclave, $canDestroyTriggerCrates|Gargoyles Lair|above/sides"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Main Section",
+        "access_rules": [
+          "@Gargoyles Lair/Tunnel After Trigger Crates"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Room with Trigger Crate for Blue Spring Access Secret",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Extra Life Above Blue Spring Secret",
+        "access_rules": [
+          "@Gargoyles Lair/Room with Trigger Crate for Blue Spring Access Secret, $canDestroyTriggerCrates|Gargoyles Lair|above/sides"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Green Gems Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section, $canDestroySpecialMoveBlocks|Gargoyles Lair|sides"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Room with Green Gems and Gold Coin Secret",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Near Bonus Warp",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section, bouncer_permit, $canDestroyTriggerCrates|Gargoyles Lair|above/sides",
+          "@Gargoyles Lair/Main Section, $canGrabHooks, $canCopter",
+          "@Gargoyles Lair/Main Section, $canGrabHooks, $canDoubleJump",
+          "@Gargoyles Lair/Main Section, $canDestroySpecialMoveBlocks|Gargoyles Lair|below"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Green Gems Behind Uppercut Blocks Secret",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section, $canDestroySpecialMoveBlocks|Gargoyles Lair|below"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Gargoyles Lair|20, @Gargoyles Lair/Near Bonus Warp"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "After Final Trigger Crate",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section, $canDestroyTriggerCrates|Gargoyles Lair|above/sides"
+        ],
+        "comment": "R:M5"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Gargoyles Lair/After Final Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 2472,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (49, 19)",
+        "access_rules": [
+          "@Gargoyles Lair/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 792,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (119, 18)",
+        "access_rules": [
+          "@Gargoyles Lair/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 1912,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (92, 39)",
+        "access_rules": [
+          "@Gargoyles Lair/Room with Green Gems and Gold Coin Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 1480,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (99, 39)",
+        "access_rules": [
+          "@Gargoyles Lair/Room with Green Gems and Gold Coin Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 1592,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Gargoyles Lair/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l7_map",
+            "x": 2320,
+            "y": 184
+          }
+        ]
+      }
+    ]
+  }
+]

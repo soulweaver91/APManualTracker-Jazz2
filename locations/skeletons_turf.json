@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Skeletons Turf",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, skeletons_turf_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, skeletons_turf_unlock, $YamlDisabled|allow_levels_out_of_order, @Ghostly Antics/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:5, @Ghostly Antics/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Four Silver Coins on Roof Above Start",
+        "access_rules": [
+          "$canUppercut",
+          "$canDoubleJump",
+          "$canCopter"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "After Building with Clock Tower",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Bottom Section Near Trigger Crate",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "After Buttstomp Near Trigger Crate",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Skeletons Turf|above"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "After Trigger Crate",
+        "access_rules": [
+          "@Skeletons Turf/After Buttstomp Near Trigger Crate, $canDestroyWildcardBlocks, $canDestroyTriggerCrates|Skeletons Turf|above/sides"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Vines After Trigger Crate",
+        "access_rules": [
+          "@Skeletons Turf/After Trigger Crate, $canGrabVines"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Four Silver Coins Above Vines",
+        "access_rules": [
+          "@Skeletons Turf/Vines After Trigger Crate"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Skeletons Turf/After Trigger Crate"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Skeletons Turf|20, @Skeletons Turf/Final Section"
+        ],
+        "comment": "R:B1"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Skeletons Turf/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5b_map",
+            "x": 3848,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (159, 35)",
+        "access_rules": [
+          "@Skeletons Turf/Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5a_map",
+            "x": 2552,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (254, 47)",
+        "access_rules": [
+          "@Skeletons Turf/After Building with Clock Tower"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5a_map",
+            "x": 4072,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (348, 9)",
+        "access_rules": [
+          "@Skeletons Turf/After Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5b_map",
+            "x": 1480,
+            "y": 152
+          }
+        ]
+      },
+      {
+        "name": "Save Point 4 (385, 3)",
+        "access_rules": [
+          "@Skeletons Turf/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5b_map",
+            "x": 2072,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Skeletons Turf/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l5b_map",
+            "x": 2952,
+            "y": 168
+          }
+        ]
+      }
+    ]
+  }
+]

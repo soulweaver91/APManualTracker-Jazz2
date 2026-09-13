@@ -1,0 +1,288 @@
+[
+  {
+    "name": "Scrambled Eggs",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, scrambled_eggs_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, scrambled_eggs_unlock, $YamlDisabled|allow_levels_out_of_order, @Spring Chickens/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:3, @Spring Chickens/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Room Below Start",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Scrambled Eggs|above"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Trigger Crate at Start",
+        "access_rules": [
+          "@Scrambled Eggs/Room Below Start, $canDestroyWildcardBlocks, $canDestroyTriggerCrates|Scrambled Eggs|above/sides"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Vines at Start",
+        "access_rules": [
+          "@Scrambled Eggs/After Trigger Crate at Start, $canGrabVines"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Above Vines at Start",
+        "access_rules": [
+          "@Scrambled Eggs/Vines at Start"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Triple Stacked Routes Room",
+        "access_rules": [
+          "@Scrambled Eggs/Vines at Start, $canDestroySpecialMoveBlocks|Scrambled Eggs|above"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Red Gems Reachable with Double Jump Secret",
+        "access_rules": [
+          "@Scrambled Eggs/Triple Stacked Routes Room, $canDoubleJump"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Trigger Crate Platforms Room",
+        "access_rules": [
+          "@Scrambled Eggs/Triple Stacked Routes Room"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Trigger Crate Behind Blocks Room",
+        "access_rules": [
+          "@Scrambled Eggs/Trigger Crate Platforms Room, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "After Trigger Crate Platforms",
+        "access_rules": [
+          "@Scrambled Eggs/Trigger Crate Behind Blocks Room, $canDestroyTriggerCrates|Scrambled Eggs|above/sides"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Around First Save Point",
+        "access_rules": [
+          "@Scrambled Eggs/After Trigger Crate Platforms"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Middle Zigzag Room After First Save Point",
+        "access_rules": [
+          "@Scrambled Eggs/After Trigger Crate Platforms"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Large Room Before Exit",
+        "access_rules": [
+          "@Scrambled Eggs/After Trigger Crate Platforms"
+        ],
+        "comment": "R:M11"
+      },
+      {
+        "name": "Blue Gem Above First Hidden Spring Secret",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit, $canDestroySpecialMoveBlocks|Scrambled Eggs|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Blue Gem Above Second Hidden Spring Secret",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit, $canDestroySpecialMoveBlocks|Scrambled Eggs|above"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Red Gems Loop Near Exit First Room",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Red Gems Loop Near Exit Second Room",
+        "access_rules": [
+          "@Scrambled Eggs/Red Gems Loop Near Exit First Room, $canDestroySpecialMoveBlocks|Scrambled Eggs|above"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Red Gems Loop Near Exit Third Room",
+        "access_rules": [
+          "@Scrambled Eggs/Red Gems Loop Near Exit Second Room, $canDestroySpecialMoveBlocks|Scrambled Eggs|below"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Final Trigger Crate",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit, $canDestroyTriggerCrates|Scrambled Eggs|above/sides"
+        ],
+        "comment": "R:M12"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Scrambled Eggs/After Final Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3b_map",
+            "x": 3848,
+            "y": 120
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (293, 3)",
+        "access_rules": [
+          "@Scrambled Eggs/Around First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3b_map",
+            "x": 600,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (463, 34)",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3b_map",
+            "x": 3320,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (55, 42)",
+        "access_rules": [
+          "@Scrambled Eggs/Triple Stacked Routes Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3a_map",
+            "x": 888,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (164, 53)",
+        "access_rules": [
+          "@Scrambled Eggs/Trigger Crate Platforms Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3a_map",
+            "x": 2632,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (178, 52)",
+        "access_rules": [
+          "@Scrambled Eggs/Trigger Crate Behind Blocks Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3a_map",
+            "x": 2856,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (462, 34)",
+        "access_rules": [
+          "@Scrambled Eggs/Large Room Before Exit"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l3b_map",
+            "x": 3304,
+            "y": 552
+          }
+        ]
+      }
+    ]
+  }
+]

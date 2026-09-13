@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Beach Bunny Bingo",
+    "access_rules": [
+      "beach_bunny_bingo_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "beach_bunny_bingo_unlock, $YamlDisabled|allow_levels_out_of_order, @Funky Grooveathon/Exit",
+      "jazz_in_time_progressive_level_unlock:5, @Funky Grooveathon/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "After One Ways",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Four Silver Coins Behind TNT Blocks Secret",
+        "access_rules": [
+          "$canDestroyWeaponBlocks|TNT"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Beach Bunny Bingo|20, @Beach Bunny Bingo/After One Ways"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Around Late Save Point",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [],
+        "comment": "R:M3"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Beach Bunny Bingo/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l5_map",
+            "x": 3960,
+            "y": 712
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (224, 36)",
+        "access_rules": [
+          "@Beach Bunny Bingo/Around Late Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l5_map",
+            "x": 3592,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Beach Bunny Bingo/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l5_map",
+            "x": 2760,
+            "y": 568
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1699 @@
+[
+  {
+    "name": "Overview",
+    "children": [
+      {
+        "name": "Rabbit in Training",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (152, 47)",
+            "ref": "Rabbit in Training/Save Point 1 (152, 47)/Save Point"
+          },
+          {
+            "name": "Sign 1 (7, 35)",
+            "ref": "Rabbit in Training/Sign 1 (7, 35)/Sign"
+          },
+          {
+            "name": "Sign 2 (19, 35)",
+            "ref": "Rabbit in Training/Sign 2 (19, 35)/Sign"
+          },
+          {
+            "name": "Sign 3 (40, 34)",
+            "ref": "Rabbit in Training/Sign 3 (40, 34)/Sign"
+          },
+          {
+            "name": "Sign 4 (61, 34)",
+            "ref": "Rabbit in Training/Sign 4 (61, 34)/Sign"
+          },
+          {
+            "name": "Sign 5 (71, 34)",
+            "ref": "Rabbit in Training/Sign 5 (71, 34)/Sign"
+          },
+          {
+            "name": "Sign 6 (73, 52)",
+            "ref": "Rabbit in Training/Sign 6 (73, 52)/Sign"
+          },
+          {
+            "name": "Sign 7 (87, 52)",
+            "ref": "Rabbit in Training/Sign 7 (87, 52)/Sign"
+          },
+          {
+            "name": "Sign 8 (106, 53)",
+            "ref": "Rabbit in Training/Sign 8 (106, 53)/Sign"
+          },
+          {
+            "name": "Sign 9 (112, 53)",
+            "ref": "Rabbit in Training/Sign 9 (112, 53)/Sign"
+          },
+          {
+            "name": "Sign 10 (118, 53)",
+            "ref": "Rabbit in Training/Sign 10 (118, 53)/Sign"
+          },
+          {
+            "name": "Sign 11 (124, 53)",
+            "ref": "Rabbit in Training/Sign 11 (124, 53)/Sign"
+          },
+          {
+            "name": "Sign 12 (138, 50)",
+            "ref": "Rabbit in Training/Sign 12 (138, 50)/Sign"
+          },
+          {
+            "name": "Sign 13 (149, 47)",
+            "ref": "Rabbit in Training/Sign 13 (149, 47)/Sign"
+          },
+          {
+            "name": "Sign 14 (163, 50)",
+            "ref": "Rabbit in Training/Sign 14 (163, 50)/Sign"
+          },
+          {
+            "name": "Sign 15 (173, 53)",
+            "ref": "Rabbit in Training/Sign 15 (173, 53)/Sign"
+          },
+          {
+            "name": "Sign 16 (199, 53)",
+            "ref": "Rabbit in Training/Sign 16 (199, 53)/Sign"
+          },
+          {
+            "name": "Exit",
+            "ref": "Rabbit in Training/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 134
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Dilemma",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (98, 15)",
+            "ref": "Dungeon Dilemma/Save Point 1 (98, 15)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (208, 33)",
+            "ref": "Dungeon Dilemma/Save Point 2 (208, 33)/Save Point"
+          },
+          {
+            "name": "Sign 1 (32, 15)",
+            "ref": "Dungeon Dilemma/Sign 1 (32, 15)/Sign"
+          },
+          {
+            "name": "Sign 2 (73, 25)",
+            "ref": "Dungeon Dilemma/Sign 2 (73, 25)/Sign"
+          },
+          {
+            "name": "Sign 3 (114, 9)",
+            "ref": "Dungeon Dilemma/Sign 3 (114, 9)/Sign"
+          },
+          {
+            "name": "Sign 4 (210, 22)",
+            "ref": "Dungeon Dilemma/Sign 4 (210, 22)/Sign"
+          },
+          {
+            "name": "Sign 5 (235, 8)",
+            "ref": "Dungeon Dilemma/Sign 5 (235, 8)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Dungeon Dilemma/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Dungeon Dilemma/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 159
+          }
+        ]
+      },
+      {
+        "name": "Knight Cap",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (149, 43)",
+            "ref": "Knight Cap/Save Point 1 (149, 43)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (194, 21)",
+            "ref": "Knight Cap/Save Point 2 (194, 21)/Save Point"
+          },
+          {
+            "name": "Sign 1 (89, 20)",
+            "ref": "Knight Cap/Sign 1 (89, 20)/Sign"
+          },
+          {
+            "name": "Sign 2 (58, 53)",
+            "ref": "Knight Cap/Sign 2 (58, 53)/Sign"
+          },
+          {
+            "name": "Sign 3 (16, 46)",
+            "ref": "Knight Cap/Sign 3 (16, 46)/Sign"
+          },
+          {
+            "name": "Sign 4 (94, 59)",
+            "ref": "Knight Cap/Sign 4 (94, 59)/Sign"
+          },
+          {
+            "name": "Sign 5 (163, 31)",
+            "ref": "Knight Cap/Sign 5 (163, 31)/Sign"
+          },
+          {
+            "name": "Sign 6 (224, 5)",
+            "ref": "Knight Cap/Sign 6 (224, 5)/Sign"
+          },
+          {
+            "name": "Sign 7 (239, 19)",
+            "ref": "Knight Cap/Sign 7 (239, 19)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Knight Cap/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Knight Cap/Exit/Level Complete"
+          },
+          {
+            "name": "Queen Earlong",
+            "ref": "Knight Cap/Queen Earlong/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Tossed Salad",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (194, 36)",
+            "ref": "Tossed Salad/Save Point 1 (194, 36)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (156, 57)",
+            "ref": "Tossed Salad/Save Point 2 (156, 57)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (109, 34)",
+            "ref": "Tossed Salad/Save Point 3 (109, 34)/Save Point"
+          },
+          {
+            "name": "Sign 1 (145, 23)",
+            "ref": "Tossed Salad/Sign 1 (145, 23)/Sign"
+          },
+          {
+            "name": "Sign 2 (73, 36)",
+            "ref": "Tossed Salad/Sign 2 (73, 36)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Tossed Salad/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Tossed Salad/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Carrot Juice",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (83, 52)",
+            "ref": "Carrot Juice/Save Point 1 (83, 52)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (112, 7)",
+            "ref": "Carrot Juice/Save Point 2 (112, 7)/Save Point"
+          },
+          {
+            "name": "Sign 1 (82, 11)",
+            "ref": "Carrot Juice/Sign 1 (82, 11)/Sign"
+          },
+          {
+            "name": "Sign 2 (89, 8)",
+            "ref": "Carrot Juice/Sign 2 (89, 8)/Sign"
+          },
+          {
+            "name": "Sign 3 (130, 1)",
+            "ref": "Carrot Juice/Sign 3 (130, 1)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Carrot Juice/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Carrot Juice/Exit/Level Complete"
+          },
+          {
+            "name": "Schwartzenguard",
+            "ref": "Carrot Juice/Schwartzenguard/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 234
+          }
+        ]
+      },
+      {
+        "name": "Weirder Science",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (157, 56)",
+            "ref": "Weirder Science/Save Point 1 (157, 56)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (222, 34)",
+            "ref": "Weirder Science/Save Point 2 (222, 34)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Weirder Science/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Weirder Science/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 259
+          }
+        ]
+      },
+      {
+        "name": "Loose Screws",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (51, 20)",
+            "ref": "Loose Screws/Save Point 1 (51, 20)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (183, 41)",
+            "ref": "Loose Screws/Save Point 2 (183, 41)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (234, 40)",
+            "ref": "Loose Screws/Save Point 3 (234, 40)/Save Point"
+          },
+          {
+            "name": "Sign 1 (69, 59)",
+            "ref": "Loose Screws/Sign 1 (69, 59)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Loose Screws/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Loose Screws/Exit/Level Complete"
+          },
+          {
+            "name": "Superbot",
+            "ref": "Loose Screws/Superbot/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 284
+          }
+        ]
+      },
+      {
+        "name": "Victorian Secret",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (157, 22)",
+            "ref": "Victorian Secret/Save Point 1 (157, 22)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (251, 54)",
+            "ref": "Victorian Secret/Save Point 2 (251, 54)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (7, 9)",
+            "ref": "Victorian Secret/Save Point 3 (7, 9)/Save Point"
+          },
+          {
+            "name": "Sign 1 (101, 43)",
+            "ref": "Victorian Secret/Sign 1 (101, 43)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Victorian Secret/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Victorian Secret/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 134
+          }
+        ]
+      },
+      {
+        "name": "Colonial Chaos",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (119, 8)",
+            "ref": "Colonial Chaos/Save Point 1 (119, 8)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (217, 15)",
+            "ref": "Colonial Chaos/Save Point 2 (217, 15)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Colonial Chaos/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Colonial Chaos/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 159
+          }
+        ]
+      },
+      {
+        "name": "Purple Haze Maze",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (37, 62)",
+            "ref": "Purple Haze Maze/Save Point 1 (37, 62)/Save Point"
+          },
+          {
+            "name": "Sign 1 (134, 61)",
+            "ref": "Purple Haze Maze/Sign 1 (134, 61)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Purple Haze Maze/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Purple Haze Maze/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Funky Grooveathon",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (164, 57)",
+            "ref": "Funky Grooveathon/Save Point 1 (164, 57)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Funky Grooveathon/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Funky Grooveathon/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Beach Bunny Bingo",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (224, 36)",
+            "ref": "Beach Bunny Bingo/Save Point 1 (224, 36)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Beach Bunny Bingo/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Beach Bunny Bingo/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 234
+          }
+        ]
+      },
+      {
+        "name": "Marinated Rabbit",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (80, 28)",
+            "ref": "Marinated Rabbit/Save Point 1 (80, 28)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (196, 59)",
+            "ref": "Marinated Rabbit/Save Point 2 (196, 59)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Marinated Rabbit/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Marinated Rabbit/Exit/Level Complete"
+          },
+          {
+            "name": "Uterus",
+            "ref": "Marinated Rabbit/Uterus/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 259
+          }
+        ]
+      },
+      {
+        "name": "A Diamondus Forever",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (80, 33)",
+            "ref": "A Diamondus Forever/Save Point 1 (80, 33)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (133, 23)",
+            "ref": "A Diamondus Forever/Save Point 2 (133, 23)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (228, 35)",
+            "ref": "A Diamondus Forever/Save Point 3 (228, 35)/Save Point"
+          },
+          {
+            "name": "Sign 1 (118, 20)",
+            "ref": "A Diamondus Forever/Sign 1 (118, 20)/Sign"
+          },
+          {
+            "name": "Sign 2 (106, 4)",
+            "ref": "A Diamondus Forever/Sign 2 (106, 4)/Sign"
+          },
+          {
+            "name": "Sign 3 (38, 50)",
+            "ref": "A Diamondus Forever/Sign 3 (38, 50)/Sign"
+          },
+          {
+            "name": "Sign 4 (111, 62)",
+            "ref": "A Diamondus Forever/Sign 4 (111, 62)/Sign"
+          },
+          {
+            "name": "Sign 5 (155, 30)",
+            "ref": "A Diamondus Forever/Sign 5 (155, 30)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "A Diamondus Forever/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "A Diamondus Forever/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 134
+          }
+        ]
+      },
+      {
+        "name": "Fourteen Carrot",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (55, 27)",
+            "ref": "Fourteen Carrot/Save Point 1 (55, 27)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (137, 35)",
+            "ref": "Fourteen Carrot/Save Point 2 (137, 35)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (60, 57)",
+            "ref": "Fourteen Carrot/Save Point 3 (60, 57)/Save Point"
+          },
+          {
+            "name": "Sign 1 (69, 3)",
+            "ref": "Fourteen Carrot/Sign 1 (69, 3)/Sign"
+          },
+          {
+            "name": "Sign 2 (186, 6)",
+            "ref": "Fourteen Carrot/Sign 2 (186, 6)/Sign"
+          },
+          {
+            "name": "Sign 3 (63, 52)",
+            "ref": "Fourteen Carrot/Sign 3 (63, 52)/Sign"
+          },
+          {
+            "name": "Sign 4 (105, 62)",
+            "ref": "Fourteen Carrot/Sign 4 (105, 62)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Fourteen Carrot/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Fourteen Carrot/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 159
+          }
+        ]
+      },
+      {
+        "name": "Electric Boogaloo",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (147, 57)",
+            "ref": "Electric Boogaloo/Save Point 1 (147, 57)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (212, 55)",
+            "ref": "Electric Boogaloo/Save Point 2 (212, 55)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Electric Boogaloo/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Electric Boogaloo/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Voltage Village",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (124, 25)",
+            "ref": "Voltage Village/Save Point 1 (124, 25)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Voltage Village/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Voltage Village/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Medieval Kineval",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (184, 52)",
+            "ref": "Medieval Kineval/Save Point 1 (184, 52)/Save Point"
+          },
+          {
+            "name": "Sign 1 (178, 52)",
+            "ref": "Medieval Kineval/Sign 1 (178, 52)/Sign"
+          },
+          {
+            "name": "Sign 2 (176, 30)",
+            "ref": "Medieval Kineval/Sign 2 (176, 30)/Sign"
+          },
+          {
+            "name": "Sign 3 (206, 24)",
+            "ref": "Medieval Kineval/Sign 3 (206, 24)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Medieval Kineval/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Medieval Kineval/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 234
+          }
+        ]
+      },
+      {
+        "name": "Hare Scare",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (19, 25)",
+            "ref": "Hare Scare/Save Point 1 (19, 25)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (34, 8)",
+            "ref": "Hare Scare/Save Point 2 (34, 8)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Hare Scare/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Hare Scare/Exit/Level Complete"
+          },
+          {
+            "name": "Bolly",
+            "ref": "Hare Scare/Bolly/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 259
+          }
+        ]
+      },
+      {
+        "name": "Gargoyles Lair",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Sign 1 (49, 19)",
+            "ref": "Gargoyles Lair/Sign 1 (49, 19)/Sign"
+          },
+          {
+            "name": "Sign 2 (119, 18)",
+            "ref": "Gargoyles Lair/Sign 2 (119, 18)/Sign"
+          },
+          {
+            "name": "Sign 3 (92, 39)",
+            "ref": "Gargoyles Lair/Sign 3 (92, 39)/Sign"
+          },
+          {
+            "name": "Sign 4 (99, 39)",
+            "ref": "Gargoyles Lair/Sign 4 (99, 39)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Gargoyles Lair/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Gargoyles Lair/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 284
+          }
+        ]
+      },
+      {
+        "name": "Thriller Gorilla",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (208, 46)",
+            "ref": "Thriller Gorilla/Save Point 1 (208, 46)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (157, 18)",
+            "ref": "Thriller Gorilla/Save Point 2 (157, 18)/Save Point"
+          },
+          {
+            "name": "Sign 1 (12, 41)",
+            "ref": "Thriller Gorilla/Sign 1 (12, 41)/Sign"
+          },
+          {
+            "name": "Sign 2 (5, 57)",
+            "ref": "Thriller Gorilla/Sign 2 (5, 57)/Sign"
+          },
+          {
+            "name": "Sign 3 (111, 50)",
+            "ref": "Thriller Gorilla/Sign 3 (111, 50)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Thriller Gorilla/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Thriller Gorilla/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 433
+          }
+        ]
+      },
+      {
+        "name": "Jungle Jump",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (170, 34)",
+            "ref": "Jungle Jump/Save Point 1 (170, 34)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Jungle Jump/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Jungle Jump/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 458
+          }
+        ]
+      },
+      {
+        "name": "A Cold Day in Heck",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (193, 41)",
+            "ref": "A Cold Day in Heck/Save Point 1 (193, 41)/Save Point"
+          },
+          {
+            "name": "Sign 1 (111, 5)",
+            "ref": "A Cold Day in Heck/Sign 1 (111, 5)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "A Cold Day in Heck/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "A Cold Day in Heck/Exit/Level Complete"
+          },
+          {
+            "name": "Bubba",
+            "ref": "A Cold Day in Heck/Bubba/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 483
+          }
+        ]
+      },
+      {
+        "name": "Rabbit Roast",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (13, 56)",
+            "ref": "Rabbit Roast/Save Point 1 (13, 56)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (101, 27)",
+            "ref": "Rabbit Roast/Save Point 2 (101, 27)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (140, 10)",
+            "ref": "Rabbit Roast/Save Point 3 (140, 10)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Rabbit Roast/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Rabbit Roast/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 508
+          }
+        ]
+      },
+      {
+        "name": "Burnin Biscuits",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (102, 19)",
+            "ref": "Burnin Biscuits/Save Point 1 (102, 19)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Burnin Biscuits/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Burnin Biscuits/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 533
+          }
+        ]
+      },
+      {
+        "name": "Bad Pitt",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (193, 56)",
+            "ref": "Bad Pitt/Save Point 1 (193, 56)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (225, 37)",
+            "ref": "Bad Pitt/Save Point 2 (225, 37)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Bad Pitt/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Bad Pitt/Exit/Level Complete"
+          },
+          {
+            "name": "Devil Devan",
+            "ref": "Bad Pitt/Devil Devan/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 64,
+            "y": 558
+          }
+        ]
+      },
+      {
+        "name": "Darn Ratz",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (121, 39)",
+            "ref": "Darn Ratz/Save Point 1 (121, 39)/Save Point"
+          },
+          {
+            "name": "Sign 1 (59, 35)",
+            "ref": "Darn Ratz/Sign 1 (59, 35)/Sign"
+          },
+          {
+            "name": "Sign 2 (82, 43)",
+            "ref": "Darn Ratz/Sign 2 (82, 43)/Sign"
+          },
+          {
+            "name": "Sign 3 (50, 25)",
+            "ref": "Darn Ratz/Sign 3 (50, 25)/Sign"
+          },
+          {
+            "name": "Sign 4 (106, 17)",
+            "ref": "Darn Ratz/Sign 4 (106, 17)/Sign"
+          },
+          {
+            "name": "Sign 5 (118, 27)",
+            "ref": "Darn Ratz/Sign 5 (118, 27)/Sign"
+          },
+          {
+            "name": "Sign 6 (176, 18)",
+            "ref": "Darn Ratz/Sign 6 (176, 18)/Sign"
+          },
+          {
+            "name": "Sign 7 (179, 58)",
+            "ref": "Darn Ratz/Sign 7 (179, 58)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Darn Ratz/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Darn Ratz/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Retro Rabbit",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Sign 1 (75, 62)",
+            "ref": "Retro Rabbit/Sign 1 (75, 62)/Sign"
+          },
+          {
+            "name": "Sign 2 (89, 50)",
+            "ref": "Retro Rabbit/Sign 2 (89, 50)/Sign"
+          },
+          {
+            "name": "Sign 3 (204, 62)",
+            "ref": "Retro Rabbit/Sign 3 (204, 62)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Retro Rabbit/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Retro Rabbit/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 433
+          }
+        ]
+      },
+      {
+        "name": "Frog Stomp",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (75, 52)",
+            "ref": "Frog Stomp/Save Point 1 (75, 52)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (98, 33)",
+            "ref": "Frog Stomp/Save Point 2 (98, 33)/Save Point"
+          },
+          {
+            "name": "Sign 1 (8, 26)",
+            "ref": "Frog Stomp/Sign 1 (8, 26)/Sign"
+          },
+          {
+            "name": "Sign 2 (40, 26)",
+            "ref": "Frog Stomp/Sign 2 (40, 26)/Sign"
+          },
+          {
+            "name": "Exit",
+            "ref": "Frog Stomp/Exit/Level Complete"
+          },
+          {
+            "name": "Bubba",
+            "ref": "Frog Stomp/Bubba/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 458
+          }
+        ]
+      },
+      {
+        "name": "Easter Bunny",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (374, 3)",
+            "ref": "Easter Bunny/Save Point 1 (374, 3)/Save Point"
+          },
+          {
+            "name": "Sign 1 (14, 6)",
+            "ref": "Easter Bunny/Sign 1 (14, 6)/Sign"
+          },
+          {
+            "name": "Sign 2 (43, 41)",
+            "ref": "Easter Bunny/Sign 2 (43, 41)/Sign"
+          },
+          {
+            "name": "Sign 3 (60, 13)",
+            "ref": "Easter Bunny/Sign 3 (60, 13)/Sign"
+          },
+          {
+            "name": "Sign 4 (55, 4)",
+            "ref": "Easter Bunny/Sign 4 (55, 4)/Sign"
+          },
+          {
+            "name": "Sign 5 (151, 15)",
+            "ref": "Easter Bunny/Sign 5 (151, 15)/Sign"
+          },
+          {
+            "name": "Sign 6 (319, 31)",
+            "ref": "Easter Bunny/Sign 6 (319, 31)/Sign"
+          },
+          {
+            "name": "Sign 7 (306, 14)",
+            "ref": "Easter Bunny/Sign 7 (306, 14)/Sign"
+          },
+          {
+            "name": "Sign 8 (332, 44)",
+            "ref": "Easter Bunny/Sign 8 (332, 44)/Sign"
+          },
+          {
+            "name": "Sign 9 (489, 4)",
+            "ref": "Easter Bunny/Sign 9 (489, 4)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Easter Bunny/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Easter Bunny/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 433
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Spring Chickens",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (200, 4)",
+            "ref": "Spring Chickens/Save Point 1 (200, 4)/Save Point"
+          },
+          {
+            "name": "Sign 1 (509, 9)",
+            "ref": "Spring Chickens/Sign 1 (509, 9)/Sign"
+          },
+          {
+            "name": "Sign 2 (408, 41)",
+            "ref": "Spring Chickens/Sign 2 (408, 41)/Sign"
+          },
+          {
+            "name": "Sign 3 (426, 18)",
+            "ref": "Spring Chickens/Sign 3 (426, 18)/Sign"
+          },
+          {
+            "name": "Exit",
+            "ref": "Spring Chickens/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 458
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Scrambled Eggs",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (293, 3)",
+            "ref": "Scrambled Eggs/Save Point 1 (293, 3)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (463, 34)",
+            "ref": "Scrambled Eggs/Save Point 2 (463, 34)/Save Point"
+          },
+          {
+            "name": "Sign 1 (55, 42)",
+            "ref": "Scrambled Eggs/Sign 1 (55, 42)/Sign"
+          },
+          {
+            "name": "Sign 2 (164, 53)",
+            "ref": "Scrambled Eggs/Sign 2 (164, 53)/Sign"
+          },
+          {
+            "name": "Sign 3 (178, 52)",
+            "ref": "Scrambled Eggs/Sign 3 (178, 52)/Sign"
+          },
+          {
+            "name": "Sign 4 (462, 34)",
+            "ref": "Scrambled Eggs/Sign 4 (462, 34)/Sign"
+          },
+          {
+            "name": "Exit",
+            "ref": "Scrambled Eggs/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 483
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Ghostly Antics",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (151, 112)",
+            "ref": "Ghostly Antics/Save Point 1 (151, 112)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (160, 96) - Hard Difficulty Only",
+            "ref": "Ghostly Antics/Save Point 2 (160, 96) - Hard Difficulty Only/Save Point"
+          },
+          {
+            "name": "Sign 1 (138, 45)",
+            "ref": "Ghostly Antics/Sign 1 (138, 45)/Sign"
+          },
+          {
+            "name": "Sign 2 (146, 59)",
+            "ref": "Ghostly Antics/Sign 2 (146, 59)/Sign"
+          },
+          {
+            "name": "Sign 3 (132, 69)",
+            "ref": "Ghostly Antics/Sign 3 (132, 69)/Sign"
+          },
+          {
+            "name": "Sign 4 (121, 84)",
+            "ref": "Ghostly Antics/Sign 4 (121, 84)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Ghostly Antics/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Ghostly Antics/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 508
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Skeletons Turf",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (159, 35)",
+            "ref": "Skeletons Turf/Save Point 1 (159, 35)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (254, 47)",
+            "ref": "Skeletons Turf/Save Point 2 (254, 47)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (348, 9)",
+            "ref": "Skeletons Turf/Save Point 3 (348, 9)/Save Point"
+          },
+          {
+            "name": "Save Point 4 (385, 3)",
+            "ref": "Skeletons Turf/Save Point 4 (385, 3)/Save Point"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Skeletons Turf/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Skeletons Turf/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 533
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Graveyard Shift",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (195, 47)",
+            "ref": "Graveyard Shift/Save Point 1 (195, 47)/Save Point"
+          },
+          {
+            "name": "Sign 1 (103, 59) Through Warp at (177, 0)",
+            "ref": "Graveyard Shift/Sign 1 (103, 59) Through Warp at (177, 0)/Sign"
+          },
+          {
+            "name": "Exit",
+            "ref": "Graveyard Shift/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 558
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Turtle Town",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (116, 92)",
+            "ref": "Turtle Town/Save Point 1 (116, 92)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (349, 72)",
+            "ref": "Turtle Town/Save Point 2 (349, 72)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (130, 134)",
+            "ref": "Turtle Town/Save Point 3 (130, 134)/Save Point"
+          },
+          {
+            "name": "Sign 1 (165, 44)",
+            "ref": "Turtle Town/Sign 1 (165, 44)/Sign"
+          },
+          {
+            "name": "Sign 2 (95, 58)",
+            "ref": "Turtle Town/Sign 2 (95, 58)/Sign"
+          },
+          {
+            "name": "Sign 3 (57, 49)",
+            "ref": "Turtle Town/Sign 3 (57, 49)/Sign"
+          },
+          {
+            "name": "Sign 4 (312, 72)",
+            "ref": "Turtle Town/Sign 4 (312, 72)/Sign"
+          },
+          {
+            "name": "Sign 5 (323, 103)",
+            "ref": "Turtle Town/Sign 5 (323, 103)/Sign"
+          },
+          {
+            "name": "Sign 6 (338, 72)",
+            "ref": "Turtle Town/Sign 6 (338, 72)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Turtle Town/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Turtle Town/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 583
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Suburbia Commando",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (252, 126)",
+            "ref": "Suburbia Commando/Save Point 1 (252, 126)/Save Point"
+          },
+          {
+            "name": "Sign 1 (199, 22) - Hard Difficulty Only",
+            "ref": "Suburbia Commando/Sign 1 (199, 22) - Hard Difficulty Only/Sign"
+          },
+          {
+            "name": "Sign 2 (270, 122)",
+            "ref": "Suburbia Commando/Sign 2 (270, 122)/Sign"
+          },
+          {
+            "name": "Sign 3 (10, 114)",
+            "ref": "Suburbia Commando/Sign 3 (10, 114)/Sign"
+          },
+          {
+            "name": "Bonus Warp (Either)",
+            "ref": "Suburbia Commando/Bonus Warp (10 Coins)/Ten Coin Bonus Area Entered"
+          },
+          {
+            "name": "Bonus Warp (20 Coins)",
+            "ref": "Suburbia Commando/Bonus Warp (20 Coins)/Twenty Coin Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Suburbia Commando/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 608
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Urban Brawl",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (124, 87)",
+            "ref": "Urban Brawl/Save Point 1 (124, 87)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (218, 112)",
+            "ref": "Urban Brawl/Save Point 2 (218, 112)/Save Point"
+          },
+          {
+            "name": "Sign 1 (261, 15)",
+            "ref": "Urban Brawl/Sign 1 (261, 15)/Sign"
+          },
+          {
+            "name": "Sign 2 (86, 80)",
+            "ref": "Urban Brawl/Sign 2 (86, 80)/Sign"
+          },
+          {
+            "name": "Sign 3 (196, 111)",
+            "ref": "Urban Brawl/Sign 3 (196, 111)/Sign"
+          },
+          {
+            "name": "Sign 4 (265, 92)",
+            "ref": "Urban Brawl/Sign 4 (265, 92)/Sign"
+          },
+          {
+            "name": "Sign 5 (89, 223) Through Warp at (142, 196)",
+            "ref": "Urban Brawl/Sign 5 (89, 223) Through Warp at (142, 196)/Sign"
+          },
+          {
+            "name": "Sign 6 (153, 183)",
+            "ref": "Urban Brawl/Sign 6 (153, 183)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Urban Brawl/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Urban Brawl/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 884,
+            "y": 633
+          }
+        ],
+        "visibility_rules": [
+          "enable_tsf"
+        ]
+      },
+      {
+        "name": "Snow Bunnies",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (280, 26)",
+            "ref": "Snow Bunnies/Save Point 1 (280, 26)/Save Point"
+          },
+          {
+            "name": "Sign 1 (8, 35)",
+            "ref": "Snow Bunnies/Sign 1 (8, 35)/Sign"
+          },
+          {
+            "name": "Sign 2 (10, 35)",
+            "ref": "Snow Bunnies/Sign 2 (10, 35)/Sign"
+          },
+          {
+            "name": "Sign 3 (77, 24)",
+            "ref": "Snow Bunnies/Sign 3 (77, 24)/Sign"
+          },
+          {
+            "name": "Sign 4 (176, 20)",
+            "ref": "Snow Bunnies/Sign 4 (176, 20)/Sign"
+          },
+          {
+            "name": "Sign 5 (445, 24)",
+            "ref": "Snow Bunnies/Sign 5 (445, 24)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Snow Bunnies/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Snow Bunnies/Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 607
+          }
+        ],
+        "visibility_rules": [
+          "enable_cc",
+          "enable_hh"
+        ]
+      },
+      {
+        "name": "Dashing thru the snow..",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (293, 49)",
+            "ref": "Dashing thru the snow../Save Point 1 (293, 49)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (515, 39)",
+            "ref": "Dashing thru the snow../Save Point 2 (515, 39)/Save Point"
+          },
+          {
+            "name": "Sign 1 (101, 28)",
+            "ref": "Dashing thru the snow../Sign 1 (101, 28)/Sign"
+          },
+          {
+            "name": "Sign 2 (157, 43)",
+            "ref": "Dashing thru the snow../Sign 2 (157, 43)/Sign"
+          },
+          {
+            "name": "Sign 3 (173, 4)",
+            "ref": "Dashing thru the snow../Sign 3 (173, 4)/Sign"
+          },
+          {
+            "name": "Sign 4 (242, 18)",
+            "ref": "Dashing thru the snow../Sign 4 (242, 18)/Sign"
+          },
+          {
+            "name": "Sign 5 (289, 30)",
+            "ref": "Dashing thru the snow../Sign 5 (289, 30)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Dashing thru the snow../Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Dashing thru the snow../Exit/Level Complete"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 632
+          }
+        ],
+        "visibility_rules": [
+          "enable_cc",
+          "enable_hh"
+        ]
+      },
+      {
+        "name": "Tinsel Town",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Save Point 1 (256, 42)",
+            "ref": "Tinsel Town/Save Point 1 (256, 42)/Save Point"
+          },
+          {
+            "name": "Save Point 2 (351, 54)",
+            "ref": "Tinsel Town/Save Point 2 (351, 54)/Save Point"
+          },
+          {
+            "name": "Save Point 3 (579, 18)",
+            "ref": "Tinsel Town/Save Point 3 (579, 18)/Save Point"
+          },
+          {
+            "name": "Save Point 4 (721, 7)",
+            "ref": "Tinsel Town/Save Point 4 (721, 7)/Save Point"
+          },
+          {
+            "name": "Sign 1 (157, 54)",
+            "ref": "Tinsel Town/Sign 1 (157, 54)/Sign"
+          },
+          {
+            "name": "Sign 2 (214, 42)",
+            "ref": "Tinsel Town/Sign 2 (214, 42)/Sign"
+          },
+          {
+            "name": "Sign 3 (485, 40)",
+            "ref": "Tinsel Town/Sign 3 (485, 40)/Sign"
+          },
+          {
+            "name": "Sign 4 (622, 36)",
+            "ref": "Tinsel Town/Sign 4 (622, 36)/Sign"
+          },
+          {
+            "name": "Sign 5 (645, 54)",
+            "ref": "Tinsel Town/Sign 5 (645, 54)/Sign"
+          },
+          {
+            "name": "Bonus Warp",
+            "ref": "Tinsel Town/Bonus Warp/Bonus Area Entered"
+          },
+          {
+            "name": "Exit",
+            "ref": "Tinsel Town/Exit/Level Complete"
+          },
+          {
+            "name": "Xmas Bilsy",
+            "ref": "Tinsel Town/Xmas Bilsy/Boss Defeated"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 474,
+            "y": 657
+          }
+        ],
+        "visibility_rules": [
+          "enable_cc",
+          "enable_hh"
+        ]
+      }
+    ]
+  }
+]

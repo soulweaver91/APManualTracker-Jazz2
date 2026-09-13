@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Burnin Biscuits",
+    "access_rules": [
+      "burnin_biscuits_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "burnin_biscuits_unlock, $YamlDisabled|allow_levels_out_of_order, @Rabbit Roast/Exit",
+      "funky_monkeys_progressive_level_unlock:5, @Rabbit Roast/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Four Silver Coins Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Burnin Biscuits|sides"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Four Silver Coins in a Corner High Above Main Path Secret",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canCopter"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Ammo and Extra Life Crates Accessed by Spring Below Buttstomp Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Burnin Biscuits|above"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Burnin Biscuits|10"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Around Save Point",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Gold Coin Below Buttstomp Blocks Secret",
+        "access_rules": [
+          "@Burnin Biscuits/Around Save Point, $canDestroySpecialMoveBlocks|Burnin Biscuits|above"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Spring Section",
+        "access_rules": [
+          "@Burnin Biscuits/Around Save Point"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Room After Spring Section",
+        "access_rules": [
+          "@Burnin Biscuits/Around Save Point"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Burnin Biscuits/Around Save Point, $canDestroySpecialMoveBlocks|Burnin Biscuits|above"
+        ],
+        "comment": "R:M4"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Burnin Biscuits/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l5_map",
+            "x": 3224,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (102, 19)",
+        "access_rules": [
+          "@Burnin Biscuits/Around Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l5_map",
+            "x": 1640,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Burnin Biscuits/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e4l5_map",
+            "x": 968,
+            "y": 392
+          }
+        ]
+      }
+    ]
+  }
+]

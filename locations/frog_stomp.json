@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Frog Stomp",
+    "access_rules": [
+      "frog_stomp_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "frog_stomp_unlock, $YamlDisabled|allow_levels_out_of_order, @Retro Rabbit/Exit",
+      "shareware_demo_progressive_level_unlock:3, @Retro Rabbit/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Tunnel After Destructible Blocks on First Visit",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Fire Shield Available Before Trigger Crate Secret",
+        "access_rules": [
+          "@Frog Stomp/Tunnel After Destructible Blocks on First Visit"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Trigger Crate Loop Upper Section",
+        "access_rules": [
+          "@Frog Stomp/Tunnel After Destructible Blocks on First Visit"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Trigger Crate Loop Lower Section",
+        "access_rules": [
+          "@Frog Stomp/Tunnel After Destructible Blocks on First Visit"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Around Second Save Point",
+        "access_rules": [
+          "@Frog Stomp/Tunnel After Destructible Blocks on First Visit, $canDestroyTriggerCrates|Frog Stomp|above/sides"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Wind Tunnel Room",
+        "access_rules": [
+          "@Frog Stomp/Around Second Save Point, $canGrabVines"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Spring Section",
+        "access_rules": [
+          "@Frog Stomp/Wind Tunnel Room, $canDestroySpecialMoveBlocks|Frog Stomp|above"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Before Boss Room",
+        "access_rules": [
+          "@Frog Stomp/Spring Section"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Boss Room",
+        "access_rules": [
+          "@Frog Stomp/Spring Section"
+        ],
+        "comment": "R:M8"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Frog Stomp/Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 4008,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (75, 52)",
+        "access_rules": [
+          "@Frog Stomp/Trigger Crate Loop Upper Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 1208,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (98, 33)",
+        "access_rules": [
+          "@Frog Stomp/Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 1576,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (8, 26)",
+        "access_rules": [
+          "@Frog Stomp/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 136,
+            "y": 424
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (40, 26)",
+        "access_rules": [
+          "@Frog Stomp/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 648,
+            "y": 424
+          }
+        ]
+      },
+      {
+        "name": "Bubba",
+        "access_rules": [
+          "@Frog Stomp/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/bubba.png",
+            "chest_opened_img": "images/locations/bubba_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l3_map",
+            "x": 3976,
+            "y": 280
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "name": "Jazz Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/jazz_unlock.png",
+    "codes": "jazz_unlock"
+  },
+  {
+    "name": "Spaz Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/spaz_unlock.png",
+    "codes": "spaz_unlock"
+  },
+  {
+    "name": "Lori Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/lori_unlock.png",
+    "codes": "lori_unlock"
+  },
+  {
+    "name": "Wildcard Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/wildcard_destructible_scenery.png",
+    "codes": "wildcard_destructible_scenery"
+  },
+  {
+    "name": "Bouncer Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/bouncer_destructible_scenery.png",
+    "codes": "bouncer_destructible_scenery"
+  },
+  {
+    "name": "Seeker Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/seeker_destructible_scenery.png",
+    "codes": "seeker_destructible_scenery"
+  },
+  {
+    "name": "RF Missile Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/rf_missile_destructible_scenery.png",
+    "codes": "rf_missile_destructible_scenery"
+  },
+  {
+    "name": "Toaster Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/toaster_destructible_scenery.png",
+    "codes": "toaster_destructible_scenery"
+  },
+  {
+    "name": "TNT Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/tnt_destructible_scenery.png",
+    "codes": "tnt_destructible_scenery"
+  },
+  {
+    "name": "Speed Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/speed_destructible_scenery.png",
+    "codes": "speed_destructible_scenery"
+  },
+  {
+    "name": "Special Move Destructible Scenery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/special_move_destructible_scenery.png",
+    "codes": "special_move_destructible_scenery"
+  },
+  {
+    "name": "Blaster Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/blaster_permit.png",
+    "codes": "blaster_permit"
+  },
+  {
+    "name": "Bouncer Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/bouncer_permit.png",
+    "codes": "bouncer_permit"
+  },
+  {
+    "name": "Freezer Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/freezer_permit.png",
+    "codes": "freezer_permit"
+  },
+  {
+    "name": "Seeker Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/seeker_permit.png",
+    "codes": "seeker_permit"
+  },
+  {
+    "name": "RF Missile Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/rf_missile_permit.png",
+    "codes": "rf_missile_permit"
+  },
+  {
+    "name": "Toaster Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/toaster_permit.png",
+    "codes": "toaster_permit"
+  },
+  {
+    "name": "TNT Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/tnt_permit.png",
+    "codes": "tnt_permit"
+  },
+  {
+    "name": "Pepper Spray Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/pepper_spray_permit.png",
+    "codes": "pepper_spray_permit"
+  },
+  {
+    "name": "Electro Blaster Permit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/electro_blaster_permit.png",
+    "codes": "electro_blaster_permit"
+  },
+  {
+    "name": "Rabbit in Training Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/rabbit_in_training_unlock.png",
+    "codes": "rabbit_in_training_unlock"
+  },
+  {
+    "name": "Dungeon Dilemma Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/dungeon_dilemma_unlock.png",
+    "codes": "dungeon_dilemma_unlock"
+  },
+  {
+    "name": "Knight Cap Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/knight_cap_unlock.png",
+    "codes": "knight_cap_unlock"
+  },
+  {
+    "name": "Tossed Salad Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/tossed_salad_unlock.png",
+    "codes": "tossed_salad_unlock"
+  },
+  {
+    "name": "Carrot Juice Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/carrot_juice_unlock.png",
+    "codes": "carrot_juice_unlock"
+  },
+  {
+    "name": "Weirder Science Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/weirder_science_unlock.png",
+    "codes": "weirder_science_unlock"
+  },
+  {
+    "name": "Loose Screws Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/loose_screws_unlock.png",
+    "codes": "loose_screws_unlock"
+  },
+  {
+    "name": "Formerly a Prince Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/formerly_a_prince_progressive_level_unlock.png",
+    "codes": "formerly_a_prince_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "Victorian Secret Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/victorian_secret_unlock.png",
+    "codes": "victorian_secret_unlock"
+  },
+  {
+    "name": "Colonial Chaos Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/colonial_chaos_unlock.png",
+    "codes": "colonial_chaos_unlock"
+  },
+  {
+    "name": "Purple Haze Maze Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/purple_haze_maze_unlock.png",
+    "codes": "purple_haze_maze_unlock"
+  },
+  {
+    "name": "Funky Grooveathon Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/funky_grooveathon_unlock.png",
+    "codes": "funky_grooveathon_unlock"
+  },
+  {
+    "name": "Beach Bunny Bingo Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/beach_bunny_bingo_unlock.png",
+    "codes": "beach_bunny_bingo_unlock"
+  },
+  {
+    "name": "Marinated Rabbit Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/marinated_rabbit_unlock.png",
+    "codes": "marinated_rabbit_unlock"
+  },
+  {
+    "name": "Jazz in Time Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/jazz_in_time_progressive_level_unlock.png",
+    "codes": "jazz_in_time_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 6,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "A Diamondus Forever Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/a_diamondus_forever_unlock.png",
+    "codes": "a_diamondus_forever_unlock"
+  },
+  {
+    "name": "Fourteen Carrot Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/fourteen_carrot_unlock.png",
+    "codes": "fourteen_carrot_unlock"
+  },
+  {
+    "name": "Electric Boogaloo Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/electric_boogaloo_unlock.png",
+    "codes": "electric_boogaloo_unlock"
+  },
+  {
+    "name": "Voltage Village Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/voltage_village_unlock.png",
+    "codes": "voltage_village_unlock"
+  },
+  {
+    "name": "Medieval Kineval Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/medieval_kineval_unlock.png",
+    "codes": "medieval_kineval_unlock"
+  },
+  {
+    "name": "Hare Scare Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/hare_scare_unlock.png",
+    "codes": "hare_scare_unlock"
+  },
+  {
+    "name": "Gargoyles Lair Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/gargoyles_lair_unlock.png",
+    "codes": "gargoyles_lair_unlock"
+  },
+  {
+    "name": "Flashback Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/flashback_progressive_level_unlock.png",
+    "codes": "flashback_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "Thriller Gorilla Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/thriller_gorilla_unlock.png",
+    "codes": "thriller_gorilla_unlock"
+  },
+  {
+    "name": "Jungle Jump Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/jungle_jump_unlock.png",
+    "codes": "jungle_jump_unlock"
+  },
+  {
+    "name": "A Cold Day in Heck Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/a_cold_day_in_heck_unlock.png",
+    "codes": "a_cold_day_in_heck_unlock"
+  },
+  {
+    "name": "Rabbit Roast Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/rabbit_roast_unlock.png",
+    "codes": "rabbit_roast_unlock"
+  },
+  {
+    "name": "Burnin Biscuits Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/burnin_biscuits_unlock.png",
+    "codes": "burnin_biscuits_unlock"
+  },
+  {
+    "name": "Bad Pitt Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/bad_pitt_unlock.png",
+    "codes": "bad_pitt_unlock"
+  },
+  {
+    "name": "Funky Monkeys Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/funky_monkeys_progressive_level_unlock.png",
+    "codes": "funky_monkeys_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 6,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "Darn Ratz Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/darn_ratz_unlock.png",
+    "codes": "darn_ratz_unlock"
+  },
+  {
+    "name": "Retro Rabbit Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/retro_rabbit_unlock.png",
+    "codes": "retro_rabbit_unlock"
+  },
+  {
+    "name": "Frog Stomp Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/frog_stomp_unlock.png",
+    "codes": "frog_stomp_unlock"
+  },
+  {
+    "name": "Shareware Demo Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/shareware_demo_progressive_level_unlock.png",
+    "codes": "shareware_demo_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 3,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "Easter Bunny Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/easter_bunny_unlock.png",
+    "codes": "easter_bunny_unlock"
+  },
+  {
+    "name": "Spring Chickens Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/spring_chickens_unlock.png",
+    "codes": "spring_chickens_unlock"
+  },
+  {
+    "name": "Scrambled Eggs Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/scrambled_eggs_unlock.png",
+    "codes": "scrambled_eggs_unlock"
+  },
+  {
+    "name": "Ghostly Antics Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/ghostly_antics_unlock.png",
+    "codes": "ghostly_antics_unlock"
+  },
+  {
+    "name": "Skeletons Turf Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/skeletons_turf_unlock.png",
+    "codes": "skeletons_turf_unlock"
+  },
+  {
+    "name": "Graveyard Shift Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/graveyard_shift_unlock.png",
+    "codes": "graveyard_shift_unlock"
+  },
+  {
+    "name": "Turtle Town Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/turtle_town_unlock.png",
+    "codes": "turtle_town_unlock"
+  },
+  {
+    "name": "Suburbia Commando Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/suburbia_commando_unlock.png",
+    "codes": "suburbia_commando_unlock"
+  },
+  {
+    "name": "Urban Brawl Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/urban_brawl_unlock.png",
+    "codes": "urban_brawl_unlock"
+  },
+  {
+    "name": "The Secret Files Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/the_secret_files_progressive_level_unlock.png",
+    "codes": "the_secret_files_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 9,
+    "overlay_font_size": 32
+  },
+  {
+    "name": "Snow Bunnies Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/snow_bunnies_unlock.png",
+    "codes": "snow_bunnies_unlock"
+  },
+  {
+    "name": "Dashing thru the snow.. Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/dashing_thru_the_snow.._unlock.png",
+    "codes": "dashing_thru_the_snow.._unlock"
+  },
+  {
+    "name": "Tinsel Town Unlock",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/items/tinsel_town_unlock.png",
+    "codes": "tinsel_town_unlock"
+  },
+  {
+    "name": "Christmas Chronicles Progressive Level Unlock",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/items/christmas_chronicles_progressive_level_unlock.png",
+    "codes": "christmas_chronicles_progressive_level_unlock",
+    "min_quantity": 0,
+    "max_quantity": 3,
+    "overlay_font_size": 32
+  }
+]

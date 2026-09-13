@@ -1,0 +1,305 @@
+[
+  {
+    "name": "Urban Brawl",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, urban_brawl_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, urban_brawl_unlock, $YamlDisabled|allow_levels_out_of_order, @Suburbia Commando/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:9, @Suburbia Commando/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Gems Below Buttstomp Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Urban Brawl|above"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "First Layer After Horizontal Pole",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Chute from First to Second Layer",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Second Layer",
+        "access_rules": [],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Third Layer Before Trigger Crate",
+        "access_rules": [],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Third Layer After Trigger Crate",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Urban Brawl|above/sides"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Manhole Loop Onto the Roof of Building With Nine Silver Coins",
+        "access_rules": [
+          "@Urban Brawl/Third Layer After Trigger Crate, $canDestroySpecialMoveBlocks|Urban Brawl|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Fourth Layer Before Destructible Blocks",
+        "access_rules": [
+          "@Urban Brawl/Third Layer After Trigger Crate, $canDestroySpecialMoveBlocks|Urban Brawl|above"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Fourth Layer After Destructible Blocks",
+        "access_rules": [
+          "@Urban Brawl/Fourth Layer Before Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Urban Brawl/Fourth Layer After Destructible Blocks"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Urban Brawl|20, @Urban Brawl/Final Section"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Warp Tucked in Corner High Above Secret",
+        "access_rules": [
+          "@Urban Brawl/Final Section, $canCopter"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Room With Two Extra Lives and Greetings to GeoBunny",
+        "access_rules": [
+          "@Urban Brawl/Warp Tucked in Corner High Above Secret"
+        ],
+        "comment": "R:A4"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Urban Brawl/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 232,
+            "y": 2936
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (124, 87)",
+        "access_rules": [
+          "@Urban Brawl/Second Layer"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9a_map",
+            "x": 1992,
+            "y": 1400
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (218, 112)",
+        "access_rules": [
+          "@Urban Brawl/Third Layer After Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 1336,
+            "y": 1800
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (261, 15)",
+        "access_rules": [
+          "@Urban Brawl/First Layer After Horizontal Pole"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 2024,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (86, 80)",
+        "access_rules": [
+          "@Urban Brawl/Second Layer"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9a_map",
+            "x": 1384,
+            "y": 1288
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (196, 111)",
+        "access_rules": [
+          "@Urban Brawl/Third Layer Before Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 984,
+            "y": 1784
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (265, 92)",
+        "access_rules": [
+          "@Urban Brawl/Third Layer After Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 2088,
+            "y": 1480
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (89, 223) Through Warp at (142, 196)",
+        "access_rules": [
+          "@Urban Brawl/Room With Two Extra Lives and Greetings to GeoBunny"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9a_map",
+            "x": 1432,
+            "y": 3576
+          }
+        ]
+      },
+      {
+        "name": "Sign 6 (153, 183)",
+        "access_rules": [
+          "@Urban Brawl/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 296,
+            "y": 2936
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Urban Brawl/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l9b_map",
+            "x": 616,
+            "y": 3528
+          }
+        ]
+      }
+    ]
+  }
+]

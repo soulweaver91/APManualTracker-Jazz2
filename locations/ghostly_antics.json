@@ -1,0 +1,307 @@
+[
+  {
+    "name": "Ghostly Antics",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlDisabled|allow_levels_out_of_order, @Scrambled Eggs/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:4, @Scrambled Eggs/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Between Second and Third Buildings",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Sucker Tube Across the Building",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Submerged Trigger Crate Building",
+        "access_rules": [
+          "$canSwim"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Water Level Control Room",
+        "access_rules": [
+          "@Ghostly Antics/Submerged Trigger Crate Building, $canDestroyTriggerCrates|Ghostly Antics|above/below/sides"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Before Spring Section",
+        "access_rules": [
+          "@Ghostly Antics/Water Level Control Room, $canDestroyTriggerCrates|Ghostly Antics|above"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Spring Section",
+        "access_rules": [
+          "@Ghostly Antics/Before Spring Section"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Second Half of Level",
+        "access_rules": [
+          "@Ghostly Antics/Before Spring Section"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Room Under Gap in Line of Red Springs Secret",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level, $canDestroySpecialMoveBlocks|Ghostly Antics|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Green Gems in Room Under Spring Section Secret",
+        "access_rules": [
+          "@Ghostly Antics/Room Under Gap in Line of Red Springs Secret, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Extra Life Above Gap in Line of Red Springs Secret",
+        "access_rules": [
+          "@Ghostly Antics/Room Under Gap in Line of Red Springs Secret, $canDestroySpeedBlocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Banana Tunnel Secret",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Silver Coins Below Trigger Crate Ledge",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level, $canDestroyTriggerCrates|Ghostly Antics|above/sides",
+          "@Ghostly Antics/Second Half of Level, $canDoubleJump",
+          "@Ghostly Antics/Second Half of Level, $canCopter"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Toaster Power Up Secret",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Red Gems Below Bridge Secret",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level, $canDestroyTriggerCrates|Ghostly Antics|above/sides, $canDoubleJump",
+          "@Ghostly Antics/Second Half of Level, $canDestroyTriggerCrates|Ghostly Antics|above/sides, $canUppercut"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Bonus Warp Below Bridge",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level, $canDestroySpecialMoveBlocks|Ghostly Antics|above"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Gems and Drumsticks Tube Secret",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Ghostly Antics|20, @Ghostly Antics/Bonus Warp Below Bridge"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Exit Room",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "comment": "R:M8"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Ghostly Antics/Exit Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4b_map",
+            "x": 1208,
+            "y": 1704
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (151, 112)",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 2424,
+            "y": 1800
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (160, 96) - Hard Difficulty Only",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 2568,
+            "y": 1544
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (138, 45)",
+        "access_rules": [
+          "@Ghostly Antics/Between Second and Third Buildings"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 2216,
+            "y": 728
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (146, 59)",
+        "access_rules": [
+          "@Ghostly Antics/After Sucker Tube Across the Building"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 2344,
+            "y": 952
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (132, 69)",
+        "access_rules": [
+          "@Ghostly Antics/Submerged Trigger Crate Building"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 2120,
+            "y": 1112
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (121, 84)",
+        "access_rules": [
+          "@Ghostly Antics/Second Half of Level"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4a_map",
+            "x": 1944,
+            "y": 1352
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Ghostly Antics/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l4b_map",
+            "x": 1112,
+            "y": 2008
+          }
+        ]
+      }
+    ]
+  }
+]

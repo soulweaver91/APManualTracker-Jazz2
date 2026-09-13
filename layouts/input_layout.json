@@ -1,0 +1,88 @@
+{
+  "basic_movement_ability": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 56,
+    "item_margin": "0,0",
+    "rows": [
+      [
+        "buttstomp_unlock",
+        "uppercut_unlock",
+        "copter_ears_unlock",
+        "sidekick_unlock",
+        "double_jump_unlock",
+        "swimming_unlock",
+        "vine_traversal",
+        "hook_traversal"
+      ]
+    ]
+  },
+  "level_movement_ability": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 64,
+    "item_margin": "2,2",
+    "rows": [
+      [
+        "wildcard_destructible_scenery",
+        "bouncer_destructible_scenery",
+        "seeker_destructible_scenery",
+        "rf_missile_destructible_scenery",
+        "toaster_destructible_scenery",
+        "tnt_destructible_scenery",
+        "speed_destructible_scenery",
+        "special_move_destructible_scenery"
+      ]
+    ]
+  },
+  "weapon_unlock": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 56,
+    "item_margin": "2,2",
+    "rows": [
+      [
+        "blaster_permit",
+        "bouncer_permit",
+        "freezer_permit",
+        "seeker_permit",
+        "rf_missile_permit",
+        "toaster_permit",
+        "tnt_permit",
+        "pepper_spray_permit",
+        "electro_blaster_permit"
+      ]
+    ]
+  },
+  "tracker_items": {
+    "type": "array",
+    "orientation": "vertical",
+    "style": "wrap",
+    "content": [
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "playable_character"
+      },
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "basic_movement_ability"
+      },
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "level_movement_ability"
+      },
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "weapon_unlock"
+      }
+    ]
+  }
+}

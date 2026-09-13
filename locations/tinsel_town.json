@@ -1,0 +1,477 @@
+[
+  {
+    "name": "Tinsel Town",
+    "visibility_rules": [
+      "enable_cc",
+      "enable_hh"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_cc, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_hh, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_cc, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
+      "$YamlEnabled|enable_hh, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
+      "$YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit",
+      "$YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Room With Candy Below Buttstomp Blocks at Start",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Room With Candy and Gem Crate Below Buttstomp Blocks at Start",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Chute With Candy in Big Downwards and Upwards Slope Section",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "TNT Block Bypass into Room With Four Silver Coins Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Between Main Path TNT Blocks",
+        "access_rules": [
+          "$canDestroyWeaponBlocks|TNT"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After TNT Blocks",
+        "access_rules": [
+          "@Tinsel Town/TNT Block Bypass into Room With Four Silver Coins Secret",
+          "@Tinsel Town/Between Main Path TNT Blocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Vines Above First Save Point",
+        "access_rules": [
+          "@Tinsel Town/After TNT Blocks, $canGrabVines"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Room With Secluded House Above First Save Point",
+        "access_rules": [
+          "@Tinsel Town/Vines Above First Save Point, $canGrabVines"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Chute into Cave Section",
+        "access_rules": [
+          "@Tinsel Town/After TNT Blocks, $canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Cave Section Before Trigger Crate",
+        "access_rules": [
+          "@Tinsel Town/Chute into Cave Section"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Green Gems Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@Tinsel Town/Chute into Cave Section, $canDestroySpecialMoveBlocks|Tinsel Town|below"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Cave Section After Trigger Crate",
+        "access_rules": [
+          "@Tinsel Town/Chute into Cave Section, $canDestroyTriggerCrates|Tinsel Town|above/below/sides"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Cave Section Lower Path",
+        "access_rules": [
+          "@Tinsel Town/Cave Section After Trigger Crate"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Extra Life Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "@Tinsel Town/Cave Section Lower Path, $canDestroySpecialMoveBlocks|Tinsel Town|sides"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Vines After Cave Section",
+        "access_rules": [
+          "@Tinsel Town/Cave Section Lower Path, $canGrabVines"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Room With Two Bomb Crates and Four Silver Coins",
+        "access_rules": [
+          "@Tinsel Town/Vines After Cave Section, $canGrabVines"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Vines Before Burrowsville",
+        "access_rules": [
+          "@Tinsel Town/Room With Two Bomb Crates and Four Silver Coins, $canGrabVines"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Burrowsville Middle Layer",
+        "access_rules": [
+          "@Tinsel Town/Vines Before Burrowsville"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Burrowsville Middle Layer House Interiors With Red Gems Secret",
+        "access_rules": [
+          ", $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Burrowsville Upper Layer",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Middle Layer, $canGrabVines"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Burrowsville Open Room and Lower Layers",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Middle Layer"
+        ],
+        "comment": "R:M11"
+      },
+      {
+        "name": "Candy Sucker Tube Secret",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Middle Layer, $canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A11"
+      },
+      {
+        "name": "Red Gems Beneath Vine Under Collapsing Bridge Secret",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Middle Layer, $canGrabVines"
+        ],
+        "comment": "R:A12"
+      },
+      {
+        "name": "Burrowsville Lower Layers House Interiors With Red Gems Secret",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Open Room and Lower Layers, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A13"
+      },
+      {
+        "name": "Three Silver Coins Above Spring Secret",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Open Room and Lower Layers, $canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:A14"
+      },
+      {
+        "name": "Trigger Crate Above Spring on Main Path",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Open Room and Lower Layers, $canDestroySpecialMoveBlocks|Tinsel Town|above"
+        ],
+        "comment": "R:M12"
+      },
+      {
+        "name": "Near Bonus Warp",
+        "access_rules": [
+          "@Tinsel Town/Trigger Crate Above Spring on Main Path, $canDestroyTriggerCrates|Tinsel Town|above/sides"
+        ],
+        "comment": "R:M13"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Tinsel Town|20, @Tinsel Town/Near Bonus Warp"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Before Boss Room",
+        "access_rules": [
+          "@Tinsel Town/Near Bonus Warp, $canGrabVines"
+        ],
+        "comment": "R:M14"
+      },
+      {
+        "name": "Boss Room",
+        "access_rules": [
+          "@Tinsel Town/Before Boss Room"
+        ],
+        "comment": "R:M15"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Tinsel Town/Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 3384,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (256, 42)",
+        "access_rules": [
+          "@Tinsel Town/After TNT Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3b_map",
+            "x": 8,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (351, 54)",
+        "access_rules": [
+          "@Tinsel Town/Cave Section Lower Path"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3b_map",
+            "x": 1528,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (579, 18)",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Upper Layer"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 1080,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Save Point 4 (721, 7)",
+        "access_rules": [
+          "@Tinsel Town/Before Boss Room"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 3352,
+            "y": 120
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (157, 54)",
+        "access_rules": [
+          "@Tinsel Town/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3a_map",
+            "x": 2520,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (214, 42)",
+        "access_rules": [
+          "@Tinsel Town/After TNT Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3a_map",
+            "x": 3432,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (485, 40)",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Middle Layer"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3b_map",
+            "x": 3672,
+            "y": 648
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (622, 36)",
+        "access_rules": [
+          "@Tinsel Town/Burrowsville Open Room and Lower Layers"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 1768,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (645, 54)",
+        "access_rules": [
+          "@Tinsel Town/Near Bonus Warp"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 2136,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Tinsel Town/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 2984,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Xmas Bilsy",
+        "access_rules": [
+          "@Tinsel Town/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/xmas_bilsy.png",
+            "chest_opened_img": "images/locations/xmas_bilsy_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l3c_map",
+            "x": 3352,
+            "y": 680
+          }
+        ]
+      }
+    ]
+  }
+]

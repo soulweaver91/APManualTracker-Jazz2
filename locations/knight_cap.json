@@ -1,0 +1,458 @@
+[
+  {
+    "name": "Knight Cap",
+    "access_rules": [
+      "knight_cap_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "knight_cap_unlock, $YamlDisabled|allow_levels_out_of_order, @Dungeon Dilemma/Exit",
+      "formerly_a_prince_progressive_level_unlock:3, @Dungeon Dilemma/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz Main Area",
+        "access_rules": [
+          "@Knight Cap/Jazz Start"
+        ],
+        "comment": "R:J1"
+      },
+      {
+        "name": "Jazz Left Path Left Branch Before Chute",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:J2"
+      },
+      {
+        "name": "Jazz Left Path Left Branch After Chute",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path Left Branch Before Chute",
+          "@Knight Cap/Jazz Main Area, $canDestroySpecialMoveBlocks|Knight Cap|above, $canUppercut"
+        ],
+        "comment": "R:J3"
+      },
+      {
+        "name": "Jazz Only Freezer Upgrade Secret",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, $canDestroySpecialMoveBlocks|Knight Cap|below"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Jazz Only Gold Coin Secret",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Jazz Left Path Convergence",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path Left Branch After Chute",
+          "@Knight Cap/Jazz Main Area, $canDestroySpecialMoveBlocks|Knight Cap|above"
+        ],
+        "comment": "R:J4"
+      },
+      {
+        "name": "Jazz Left Path End",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path Convergence"
+        ],
+        "comment": "R:J5"
+      },
+      {
+        "name": "Jazz Only Red Gems Behind Trigger Scenery Secret",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path End, $canDestroyTriggerCrates|Knight Cap|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Only Four Silver Coins Behind Trigger Scenery Secret",
+        "access_rules": [
+          "@Knight Cap/Spaz Start, $canDestroyTriggerCrates|Knight Cap|above/sides"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Spaz Only After Chute",
+        "access_rules": [
+          "@Knight Cap/Spaz Start"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Spaz Only Four Silver Coins in Secluded Room Secret",
+        "access_rules": [
+          "@Knight Cap/Spaz Only After Chute"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Spaz Only Two Gold Coins Secret",
+        "access_rules": [
+          "@Knight Cap/Spaz Only After Chute, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Spaz Only Extra Life Secret",
+        "access_rules": [
+          "@Knight Cap/Spaz Only After Chute, $canDestroySpecialMoveBlocks|Knight Cap|sides"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Spaz Only Gold Coin Secret",
+        "access_rules": [
+          "@Knight Cap/Spaz Only After Chute, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Shared Path Start From Left",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path End",
+          "@Knight Cap/Spaz Only After Chute"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Shared Path Start From Right",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area",
+          "@Knight Cap/Shared Path Start From Left"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area",
+          "@Knight Cap/Shared Path Start From Right"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Gold Coin Behind Trigger Scenery Secret",
+        "access_rules": [
+          "@Knight Cap/Shared Path Start, $canDestroyTriggerCrates|Knight Cap|above/sides"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Gem Ring Secret",
+        "access_rules": [
+          "@Knight Cap/Shared Path Start, $canDestroySpecialMoveBlocks|Knight Cap|above"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "@Knight Cap/Shared Path Start, $canCollectEnoughCoins|Knight Cap|20"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "After Vine",
+        "access_rules": [
+          "@Knight Cap/Shared Path Start, $canGrabVines"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "After One Way",
+        "access_rules": [
+          "@Knight Cap/After Vine"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Flight Carrot Ledge",
+        "access_rules": [
+          "@Knight Cap/After One Way, $canDoubleJump",
+          "@Knight Cap/After One Way, $canUppercut"
+        ],
+        "comment": "R:A11"
+      },
+      {
+        "name": "Extra Life Secret",
+        "access_rules": [
+          "@Knight Cap/After One Way, $canDestroySpecialMoveBlocks|Knight Cap|above"
+        ],
+        "comment": "R:A12"
+      },
+      {
+        "name": "Silly Message Secret",
+        "access_rules": [
+          "@Knight Cap/After One Way, $canDoubleJump",
+          "@Knight Cap/After One Way, $canUppercut"
+        ],
+        "comment": "R:A13"
+      },
+      {
+        "name": "Boss Area",
+        "access_rules": [
+          "@Knight Cap/After One Way"
+        ],
+        "comment": "R:M6"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Knight Cap/After One Way"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 4024,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (149, 43)",
+        "access_rules": [
+          "@Knight Cap/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 2392,
+            "y": 696
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (194, 21)",
+        "access_rules": [
+          "@Knight Cap/After One Way"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 3112,
+            "y": 344
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (89, 20)",
+        "access_rules": [
+          "@Knight Cap/Jazz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 1432,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (58, 53)",
+        "access_rules": [
+          "@Knight Cap/Jazz Left Path End"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 936,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (16, 46)",
+        "access_rules": [
+          "@Knight Cap/Spaz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 264,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (94, 59)",
+        "access_rules": [
+          "@Knight Cap/Spaz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 1512,
+            "y": 952
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (163, 31)",
+        "access_rules": [
+          "@Knight Cap/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 2616,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "name": "Sign 6 (224, 5)",
+        "access_rules": [
+          "@Knight Cap/Silly Message Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 3592,
+            "y": 88
+          }
+        ]
+      },
+      {
+        "name": "Sign 7 (239, 19)",
+        "access_rules": [
+          "@Knight Cap/After One Way"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 3832,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Knight Cap/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 2520,
+            "y": 728
+          }
+        ]
+      },
+      {
+        "name": "Queen Earlong",
+        "access_rules": [
+          "@Knight Cap/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/queen_earlong.png",
+            "chest_opened_img": "images/locations/queen_earlong_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l2_map",
+            "x": 3992,
+            "y": 408
+          }
+        ]
+      }
+    ]
+  }
+]

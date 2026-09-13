@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Copter Ears Unlock",
+        "type": "toggle",
+        "loop": "true",
+        "img": "images/items/copter_ears_unlock.png",
+        "codes": "copter_ears_unlock"
+    },
+    {
+        "name": "Sidekick Unlock",
+        "type": "toggle",
+        "loop": "true",
+        "img": "images/items/sidekick_unlock.png",
+        "codes": "sidekick_unlock"
+    },
+    {
+        "name": "Buttstomp Unlock",
+        "type": "toggle",
+        "loop": "true",
+        "img": "images/items/buttstomp_unlock.png",
+        "codes": "buttstomp_unlock"
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "tracker_levels_right": {
+    "type": "array",
+    "orientation": "horizontal",
+    "item_margin": "0",
+    "content": []
+  }
+}

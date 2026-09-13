@@ -1,0 +1,244 @@
+[
+  {
+    "name": "Spring Chickens",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, spring_chickens_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, spring_chickens_unlock, $YamlDisabled|allow_levels_out_of_order, @Easter Bunny/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:2, @Easter Bunny/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Turtle Path at Start",
+        "access_rules": [],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Gem Path at Start First Room",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Gem Path at Start Second Room",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "After Diverging Paths at Start",
+        "access_rules": [],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Platforms With Gems Below Trigger Scenery Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Spring Chickens|above/below/sides"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Sloping Tunnel Secret",
+        "access_rules": [],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Triple Bridges Lower Section to Alternating Springs and Spikes",
+        "access_rules": [],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Mid Level Vine Climb",
+        "access_rules": [
+          "$canGrabVines"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Around Save Point",
+        "access_rules": [
+          "@Spring Chickens/Mid Level Vine Climb"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "After Destructible Blocks",
+        "access_rules": [
+          "@Spring Chickens/Around Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Cakes Above Vine in Cave",
+        "access_rules": [
+          "@Spring Chickens/After Destructible Blocks, $canGrabVines"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Room Halfway Up Springs After Turtle Zigzag",
+        "access_rules": [
+          "@Spring Chickens/After Destructible Blocks"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "Egg Basket Room",
+        "access_rules": [
+          "@Spring Chickens/After Destructible Blocks"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "Cakes Above Vine in Egg Basket Room",
+        "access_rules": [
+          "@Spring Chickens/Egg Basket Room, $canGrabVines"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Final Fall First Room on Left",
+        "access_rules": [
+          "@Spring Chickens/Egg Basket Room, $canDestroySpecialMoveBlocks|Spring Chickens|above"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Final Fall First Room on Right",
+        "access_rules": [
+          "@Spring Chickens/Egg Basket Room, $canDestroySpecialMoveBlocks|Spring Chickens|above"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Final Fall Second Room",
+        "access_rules": [
+          "@Spring Chickens/Final Fall First Room on Left, $canDestroySpecialMoveBlocks|Spring Chickens|above",
+          "@Spring Chickens/Final Fall First Room on Right, $canDestroySpecialMoveBlocks|Spring Chickens|above"
+        ],
+        "comment": "R:M11"
+      },
+      {
+        "name": "Final Fall Third Room",
+        "access_rules": [
+          "@Spring Chickens/Final Fall Second Room, $canDestroySpecialMoveBlocks|Spring Chickens|above"
+        ],
+        "comment": "R:M12"
+      },
+      {
+        "name": "Final Fall Exit Room",
+        "access_rules": [
+          "@Spring Chickens/Final Fall Third Room, $canDestroyWildcardBlocks, $canDestroyTriggerCrates|Spring Chickens|above/sides"
+        ],
+        "comment": "R:M13"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Spring Chickens/Final Fall Exit Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l2a_map",
+            "x": 216,
+            "y": 712
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (200, 4)",
+        "access_rules": [
+          "@Spring Chickens/Around Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l2a_map",
+            "x": 3208,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (509, 9)",
+        "access_rules": [
+          "@Spring Chickens/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l2b_map",
+            "x": 4056,
+            "y": 152
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (408, 41)",
+        "access_rules": [
+          "@Spring Chickens/After Diverging Paths at Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l2b_map",
+            "x": 2440,
+            "y": 664
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (426, 18)",
+        "access_rules": [
+          "@Spring Chickens/After Diverging Paths at Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l2b_map",
+            "x": 2728,
+            "y": 296
+          }
+        ]
+      }
+    ]
+  }
+]

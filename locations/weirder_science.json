@@ -1,0 +1,309 @@
+[
+  {
+    "name": "Weirder Science",
+    "access_rules": [
+      "weirder_science_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "weirder_science_unlock, $YamlDisabled|allow_levels_out_of_order, @Carrot Juice/Exit",
+      "formerly_a_prince_progressive_level_unlock:6, @Carrot Juice/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz After First Room",
+        "access_rules": [
+          "@Weirder Science/Jazz Start"
+        ],
+        "comment": "R:J1"
+      },
+      {
+        "name": "Jazz Super Gem and Five Silver Coins Above Trigger Scenery Secret",
+        "access_rules": [
+          "@Weirder Science/Jazz Start, $canDestroyTriggerCrates|Weirder Science|above"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Jazz Gold Coin Secret",
+        "access_rules": [
+          "@Weirder Science/Jazz Start, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Gold Coin Below Start Secret",
+        "access_rules": [
+          "@Weirder Science/Spaz Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Spaz Silver Coins Warp Secret",
+        "access_rules": [
+          "@Weirder Science/Spaz Start"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Spaz Silver Coins Behind Blocks Entrance Side Secret",
+        "access_rules": [
+          "@Weirder Science/Spaz Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Spaz Silver Coins Behind Blocks Exit Side Secret",
+        "access_rules": [
+          "@Weirder Science/Spaz Silver Coins Behind Blocks Entrance Side Secret",
+          "@Weirder Science/Spaz Start, $canDoubleJump"
+        ],
+        "comment": "R:A5a"
+      },
+      {
+        "name": "Spaz Only Below Silver Coins Behind Blocks",
+        "access_rules": [
+          "@Weirder Science/Spaz Start"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Spaz Only After Springs",
+        "access_rules": [
+          "@Weirder Science/Spaz Start"
+        ],
+        "comment": "R:S2"
+      },
+      {
+        "name": "Spaz Only After Hooks",
+        "access_rules": [
+          "@Weirder Science/Spaz Start, $canGrabHooks"
+        ],
+        "comment": "R:S3"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@Weirder Science/Jazz After First Room",
+          "@Weirder Science/Spaz Only After Hooks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Green Gems Below Buttstomp Blocks Secret",
+        "access_rules": [
+          "@Weirder Science/Shared Path Start, $canDestroySpecialMoveBlocks|Weirder Science|above"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Shared Sucker Tube",
+        "access_rules": [
+          "@Weirder Science/Shared Path Start"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Gold Coin and Super Gem Above Frozen Spring Secret",
+        "access_rules": [
+          "@Weirder Science/After Shared Sucker Tube, toaster_permit"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Six Green Gems Above Trigger Scenery Secret",
+        "access_rules": [
+          "@Weirder Science/After Shared Sucker Tube, $canDestroyTriggerCrates|Weirder Science|above/sides"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Gold Coin Among Breakable Blocks Secret",
+        "access_rules": [
+          "@Weirder Science/After Shared Sucker Tube, $canDestroyWildcardBlocks, $canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Around First Save Point",
+        "access_rules": [
+          "@Weirder Science/After Shared Sucker Tube"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Two Gold Coins Above Trigger Scenery Secret",
+        "access_rules": [
+          "@Weirder Science/Around First Save Point, $canDestroyTriggerCrates|Weirder Science|above/sides"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Before Ascending Hooks",
+        "access_rules": [
+          "@Weirder Science/Around First Save Point"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "After Ascending Hooks",
+        "access_rules": [
+          "@Weirder Science/Around First Save Point, $canGrabHooks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Silver Coins Behind Buttstomp Blocks Secret",
+        "access_rules": [
+          "@Weirder Science/After Ascending Hooks, $canDestroySpecialMoveBlocks|Weirder Science|above"
+        ],
+        "comment": "R:A11"
+      },
+      {
+        "name": "After Poles",
+        "access_rules": [
+          "@Weirder Science/After Ascending Hooks"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Ledges Before High Pair of Hooks",
+        "access_rules": [
+          "@Weirder Science/After Ascending Hooks, $canGrabHooks",
+          "@Weirder Science/After Ascending Hooks, $canUppercut",
+          "@Weirder Science/After Ascending Hooks, $canDoubleJump"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "After High Pair of Hooks",
+        "access_rules": [
+          "@Weirder Science/Ledges Before High Pair of Hooks, $canGrabHooks"
+        ],
+        "comment": "R:M8"
+      },
+      {
+        "name": "After Main Path Buttstomp Blocks",
+        "access_rules": [
+          "@Weirder Science/After High Pair of Hooks, $canDestroySpecialMoveBlocks|Weirder Science|above"
+        ],
+        "comment": "R:M9"
+      },
+      {
+        "name": "After Sucker Tube Below Buttstomp Blocks",
+        "access_rules": [
+          "@Weirder Science/After Main Path Buttstomp Blocks"
+        ],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Weirder Science|50, @Weirder Science/After Sucker Tube Below Buttstomp Blocks"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Room with Exit",
+        "access_rules": [
+          "@Weirder Science/After Sucker Tube Below Buttstomp Blocks"
+        ],
+        "comment": "R:M11"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Weirder Science/Room with Exit"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l5_map",
+            "x": 4008,
+            "y": 984
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (157, 56)",
+        "access_rules": [
+          "@Weirder Science/Around First Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l5_map",
+            "x": 2520,
+            "y": 904
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (222, 34)",
+        "access_rules": [
+          "@Weirder Science/After Poles"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l5_map",
+            "x": 3560,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Weirder Science/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l5_map",
+            "x": 3608,
+            "y": 648
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "tracker_levels_right": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "20,0,0,0",
+    "item_margin": "0",
+    "content": [
+      {
+        "type": "layout",
+        "dropshadow": false,
+        "margin": 0,
+        "key": "the_secret_files_content"
+      }
+    ]
+  }
+}

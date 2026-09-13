@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Graveyard Shift",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, graveyard_shift_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$YamlEnabled|enable_tsf, graveyard_shift_unlock, $YamlDisabled|allow_levels_out_of_order, @Skeletons Turf/Exit",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:6, @Skeletons Turf/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Upper Section After Ledge",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Toaster Ammo and Carrot Crates Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Graveyard Shift|above/sides"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Warp High Above Upper Section Secret",
+        "access_rules": [
+          "$canCopter",
+          "$canDoubleJump"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Michelle's Grave",
+        "access_rules": [
+          "@Graveyard Shift/Warp High Above Upper Section Secret"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Lower Section Before Destructible Blocks",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Lower Section After Destructible Blocks",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Green Gems Above Wall of Destructible Blocks Secret",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks, $canDestroySpecialMoveBlocks|Graveyard Shift|below"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Toaster Ammo Above Vine",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks, $canGrabVines"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Room Behind Sturdy Blocks Secret",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Trigger Crate in Room Behind Sturdy Blocks Secret",
+        "access_rules": [
+          "@Graveyard Shift/Room Behind Sturdy Blocks Secret, $canUppercut, $canDestroyTriggerCrates|Graveyard Shift|above/below",
+          "@Graveyard Shift/Room Behind Sturdy Blocks Secret, $canDoubleJump, $canDestroyTriggerCrates|Graveyard Shift|above/sides"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Super Gem Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks, $canDestroySpecialMoveBlocks|Graveyard Shift|sides"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Chute With Spring Platforms",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Blue Gems Above Exit Secret",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks"
+        ],
+        "comment": "R:A9"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Graveyard Shift/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l6_map",
+            "x": 40,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (195, 47)",
+        "access_rules": [
+          "@Graveyard Shift/Lower Section After Destructible Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l6_map",
+            "x": 3128,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (103, 59) Through Warp at (177, 0)",
+        "access_rules": [
+          "@Graveyard Shift/Michelle's Grave"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l6_map",
+            "x": 1656,
+            "y": 952
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "name": "Carrot Juice",
+    "access_rules": [
+      "carrot_juice_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "carrot_juice_unlock, $YamlDisabled|allow_levels_out_of_order, @Tossed Salad/Exit",
+      "formerly_a_prince_progressive_level_unlock:5, @Tossed Salad/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Extra Life High Above Start Secret",
+        "access_rules": [
+          "$canCopter",
+          "$canDoubleJump"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Left Path After First Fall",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Left Path After Second Fall",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Left Path Crate Accessed with Pushable Rock Secret",
+        "access_rules": [
+          "$canUppercut",
+          "$canDoubleJump"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Left Path After Third Fall",
+        "access_rules": [],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Left Path After Fourth Fall",
+        "access_rules": [],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Left Path Last Section",
+        "access_rules": [],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Gems and Ammo High in Cave Area Secret",
+        "access_rules": [
+          "$canGrabVines"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Left Path Ammo and Super Gem Secret",
+        "access_rules": [],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Right Path",
+        "access_rules": [],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Paths Convergence",
+        "access_rules": [],
+        "comment": "R:M7"
+      },
+      {
+        "name": "After First Drop after Convergence",
+        "access_rules": [],
+        "comment": "R:M8"
+      },
+      {
+        "name": "After Second Drop after Convergence",
+        "access_rules": [],
+        "comment": "R:M9"
+      },
+      {
+        "name": "After Poles One Way",
+        "access_rules": [],
+        "comment": "R:M10"
+      },
+      {
+        "name": "Around Second Save Point",
+        "access_rules": [],
+        "comment": "R:M11"
+      },
+      {
+        "name": "Five Silver Coins Behind Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Six Silver Coins Above Bubble Shield Secret",
+        "access_rules": [],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Horizontal Spring after Second Save Point",
+        "access_rules": [],
+        "comment": "R:M12"
+      },
+      {
+        "name": "After East Upper Spring One Way",
+        "access_rules": [],
+        "comment": "R:M13"
+      },
+      {
+        "name": "Lizard Copter Extra Life Secret",
+        "access_rules": [],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Gold Coin And Bouncer Ammo Warp Secret",
+        "access_rules": [],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Toaster Ammo and Gem Crates Behind Trigger Scenery Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Carrot Juice|above/sides"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Gold Coin Warp Secret",
+        "access_rules": [],
+        "comment": "R:A10"
+      },
+      {
+        "name": "After Fall Near End of Level",
+        "access_rules": [],
+        "comment": "R:M14"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Carrot Juice|20"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "One Way After Fall Near End of Level",
+        "access_rules": [],
+        "comment": "R:M15"
+      },
+      {
+        "name": "End of Level Top Path",
+        "access_rules": [],
+        "comment": "R:A11"
+      },
+      {
+        "name": "Boss Area",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Carrot Juice|above"
+        ],
+        "comment": "R:M16"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Carrot Juice/Boss Area"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 3848,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (83, 52)",
+        "access_rules": [
+          "@Carrot Juice/Left Path Last Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 1336,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (112, 7)",
+        "access_rules": [
+          "@Carrot Juice/Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 1800,
+            "y": 120
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (82, 11)",
+        "access_rules": [
+          "@Carrot Juice/Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 1320,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (89, 8)",
+        "access_rules": [
+          "@Carrot Juice/Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 1432,
+            "y": 136
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (130, 1)",
+        "access_rules": [
+          "@Carrot Juice/Lizard Copter Extra Life Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 2088,
+            "y": 24
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Carrot Juice/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 2856,
+            "y": 968
+          }
+        ]
+      },
+      {
+        "name": "Schwartzenguard",
+        "access_rules": [
+          "@Carrot Juice/Exit"
+        ],
+        "sections": [
+          {
+            "name": "Boss Defeated",
+            "chest_unopened_img": "images/locations/schwartzenguard.png",
+            "chest_opened_img": "images/locations/schwartzenguard_defeated.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l4_map",
+            "x": 3816,
+            "y": 376
+          }
+        ]
+      }
+    ]
+  }
+]

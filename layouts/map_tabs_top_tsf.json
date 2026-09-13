@@ -1,0 +1,62 @@
+{
+  "tracker_overview_tsf": {
+    "type": "map",
+    "maps": [
+      "main_map"
+    ]
+  },
+  "tracker_map": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Overview",
+        "content": {
+          "type": "layout",
+          "key": "tracker_overview_tsf"
+        }
+      },
+      {
+        "title": "Formerly a Prince",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e1"
+        }
+      },
+      {
+        "title": "Jazz in Time",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e2"
+        }
+      },
+      {
+        "title": "Flashback",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e3"
+        }
+      },
+      {
+        "title": "Funky Monkeys",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e4"
+        }
+      },
+      {
+        "title": "Shareware Demo",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e5"
+        }
+      },
+      {
+        "title": "The Secret Files",
+        "content": {
+          "type": "layout",
+          "key": "tracker_tabs_e6"
+        }
+      }
+    ]
+  }
+}

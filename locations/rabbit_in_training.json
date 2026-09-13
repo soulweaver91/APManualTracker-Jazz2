@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Rabbit in Training",
+    "access_rules": [
+      "rabbit_in_training_unlock",
+      "formerly_a_prince_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "After Vine Pit",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Destructible Blocks",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "After Buttstomp Blocks",
+        "access_rules": [
+          "@Rabbit in Training/After Destructible Blocks, $canDestroySpecialMoveBlocks|Rabbit in Training|above"
+        ],
+        "comment": "R:M3"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 3480,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (7, 35)",
+        "access_rules": [
+          "@Rabbit in Training/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 120,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (19, 35)",
+        "access_rules": [
+          "@Rabbit in Training/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 312,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (40, 34)",
+        "access_rules": [
+          "@Rabbit in Training/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 648,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (61, 34)",
+        "access_rules": [
+          "@Rabbit in Training/After Vine Pit"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 984,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (71, 34)",
+        "access_rules": [
+          "@Rabbit in Training/After Destructible Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1144,
+            "y": 552
+          }
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Save Point 1 (152, 47)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 2440,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Sign 6 (73, 52)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1176,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 7 (87, 52)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1400,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 8 (106, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1704,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 9 (112, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1800,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 10 (118, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1896,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 11 (124, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 1992,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 12 (138, 50)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 2216,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Sign 13 (149, 47)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 2392,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Sign 14 (163, 50)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 2616,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Sign 15 (173, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 2776,
+            "y": 856
+          }
+        ]
+      },
+      {
+        "name": "Sign 16 (199, 53)",
+        "access_rules": [
+          "@Rabbit in Training/After Buttstomp Blocks"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l0_map",
+            "x": 3192,
+            "y": 856
+          }
+        ]
+      }
+    ]
+  }
+]

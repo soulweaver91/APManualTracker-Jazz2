@@ -1,0 +1,165 @@
+[
+  {
+    "name": "Colonial Chaos",
+    "access_rules": [
+      "colonial_chaos_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "colonial_chaos_unlock, $YamlDisabled|allow_levels_out_of_order, @Victorian Secret/Exit",
+      "jazz_in_time_progressive_level_unlock:2, @Victorian Secret/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Silver Coins in Window Above Start",
+        "access_rules": [
+          "$canCopter",
+          "$canDoubleJump",
+          "$canUppercut"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "In and Near First Sewer Section",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Victorian Secret|above"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After Drop Between Buildings",
+        "access_rules": [
+          "@Colonial Chaos/In and Near First Sewer Section"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Above Clotheslines Near Second Sewer Section",
+        "access_rules": [
+          "@Colonial Chaos/In and Near First Sewer Section, $canGrabVines",
+          "@Colonial Chaos/Bonus Warp Area"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Colonial Chaos|20, @Colonial Chaos/After Drop Between Buildings"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Chute at the Start of Second Sewer Section",
+        "access_rules": [
+          "@Colonial Chaos/Above Clotheslines Near Second Sewer Section, $canDestroySpecialMoveBlocks|Victorian Secret|above"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Ammo Crate Behind Blocks Secret",
+        "access_rules": [
+          "@Colonial Chaos/Chute at the Start of Second Sewer Section, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Second Sewer Section after Breakable Blocks",
+        "access_rules": [
+          "@Colonial Chaos/Chute at the Start of Second Sewer Section, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Colonial Chaos/Second Sewer Section after Breakable Blocks"
+        ],
+        "comment": "R:M6"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Colonial Chaos/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l2_map",
+            "x": 3048,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (119, 8)",
+        "access_rules": [
+          "@Colonial Chaos/In and Near First Sewer Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l2_map",
+            "x": 1912,
+            "y": 136
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (217, 15)",
+        "access_rules": [
+          "@Colonial Chaos/Above Clotheslines Near Second Sewer Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l2_map",
+            "x": 3480,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Colonial Chaos/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e2l2_map",
+            "x": 3400,
+            "y": 456
+          }
+        ]
+      }
+    ]
+  }
+]

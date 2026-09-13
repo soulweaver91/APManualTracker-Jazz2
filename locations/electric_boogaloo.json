@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Electric Boogaloo",
+    "access_rules": [
+      "electric_boogaloo_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "electric_boogaloo_unlock, $YamlDisabled|allow_levels_out_of_order, @Fourteen Carrot/Exit",
+      "flashback_progressive_level_unlock:3, @Fourteen Carrot/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Above and In First Pinball Room",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Four Silver Coins in Room Accessed with Pipe Secret",
+        "access_rules": [],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Bouncer Ammo In Enclosed Area Secret",
+        "access_rules": [],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Freezer Ammo Behind Bouncer Blocks Secret",
+        "access_rules": [
+          "$canDestroyWeaponBlocks|Bouncer"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "After Chute Near Start",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Two Gold Coins Blocked By Horizontal Spring Secret",
+        "access_rules": [
+          "freezer_permit, @Electric Boogaloo/Freezer Ammo Behind Bouncer Blocks Secret",
+          "freezer_permit, $hasWeaponAccess|Electric Boogaloo|Freezer"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Carrots Behind Sturdy Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Gem Barrels Behind Sidekick Blocks",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|sides"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Small Room After Upwards Pipe",
+        "access_rules": [],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Middle Section",
+        "access_rules": [],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Freezer Ammo Behind Destructible Barrier Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Six Silver Coins and Fruit and Gems in Shape of 'YO' Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|above"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Red Gems Behind Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "First Freezer Power Up Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|sides"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Bouncer Power Up Behind Uppercut Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|below"
+        ],
+        "comment": "R:A11"
+      },
+      {
+        "name": "Second Pinball Section",
+        "access_rules": [],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Electric Boogaloo|20, @Electric Boogaloo/Final Section"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Second Freezer Power Up Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|sides"
+        ],
+        "comment": "R:A12"
+      },
+      {
+        "name": "Six Silver Coins Surrounded by Breakable Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A13"
+      },
+      {
+        "name": "Extra Life Above Uppercut Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|below"
+        ],
+        "comment": "R:A14"
+      },
+      {
+        "name": "Fruit Behind Sidekick Blocks Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Electric Boogaloo|sides"
+        ],
+        "comment": "R:A15"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Electric Boogaloo/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l3_map",
+            "x": 3960,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (147, 57)",
+        "access_rules": [
+          "@Electric Boogaloo/Middle Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l3_map",
+            "x": 2360,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (212, 55)",
+        "access_rules": [
+          "@Electric Boogaloo/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l3_map",
+            "x": 3400,
+            "y": 888
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Electric Boogaloo/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l3_map",
+            "x": 3640,
+            "y": 456
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "tracker_levels": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_size": 96,
+    "item_margin": "2,2",
+    "rows": [
+      [
+        "formerly_a_prince_progressive_level_unlock",
+        "jazz_in_time_progressive_level_unlock",
+        "flashback_progressive_level_unlock",
+        "funky_monkeys_progressive_level_unlock",
+        "shareware_demo_progressive_level_unlock",
+        "the_secret_files_progressive_level_unlock",
+        "christmas_chronicles_progressive_level_unlock"
+      ]
+    ]
+  }
+}

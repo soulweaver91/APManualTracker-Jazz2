@@ -1,0 +1,275 @@
+[
+  {
+    "name": "Snow Bunnies",
+    "visibility_rules": [
+      "enable_cc",
+      "enable_hh"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_cc, snow_bunnies_unlock",
+      "$YamlEnabled|enable_hh, snow_bunnies_unlock",
+      "$YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:1",
+      "$YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Gold Coin High Above Hidden Spring Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Snow Bunnies|above"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "After Buttstomp Blocks Near Start",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Snow Bunnies|above"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Gems and Extra Life Below Destructible Blocks Secret",
+        "access_rules": [
+          "@Snow Bunnies/After Buttstomp Blocks Near Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Spike Pit After Trigger Crate",
+        "access_rules": [
+          "@Snow Bunnies/After Buttstomp Blocks Near Start, $canDestroyTriggerCrates|Snow Bunnies|above/below/sides"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Four Silver Coins and Goodies on Vines Above Spike Pit",
+        "access_rules": [
+          "@Snow Bunnies/Spike Pit After Trigger Crate, $canGrabVines"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Descent Upon Destructible Blocks with RF Ammo Inside",
+        "access_rules": [
+          "@Snow Bunnies/Spike Pit After Trigger Crate"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "RF Ammo Inside Destructible Block Platforms Secret",
+        "access_rules": [
+          "@Snow Bunnies/Spike Pit After Trigger Crate, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Around and After Save Point",
+        "access_rules": [
+          "@Snow Bunnies/Descent Upon Destructible Blocks with RF Ammo Inside, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Red Gems Below Bridge Secret",
+        "access_rules": [
+          "@Snow Bunnies/Around and After Save Point, $canDestroySpecialMoveBlocks|Snow Bunnies|above"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Chute Near Bonus Warp",
+        "access_rules": [
+          "@Snow Bunnies/Around and After Save Point, $canDestroyWeaponBlocks|TNT"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Snow Bunnies/Chute Near Bonus Warp"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Snow Bunnies|20, @Snow Bunnies/Final Section"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Blue Gems Below Collapsible Bridge and Vine Near Exit",
+        "access_rules": [
+          "@Snow Bunnies/Final Section, $canGrabVines"
+        ],
+        "comment": "R:A6"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Snow Bunnies/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1b_map",
+            "x": 4072,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (280, 26)",
+        "access_rules": [
+          "@Snow Bunnies/Around and After Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1b_map",
+            "x": 392,
+            "y": 424
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (8, 35)",
+        "access_rules": [
+          "@Snow Bunnies/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1a_map",
+            "x": 136,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (10, 35)",
+        "access_rules": [
+          "@Snow Bunnies/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1a_map",
+            "x": 168,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (77, 24)",
+        "access_rules": [
+          "@Snow Bunnies/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1a_map",
+            "x": 1240,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (176, 20)",
+        "access_rules": [
+          "@Snow Bunnies/Spike Pit After Trigger Crate"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1a_map",
+            "x": 2824,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (445, 24)",
+        "access_rules": [
+          "@Snow Bunnies/Around and After Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1b_map",
+            "x": 3032,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Snow Bunnies/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e7l1b_map",
+            "x": 2888,
+            "y": 904
+          }
+        ]
+      }
+    ]
+  }
+]

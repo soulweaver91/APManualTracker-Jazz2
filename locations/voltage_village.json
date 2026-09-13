@@ -1,0 +1,216 @@
+[
+  {
+    "name": "Voltage Village",
+    "access_rules": [
+      "voltage_village_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "voltage_village_unlock, $YamlDisabled|allow_levels_out_of_order, @Electric Boogaloo/Exit",
+      "flashback_progressive_level_unlock:4, @Electric Boogaloo/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz Only TNT Ammo Behind Uppercut Blocks Secret",
+        "access_rules": [
+          "@Voltage Village/Jazz Start, $canDestroySpecialMoveBlocks|Voltage Village@0|below"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz After First Sidekick Blocks",
+        "access_rules": [
+          "@Voltage Village/Spaz Start, $canDestroySpecialMoveBlocks|Voltage Village@1|sides"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Spaz After Second Sidekick Blocks",
+        "access_rules": [
+          "@Voltage Village/Spaz After First Sidekick Blocks, $canDestroySpecialMoveBlocks|Voltage Village@1|sides"
+        ],
+        "comment": "R:S2"
+      },
+      {
+        "name": "Spaz Only Toaster Ammo Above Main Path Secret",
+        "access_rules": [
+          "@Voltage Village/Spaz After Second Sidekick Blocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Spaz After Destructible Blocks",
+        "access_rules": [
+          "@Voltage Village/Spaz After Second Sidekick Blocks, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:S3"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@Voltage Village/Jazz Start",
+          "@Voltage Village/Spaz After Destructible Blocks"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Four Silver Coins and Extra Life Below TNT Blocks Secret",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start, $canDestroyWeaponBlocks|TNT"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Fruit Behind Uppercut Blocks Secret",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start, $canDestroySpecialMoveBlocks|Voltage Village@2|below"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Two Gold Coins Behind Multiple Obstacles Secret",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start, $canDestroyWeaponBlocks|TNT, $canDestroyWildcardBlocks, toaster_permit"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Four Silver Coins Behind Breakable Blocks Secret",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Red Gems Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start, $canDestroySpecialMoveBlocks|Voltage Village@2|below"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Pinball Section and Beyond",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Voltage Village|20, @Voltage Village/Pinball Section and Beyond"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Small Room After Warp",
+        "access_rules": [
+          "@Voltage Village/Pinball Section and Beyond"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Room With Vine and Fruit",
+        "access_rules": [
+          "@Voltage Village/Small Room After Warp"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Fruit Above Vine",
+        "access_rules": [
+          "@Voltage Village/Small Room After Warp, $canGrabVines"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Room After Breakable Blocks Near Exit",
+        "access_rules": [
+          "@Voltage Village/Small Room After Warp, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Final Section",
+        "access_rules": [
+          "@Voltage Village/Room After Breakable Blocks Near Exit"
+        ],
+        "comment": "R:M6"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Voltage Village/Final Section"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l4_map",
+            "x": 3976,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (124, 25)",
+        "access_rules": [
+          "@Voltage Village/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l4_map",
+            "x": 1992,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Voltage Village/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l4_map",
+            "x": 328,
+            "y": 200
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "name": "Retro Rabbit",
+    "access_rules": [
+      "retro_rabbit_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "retro_rabbit_unlock, $YamlDisabled|allow_levels_out_of_order, @Darn Ratz/Exit",
+      "shareware_demo_progressive_level_unlock:2, @Darn Ratz/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [
+          "jazz_unlock",
+          "lori_unlock"
+        ],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Jazz After Buttstomp Blocks",
+        "access_rules": [
+          "@Retro Rabbit/Jazz Start, $canDestroySpecialMoveBlocks|Retro Rabbit|above"
+        ],
+        "comment": "R:J1"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Platforms Above Jazz Path",
+        "access_rules": [
+          "@Retro Rabbit/Spaz Start"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [
+          "@Retro Rabbit/Jazz After Buttstomp Blocks",
+          "@Retro Rabbit/Spaz Start"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Room With Rope Bridges",
+        "access_rules": [
+          "@Retro Rabbit/Shared Path Start"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Blue Gems High Above Secret",
+        "access_rules": [
+          "@Retro Rabbit/Shared Path Start, $canGrabVines"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Trigger Crate Room",
+        "access_rules": [
+          "@Retro Rabbit/Shared Path Start, $canDestroySpecialMoveBlocks|Retro Rabbit|above"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Gold Coin Above Speed Blocks Secret",
+        "access_rules": [
+          "@Retro Rabbit/Trigger Crate Room, $canDestroySpeedBlocks"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Chute With Coins After Destroying Trigger Crate",
+        "access_rules": [
+          "@Retro Rabbit/Trigger Crate Room, $canDestroyTriggerCrates|Retro Rabbit|above/sides"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Vine Connected Platforms Room",
+        "access_rules": [
+          "@Retro Rabbit/Chute With Coins After Destroying Trigger Crate"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Retro Rabbit|20, @Retro Rabbit/Vine Connected Platforms Room"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Exit Room",
+        "access_rules": [
+          "@Retro Rabbit/Vine Connected Platforms Room, $canDestroySpeedBlocks"
+        ],
+        "comment": "R:M6"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Retro Rabbit/Exit Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l2_map",
+            "x": 3944,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (75, 62)",
+        "access_rules": [
+          "@Retro Rabbit/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l2_map",
+            "x": 1208,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (89, 50)",
+        "access_rules": [
+          "@Retro Rabbit/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l2_map",
+            "x": 1432,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (204, 62)",
+        "access_rules": [
+          "@Retro Rabbit/Vine Connected Platforms Room"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l2_map",
+            "x": 3272,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Retro Rabbit/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e5l2_map",
+            "x": 3224,
+            "y": 984
+          }
+        ]
+      }
+    ]
+  }
+]

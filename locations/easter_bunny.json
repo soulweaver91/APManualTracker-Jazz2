@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Easter Bunny",
+    "visibility_rules": [
+      "enable_tsf"
+    ],
+    "access_rules": [
+      "$YamlEnabled|enable_tsf, easter_bunny_unlock",
+      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:1"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Room After Trigger Crate Loop",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Easter Bunny|above/sides"
+        ],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Vines Before Main Section",
+        "access_rules": [
+          "@Easter Bunny/Room After Trigger Crate Loop, $canGrabVines"
+        ],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Room With Rock Above Vine Section",
+        "access_rules": [
+          "@Easter Bunny/Vines Before Main Section"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Blue Gem Reachable With Double Jump Only Secret",
+        "access_rules": [
+          "@Easter Bunny/Vines Before Main Section, $canDoubleJump"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Main Section",
+        "access_rules": [
+          "@Easter Bunny/Vines Before Main Section, $canGrabVines"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Gold Coin Above Buttstomp Sucker Tube Secret",
+        "access_rules": [
+          "@Easter Bunny/Main Section, $canDestroySpecialMoveBlocks|Easter Bunny|above"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Room at Bottom of Windy Chasm",
+        "access_rules": [
+          "@Easter Bunny/Main Section"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Chute With Many Springs Lining Its Walls",
+        "access_rules": [
+          "@Easter Bunny/Main Section, $canDestroySpecialMoveBlocks|Easter Bunny|above"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Red Gems Above Left Vine in Room Midway Through Spring Chute",
+        "access_rules": [
+          "@Easter Bunny/Chute With Many Springs Lining Its Walls, $canGrabVines"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Red Gems Above Right Vine in Room Midway Through Spring Chute",
+        "access_rules": [
+          "@Easter Bunny/Chute With Many Springs Lining Its Walls, $canGrabVines"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "After Spring Chute",
+        "access_rules": [
+          "@Easter Bunny/Chute With Many Springs Lining Its Walls"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "$canCollectEnoughCoins|Easter Bunny|10, @Easter Bunny/After Spring Chute"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Vines Near Exit",
+        "access_rules": [
+          "@Easter Bunny/After Spring Chute, $canGrabVines"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Blue Gem Above Uppercut Blocks Secret",
+        "access_rules": [
+          "@Easter Bunny/Vines Near Exit, $canDestroySpecialMoveBlocks|Easter Bunny|below"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Exit Room",
+        "access_rules": [
+          "@Easter Bunny/Vines Near Exit, $canDestroyTriggerCrates|Easter Bunny|above/below/sides"
+        ],
+        "comment": "R:M7"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Easter Bunny/Exit Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 3640,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (374, 3)",
+        "access_rules": [
+          "@Easter Bunny/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 1896,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (14, 6)",
+        "access_rules": [
+          "@Easter Bunny/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1a_map",
+            "x": 232,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (43, 41)",
+        "access_rules": [
+          "@Easter Bunny/Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1a_map",
+            "x": 696,
+            "y": 664
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (60, 13)",
+        "access_rules": [
+          "@Easter Bunny/Room With Rock Above Vine Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1a_map",
+            "x": 968,
+            "y": 216
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (55, 4)",
+        "access_rules": [
+          "@Easter Bunny/Blue Gem Reachable With Double Jump Only Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1a_map",
+            "x": 888,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Sign 5 (151, 15)",
+        "access_rules": [
+          "@Easter Bunny/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1a_map",
+            "x": 2424,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Sign 6 (319, 31)",
+        "access_rules": [
+          "@Easter Bunny/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 1016,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "name": "Sign 7 (306, 14)",
+        "access_rules": [
+          "@Easter Bunny/Main Section"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 808,
+            "y": 232
+          }
+        ]
+      },
+      {
+        "name": "Sign 8 (332, 44)",
+        "access_rules": [
+          "@Easter Bunny/Room at Bottom of Windy Chasm"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 1224,
+            "y": 712
+          }
+        ]
+      },
+      {
+        "name": "Sign 9 (489, 4)",
+        "access_rules": [
+          "@Easter Bunny/Vines Near Exit"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 3736,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Easter Bunny/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e6l1b_map",
+            "x": 3672,
+            "y": 680
+          }
+        ]
+      }
+    ]
+  }
+]

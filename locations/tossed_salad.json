@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Tossed Salad",
+    "access_rules": [
+      "tossed_salad_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "tossed_salad_unlock, $YamlDisabled|allow_levels_out_of_order, @Knight Cap/Exit",
+      "formerly_a_prince_progressive_level_unlock:4, @Knight Cap/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Jazz Start",
+        "access_rules": [],
+        "comment": "R:J0"
+      },
+      {
+        "name": "Spaz Start",
+        "access_rules": [
+          "spaz_unlock"
+        ],
+        "comment": "R:S0"
+      },
+      {
+        "name": "Spaz Only Final Part",
+        "access_rules": [
+          "@Tossed Salad/Spaz Start"
+        ],
+        "comment": "R:S1"
+      },
+      {
+        "name": "Extra Life High Above Frozen Spring Secret",
+        "access_rules": [
+          "toaster_permit"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Five Silver Coins Above Trigger Scenery Blocks Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Tossed Salad|sides/above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Shared Path Start",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "After First Save Point",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Shared Path Lower Section",
+        "access_rules": [],
+        "comment": "R:M3"
+      },
+      {
+        "name": "East Gold Coin Area",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "After Main Path Trigger Crate",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Tossed Salad|sides/above"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Around Second Save Point",
+        "access_rules": [
+          "@Tossed Salad/After Main Path Trigger Crate"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Under Jazz Section Bridge",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point, $canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Two Silver Coins After Second Save Point Secret",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Before Final Chute",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point, $canCollectEnoughCoins|Tossed Salad|20"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Final Part",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point"
+        ],
+        "comment": "R:M7"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Tossed Salad/Final Part"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 824,
+            "y": 792
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (194, 36)",
+        "access_rules": [
+          "@Tossed Salad/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 3112,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (156, 57)",
+        "access_rules": [
+          "@Tossed Salad/Shared Path Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 2504,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (109, 34)",
+        "access_rules": [
+          "@Tossed Salad/Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 1752,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (145, 23)",
+        "access_rules": [
+          "@Tossed Salad/Jazz Start"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 2328,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (73, 36)",
+        "access_rules": [
+          "@Tossed Salad/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 1176,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Tossed Salad/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e1l3_map",
+            "x": 1192,
+            "y": 472
+          }
+        ]
+      }
+    ]
+  }
+]

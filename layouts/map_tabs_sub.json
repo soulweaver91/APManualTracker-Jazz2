@@ -1,0 +1,611 @@
+{
+  "tracker_tabs_e1": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Rabbit in Training",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l0_map"
+          ]
+        }
+      },
+      {
+        "title": "Dungeon Dilemma",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l1_map"
+          ]
+        }
+      },
+      {
+        "title": "Knight Cap",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l2_map"
+          ]
+        }
+      },
+      {
+        "title": "Tossed Salad",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l3_map"
+          ]
+        }
+      },
+      {
+        "title": "Carrot Juice",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l4_map"
+          ]
+        }
+      },
+      {
+        "title": "Weirder Science",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l5_map"
+          ]
+        }
+      },
+      {
+        "title": "Loose Screws",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e1l6_map"
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e2": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Victorian Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l1_map"
+          ]
+        }
+      },
+      {
+        "title": "Colonial Chaos",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l2_map"
+          ]
+        }
+      },
+      {
+        "title": "Purple Haze Maze",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l3_map"
+          ]
+        }
+      },
+      {
+        "title": "Funky Grooveathon",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l4_map"
+          ]
+        }
+      },
+      {
+        "title": "Beach Bunny Bingo",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l5_map"
+          ]
+        }
+      },
+      {
+        "title": "Marinated Rabbit",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e2l6_map"
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e3": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "A Diamondus Forever",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l1_map"
+          ]
+        }
+      },
+      {
+        "title": "Fourteen Carrot",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l2_map"
+          ]
+        }
+      },
+      {
+        "title": "Electric Boogaloo",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l3_map"
+          ]
+        }
+      },
+      {
+        "title": "Voltage Village",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l4_map"
+          ]
+        }
+      },
+      {
+        "title": "Medieval Kineval",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l5_map"
+          ]
+        }
+      },
+      {
+        "title": "Hare Scare",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l6_map"
+          ]
+        }
+      },
+      {
+        "title": "Gargoyles Lair",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e3l7_map"
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e4": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Thriller Gorilla",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l1_map"
+          ]
+        }
+      },
+      {
+        "title": "Jungle Jump",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l2_map"
+          ]
+        }
+      },
+      {
+        "title": "A Cold Day in Heck",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l3_map"
+          ]
+        }
+      },
+      {
+        "title": "Rabbit Roast",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l4_map"
+          ]
+        }
+      },
+      {
+        "title": "Burnin Biscuits",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l5_map"
+          ]
+        }
+      },
+      {
+        "title": "Bad Pitt",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e4l6_map"
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e5": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Darn Ratz",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e5l1_map"
+          ]
+        }
+      },
+      {
+        "title": "Retro Rabbit",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e5l2_map"
+          ]
+        }
+      },
+      {
+        "title": "Frog Stomp",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e5l3_map"
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e6": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Easter Bunny",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l1a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l1b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Spring Chickens",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l2a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l2b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Scrambled Eggs",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l3a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l3b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Ghostly Antics",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l4a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l4b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Skeletons Turf",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l5a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l5b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Graveyard Shift",
+        "content": {
+          "type": "map",
+          "maps": [
+            "e6l6_map"
+          ]
+        }
+      },
+      {
+        "title": "Turtle Town",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l7a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l7b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Suburbia Commando",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l8a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l8b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Urban Brawl",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l9a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e6l9b_map"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tracker_tabs_e7": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Snow Bunnies",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l1a_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l1b_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Dashing thru the snow..",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l2a_map"
+                ]
+              }
+            },
+            {
+              "title": "Center",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l2b_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l2c_map"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Tinsel Town",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Left",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l3a_map"
+                ]
+              }
+            },
+            {
+              "title": "Center",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l3b_map"
+                ]
+              }
+            },
+            {
+              "title": "Right",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "e7l3c_map"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

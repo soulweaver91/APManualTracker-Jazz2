@@ -1,0 +1,331 @@
+[
+  {
+    "name": "Fourteen Carrot",
+    "access_rules": [
+      "fourteen_carrot_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "fourteen_carrot_unlock, $YamlDisabled|allow_levels_out_of_order, @A Diamondus Forever/Exit",
+      "flashback_progressive_level_unlock:2, @A Diamondus Forever/Exit"
+    ],
+    "sections": [
+      {
+        "name": "Start",
+        "access_rules": [],
+        "comment": "R:M0"
+      },
+      {
+        "name": "Pepper Spray Ammo Above Trigger Scenery at Start Secret",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Fourteen Carrot|above/sides"
+        ],
+        "comment": "R:A1"
+      },
+      {
+        "name": "Character Morph Power-Up Below Buttstomp Block Secret",
+        "access_rules": [
+          "$canDestroySpecialMoveBlocks|Fourteen Carrot|above"
+        ],
+        "comment": "R:A2"
+      },
+      {
+        "name": "Extra Life Crate Above Frozen Spring Secret",
+        "access_rules": [
+          "toaster_permit, $hasWeaponAccess|Fourteen Carrot|Toaster"
+        ],
+        "comment": "R:A3"
+      },
+      {
+        "name": "Fire Shield Secret",
+        "access_rules": [
+          "$canDoubleJump",
+          "$canCopter",
+          "$canUppercut"
+        ],
+        "comment": "R:A4"
+      },
+      {
+        "name": "Gold Coin Behind Destructible Blocks Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A5"
+      },
+      {
+        "name": "Extra Shield Time Below Buttstomp Block Secret",
+        "access_rules": [
+          "$canDestroyWildcardBlocks"
+        ],
+        "comment": "R:A6"
+      },
+      {
+        "name": "Gold Coin Blocked By Spring Secret",
+        "access_rules": [
+          "freezer_permit"
+        ],
+        "comment": "R:A7"
+      },
+      {
+        "name": "Six Silver Coins and Super Gem Above Frozen Spring Secret",
+        "access_rules": [
+          "toaster_permit, $hasWeaponAccess|Fourteen Carrot|Toaster"
+        ],
+        "comment": "R:A8"
+      },
+      {
+        "name": "Middle Spring Section",
+        "access_rules": [],
+        "comment": "R:M1"
+      },
+      {
+        "name": "Middle Section Around Second Save Point",
+        "access_rules": [],
+        "comment": "R:M2"
+      },
+      {
+        "name": "Middle Section at and After Trigger Crate",
+        "access_rules": [
+          "$canDestroyTriggerCrates|Fourteen Carrot|above/sides"
+        ],
+        "comment": "R:M3"
+      },
+      {
+        "name": "Spring Section Before Bonus Warp",
+        "access_rules": [
+          "@Fourteen Carrot/Middle Section at and After Trigger Crate"
+        ],
+        "comment": "R:M4"
+      },
+      {
+        "name": "Room with Bonus Warp",
+        "access_rules": [
+          "@Fourteen Carrot/Middle Section at and After Trigger Crate"
+        ],
+        "comment": "R:M5"
+      },
+      {
+        "name": "Bonus Warp Area",
+        "access_rules": [
+          "@Fourteen Carrot/Room with Bonus Warp"
+        ],
+        "comment": "R:B1"
+      },
+      {
+        "name": "Lower Section with Third Save Point",
+        "access_rules": [
+          "@Fourteen Carrot/Room with Bonus Warp",
+          "@Fourteen Carrot/Bonus Warp Area"
+        ],
+        "comment": "R:M6"
+      },
+      {
+        "name": "Small Cave Between One Ways Above Third Save Point Secret",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "comment": "R:A9"
+      },
+      {
+        "name": "Above One Ways Above Third Save Point",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "comment": "R:A10"
+      },
+      {
+        "name": "Spring Section Before Final Room",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "comment": "R:M7"
+      },
+      {
+        "name": "Final Room",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "comment": "R:M8"
+      }
+    ],
+    "children": [
+      {
+        "name": "Exit",
+        "access_rules": [
+          "@Fourteen Carrot/Final Room"
+        ],
+        "sections": [
+          {
+            "name": "Level Complete",
+            "chest_unopened_img": "images/locations/exit.png",
+            "chest_opened_img": "images/locations/exit_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 3704,
+            "y": 600
+          }
+        ]
+      },
+      {
+        "name": "Save Point 1 (55, 27)",
+        "access_rules": [
+          "@Fourteen Carrot/Start"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 888,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Save Point 2 (137, 35)",
+        "access_rules": [
+          "@Fourteen Carrot/Middle Section Around Second Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 2200,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Save Point 3 (60, 57)",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Save Point",
+            "chest_unopened_img": "images/locations/save_point.png",
+            "chest_opened_img": "images/locations/save_point_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 968,
+            "y": 920
+          }
+        ]
+      },
+      {
+        "name": "Sign 1 (69, 3)",
+        "access_rules": [
+          "@Fourteen Carrot/Gold Coin Behind Destructible Blocks Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 1112,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "name": "Sign 2 (186, 6)",
+        "access_rules": [
+          "@Fourteen Carrot/Six Silver Coins and Super Gem Above Frozen Spring Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 2984,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Sign 3 (63, 52)",
+        "access_rules": [
+          "@Fourteen Carrot/Small Cave Between One Ways Above Third Save Point Secret"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 1016,
+            "y": 840
+          }
+        ]
+      },
+      {
+        "name": "Sign 4 (105, 62)",
+        "access_rules": [
+          "@Fourteen Carrot/Lower Section with Third Save Point"
+        ],
+        "sections": [
+          {
+            "name": "Sign",
+            "chest_unopened_img": "images/locations/sign.png",
+            "chest_opened_img": "images/locations/sign_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 1688,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "Bonus Warp",
+        "access_rules": [
+          "@Fourteen Carrot/Bonus Warp Area"
+        ],
+        "sections": [
+          {
+            "name": "Bonus Area Entered",
+            "chest_unopened_img": "images/locations/bonus_warp.png",
+            "chest_opened_img": "images/locations/bonus_warp_visited.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "e3l2_map",
+            "x": 520,
+            "y": 824
+          }
+        ]
+      }
+    ]
+  }
+]
