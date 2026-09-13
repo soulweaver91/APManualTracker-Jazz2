@@ -28,7 +28,9 @@ jobs:
       - name: Set current version to env
         run: |
           echo "PACK_VERSION=$(jq -r '.package_version' manifest.json)" >> "$GITHUB_ENV"
-          echo "BASENAME=JJ2-AP-Tracker-${{ env.PACK_VERSION }} >> "$GITHUB_ENV"
+      - name: Set basename to env
+        run: |
+          echo "BASENAME=JJ2-AP-Tracker-${{ env.PACK_VERSION }}" >> "$GITHUB_ENV"
       - name: Create pack file
         run: |
           rm -rf ./dev
