@@ -261,7 +261,7 @@ function hasWeaponAccess(level, weapon)
     end
 
     for idx, item in pairs(conditional_last_locations) do
-        weapon_level, region = item[1], item[2]
+        local weapon_level, region = item[1], item[2]
         if hasContinuousLevelAccess(weapon_level, region) then
             if CanReachRegion('@' .. weapon_level .. '/' .. region) then
                 print('hasWeaponAccess: can access conditional weapon ' .. weapon .. ' region in ' .. weapon_level .. '/' .. region)
