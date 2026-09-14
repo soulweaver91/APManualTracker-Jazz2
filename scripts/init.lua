@@ -1,6 +1,7 @@
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/items_movement.json")
 Tracker:AddItems("items/options.json")
+Tracker:AddItems("items/options_uionly.json")
 Tracker:AddMaps("maps/maps.json")
 ScriptHost:LoadScript("scripts/item_data.lua")
 ScriptHost:LoadScript("scripts/util.lua")

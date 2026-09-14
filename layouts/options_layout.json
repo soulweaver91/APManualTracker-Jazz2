@@ -1,36 +1,130 @@
 {
-    "settings_popup": {
-        "type": "array",
-        "orientation": "horizontal",
-        "v_alignment": "top",
-        "min_width": 300,
-        "min_height": 400,
-        "content": {
+  "settings_game_version": {
+    "type": "array",
+    "margin": "0, 0, 0, 5",
+    "content": [
+      {
+        "type": "group",
+        "header": "Game version settings",
+        "content": [
+          {
             "type": "itemgrid",
-            "item_width": 80,
-            "item_height": 80,
+            "item_width": 175,
+            "item_height": 63,
+            "item_margin": "2,2",
             "v_alignment": "center",
             "h_alignment": "left",
             "dropshadow": false,
             "margin": 2,
             "rows": [
-                [
-                    "enable_hh",
-                    "enable_cc",
-                    "enable_tsf"
-                ],
-                [
-                    "individual_level_unlock_keys",
-                    "allow_levels_out_of_order"
-                ],
-                [
-                    "basic_movement_in_pool",
-                    "block_destruction_in_pool"
-                ],
-                [
-                    "exclude_hard_difficulty_checks"
-                ]
+              [
+                "ui_only_enable_base",
+                "enable_tsf"
+              ],
+              [
+                "enable_hh",
+                "enable_cc"
+              ]
             ]
+          },
+          {
+            "type": "item",
+            "margin": "5, 5",
+            "item": "ui_only_game_version_note"
+          }
+        ]
+      }
+    ]
+  },
+  "settings_level_progression": {
+    "type": "array",
+    "margin": "0, 0, 0, 5",
+    "content": [
+      {
+        "type": "group",
+        "header": "Level progression settings",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_width": 355,
+            "item_height": 75,
+            "item_margin": "2,2",
+            "v_alignment": "center",
+            "h_alignment": "left",
+            "dropshadow": false,
+            "margin": 2,
+            "rows": [
+              [
+                "individual_level_unlock_keys"
+              ],
+              [
+                "allow_levels_out_of_order"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "settings_item_pool": {
+    "type": "array",
+    "margin": "0, 0, 0, 0",
+    "content": [
+      {
+        "type": "group",
+        "header": "Other item pool settings",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_width": 355,
+            "item_height": 75,
+            "item_margin": "2,2",
+            "v_alignment": "center",
+            "h_alignment": "left",
+            "dropshadow": false,
+            "margin": 2,
+            "rows": [
+              [
+                "basic_movement_in_pool"
+              ],
+              [
+                "block_destruction_in_pool"
+              ],
+              [
+                "exclude_hard_difficulty_checks"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "settings_popup": {
+    "type": "array",
+    "orientation": "vertical",
+    "v_alignment": "top",
+    "min_width": 300,
+    "min_height": 400,
+    "margin": "0, 0",
+    "content": {
+      "type": "array",
+      "orientation": "vertical",
+      "v_alignment": "top",
+      "margin": "5, 5",
+      "content": [
+        {
+          "type": "layout",
+          "key": "settings_game_version"
+        },
+        {
+          "type": "layout",
+          "key": "settings_level_progression"
+        },
+        {
+          "type": "layout",
+          "key": "settings_item_pool"
         }
+      ]
     }
+  }
 }

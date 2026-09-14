@@ -1,71 +1,68 @@
 [
-    {
-        "name": "Enable Christmas Chronicles content",
-        "type": "toggle",
-        "img": "images/options/enable_cc.png",
-        "loop": true,
-        "codes": "enable_cc"
-    },
-    {
-        "name": "Enable Holiday Hare '98 Content",
-        "type": "toggle",
-        "img": "images/options/enable_hh.png",
-        "loop": true,
-        "codes": "enable_hh"
-    },
-    {
-        "name": "Enable The Secret Files content",
-        "type": "toggle",
-        "img": "images/options/enable_tsf.png",
-        "loop": true,
-        "codes": "enable_tsf"
-    },
-    {
-        "name": "Allow entering mid-episode levels out of order",
-        "loop": true,
-        "codes": "allow_levels_out_of_order",
-        "type": "toggle",
-        "img": "images/options/allow_levels_out_of_order.png"
-    },
-    {
-        "name": "Use individual level unlock keys",
-        "type": "toggle",
-        "img": "images/options/individual_level_unlock_keys.png",
-        "loop": true,
-        "codes": "individual_level_unlock_keys"
-    },
-    {
-        "name": "Basic movement abilities in item pool",
-        "loop": true,
-        "codes": "basic_movement_in_pool",
-        "type": "toggle",
-        "img": "images/options/basic_movement_in_pool.png"
-    },
-    {
-        "name": "Block destruction permits in item pool",
-        "loop": true,
-        "codes": "block_destruction_in_pool",
-        "type": "toggle",
-        "img": "images/options/block_destruction_in_pool.png"
-    },
-    {
-        "name": "Exclude hard difficulty checks",
-        "loop": true,
-        "codes": "exclude_hard_difficulty_checks",
-        "type": "progressive",
-        "allow_disabled": false,
-        "stages": [
-            {
-                "img": "images/options/include_hard_difficulty_checks.png",
-                "inherit_codes": true,
-                "name": "Hard difficulty checks may have progression items"
-            },
-            {
-                "img": "images/options/exclude_hard_difficulty_checks.png",
-                "inherit_codes": true,
-                "name": "Hard difficulty checks do not have progression items"
-            }
-        ]
-        
-    }
+  {
+    "name": "Enable Christmas Chronicles content",
+    "type": "toggle",
+    "img": "images/options/enable_cc.png",
+    "loop": true,
+    "codes": "enable_cc"
+  },
+  {
+    "name": "Enable Holiday Hare '98 Content",
+    "type": "toggle",
+    "img": "images/options/enable_hh.png",
+    "loop": true,
+    "codes": "enable_hh"
+  },
+  {
+    "name": "Enable The Secret Files content",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/options/enable_tsf.png",
+    "codes": "enable_tsf"
+  },
+  {
+    "name": "Allow entering mid-episode levels out of order",
+    "loop": true,
+    "codes": "allow_levels_out_of_order",
+    "type": "toggle",
+    "img": "images/options/level_order_free.png",
+    "disabled_img": "images/options/level_order_episode.png",
+    "disabled_img_mods": "none"
+  },
+  {
+    "name": "Use individual level unlock keys",
+    "type": "toggle",
+    "loop": true,
+    "codes": "individual_level_unlock_keys",
+    "img": "images/options/level_unlock_keys_individual.png",
+    "disabled_img": "images/options/level_unlock_keys_progressive.png",
+    "disabled_img_mods": "none"
+  },
+  {
+    "name": "Basic movement abilities in item pool",
+    "loop": true,
+    "codes": "basic_movement_in_pool",
+    "type": "toggle",
+    "img": "images/options/movement_unlocks_on.png",
+    "disabled_img": "images/options/movement_unlocks_off.png",
+    "disabled_img_mods": "none"
+  },
+  {
+    "name": "Block destruction permits in item pool",
+    "loop": true,
+    "codes": "block_destruction_in_pool",
+    "type": "toggle",
+    "img": "images/options/block_destruction_unlocks_on.png",
+    "disabled_img": "images/options/block_destruction_unlocks_off.png",
+    "disabled_img_mods": "none"
+  },
+  {
+    "name": "Allow hard difficulty only checks to have progression items",
+    "loop": true,
+    "codes": "exclude_hard_difficulty_checks",
+    "type": "toggle",
+    "img": "images/options/hard_difficulty_checks_off.png",
+    "disabled_img": "images/options/hard_difficulty_checks_on.png",
+    "disabled_img_mods": "none"
+  }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Enable base game content",
+    "type": "static",
+    "img": "images/options/enable_base.png",
+    "codes": "ui_only_enable_base"
+  },
+  {
+    "name": "",
+    "type": "static",
+    "img": "images/options/game_version_note.png",
+    "codes": "ui_only_game_version_note"
+  }
+]
