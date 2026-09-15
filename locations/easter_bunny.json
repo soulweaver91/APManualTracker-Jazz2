@@ -5,8 +5,8 @@
       "enable_tsf"
     ],
     "access_rules": [
-      "$YamlEnabled|enable_tsf, easter_bunny_unlock",
-      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:1"
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_tsf, easter_bunny_unlock",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:1"
     ],
     "sections": [
       {

@@ -2,9 +2,9 @@
   {
     "name": "Burnin Biscuits",
     "access_rules": [
-      "burnin_biscuits_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "burnin_biscuits_unlock, $YamlDisabled|allow_levels_out_of_order, @Rabbit Roast/Exit",
-      "funky_monkeys_progressive_level_unlock:5, @Rabbit Roast/Exit"
+      "$has_count_from_group|Playable Character|1, burnin_biscuits_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, burnin_biscuits_unlock, $YamlDisabled|allow_levels_out_of_order, @Rabbit Roast/Exit",
+      "$has_count_from_group|Playable Character|1, funky_monkeys_progressive_level_unlock:5, @Rabbit Roast/Exit"
     ],
     "sections": [
       {

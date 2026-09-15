@@ -2,9 +2,9 @@
   {
     "name": "Rabbit Roast",
     "access_rules": [
-      "rabbit_roast_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "rabbit_roast_unlock, $YamlDisabled|allow_levels_out_of_order, @A Cold Day in Heck/Exit",
-      "funky_monkeys_progressive_level_unlock:4, @A Cold Day in Heck/Exit"
+      "$has_count_from_group|Playable Character|1, rabbit_roast_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, rabbit_roast_unlock, $YamlDisabled|allow_levels_out_of_order, @A Cold Day in Heck/Exit",
+      "$has_count_from_group|Playable Character|1, funky_monkeys_progressive_level_unlock:4, @A Cold Day in Heck/Exit"
     ],
     "sections": [
       {

@@ -2,9 +2,9 @@
   {
     "name": "Retro Rabbit",
     "access_rules": [
-      "retro_rabbit_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "retro_rabbit_unlock, $YamlDisabled|allow_levels_out_of_order, @Darn Ratz/Exit",
-      "shareware_demo_progressive_level_unlock:2, @Darn Ratz/Exit"
+      "$has_count_from_group|Playable Character|1, retro_rabbit_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, retro_rabbit_unlock, $YamlDisabled|allow_levels_out_of_order, @Darn Ratz/Exit",
+      "$has_count_from_group|Playable Character|1, shareware_demo_progressive_level_unlock:2, @Darn Ratz/Exit"
     ],
     "sections": [
       {

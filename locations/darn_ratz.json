@@ -2,8 +2,8 @@
   {
     "name": "Darn Ratz",
     "access_rules": [
-      "darn_ratz_unlock",
-      "shareware_demo_progressive_level_unlock:1"
+      "$has_count_from_group|Playable Character|1, darn_ratz_unlock",
+      "$has_count_from_group|Playable Character|1, shareware_demo_progressive_level_unlock:1"
     ],
     "sections": [
       {

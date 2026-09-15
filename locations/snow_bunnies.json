@@ -6,10 +6,10 @@
       "enable_hh"
     ],
     "access_rules": [
-      "$YamlEnabled|enable_cc, snow_bunnies_unlock",
-      "$YamlEnabled|enable_hh, snow_bunnies_unlock",
-      "$YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:1",
-      "$YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:1"
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_cc, snow_bunnies_unlock",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_hh, snow_bunnies_unlock",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:1",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:1"
     ],
     "sections": [
       {

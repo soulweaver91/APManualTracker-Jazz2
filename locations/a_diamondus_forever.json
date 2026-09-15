@@ -2,8 +2,8 @@
   {
     "name": "A Diamondus Forever",
     "access_rules": [
-      "a_diamondus_forever_unlock",
-      "flashback_progressive_level_unlock:1"
+      "$has_count_from_group|Playable Character|1, a_diamondus_forever_unlock",
+      "$has_count_from_group|Playable Character|1, flashback_progressive_level_unlock:1"
     ],
     "sections": [
       {

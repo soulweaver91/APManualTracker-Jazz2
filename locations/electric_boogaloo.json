@@ -2,9 +2,9 @@
   {
     "name": "Electric Boogaloo",
     "access_rules": [
-      "electric_boogaloo_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "electric_boogaloo_unlock, $YamlDisabled|allow_levels_out_of_order, @Fourteen Carrot/Exit",
-      "flashback_progressive_level_unlock:3, @Fourteen Carrot/Exit"
+      "$has_count_from_group|Playable Character|1, electric_boogaloo_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, electric_boogaloo_unlock, $YamlDisabled|allow_levels_out_of_order, @Fourteen Carrot/Exit",
+      "$has_count_from_group|Playable Character|1, flashback_progressive_level_unlock:3, @Fourteen Carrot/Exit"
     ],
     "sections": [
       {

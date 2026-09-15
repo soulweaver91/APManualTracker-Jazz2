@@ -6,12 +6,12 @@
       "enable_hh"
     ],
     "access_rules": [
-      "$YamlEnabled|enable_cc, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "$YamlEnabled|enable_hh, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "$YamlEnabled|enable_cc, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
-      "$YamlEnabled|enable_hh, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
-      "$YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit",
-      "$YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit"
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_cc, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_hh, tinsel_town_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_cc, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_hh, tinsel_town_unlock, $YamlDisabled|allow_levels_out_of_order, @Dashing thru the snow../Exit",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_cc, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_hh, christmas_chronicles_progressive_level_unlock:3, @Dashing thru the snow../Exit"
     ],
     "sections": [
       {

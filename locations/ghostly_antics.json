@@ -5,9 +5,9 @@
       "enable_tsf"
     ],
     "access_rules": [
-      "$YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "$YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlDisabled|allow_levels_out_of_order, @Scrambled Eggs/Exit",
-      "$YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:4, @Scrambled Eggs/Exit"
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_tsf, ghostly_antics_unlock, $YamlDisabled|allow_levels_out_of_order, @Scrambled Eggs/Exit",
+      "$has_count_from_group|Playable Character|1, $YamlEnabled|enable_tsf, the_secret_files_progressive_level_unlock:4, @Scrambled Eggs/Exit"
     ],
     "sections": [
       {

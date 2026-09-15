@@ -2,9 +2,9 @@
   {
     "name": "Gargoyles Lair",
     "access_rules": [
-      "gargoyles_lair_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "gargoyles_lair_unlock, $YamlDisabled|allow_levels_out_of_order, @Medieval Kineval/Secret Level Exit",
-      "flashback_progressive_level_unlock:7, @Medieval Kineval/Secret Level Exit"
+      "$has_count_from_group|Playable Character|1, gargoyles_lair_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, gargoyles_lair_unlock, $YamlDisabled|allow_levels_out_of_order, @Medieval Kineval/Secret Level Exit",
+      "$has_count_from_group|Playable Character|1, flashback_progressive_level_unlock:7, @Medieval Kineval/Secret Level Exit"
     ],
     "sections": [
       {

@@ -2,8 +2,8 @@
   {
     "name": "Dungeon Dilemma",
     "access_rules": [
-      "dungeon_dilemma_unlock",
-      "formerly_a_prince_progressive_level_unlock:2"
+      "$has_count_from_group|Playable Character|1, dungeon_dilemma_unlock",
+      "$has_count_from_group|Playable Character|1, formerly_a_prince_progressive_level_unlock:2"
     ],
     "sections": [
       {

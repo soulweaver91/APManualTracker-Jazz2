@@ -2,9 +2,9 @@
   {
     "name": "Carrot Juice",
     "access_rules": [
-      "carrot_juice_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "carrot_juice_unlock, $YamlDisabled|allow_levels_out_of_order, @Tossed Salad/Exit",
-      "formerly_a_prince_progressive_level_unlock:5, @Tossed Salad/Exit"
+      "$has_count_from_group|Playable Character|1, carrot_juice_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, carrot_juice_unlock, $YamlDisabled|allow_levels_out_of_order, @Tossed Salad/Exit",
+      "$has_count_from_group|Playable Character|1, formerly_a_prince_progressive_level_unlock:5, @Tossed Salad/Exit"
     ],
     "sections": [
       {

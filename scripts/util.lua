@@ -106,25 +106,25 @@ function setupLori()
     local hasTSF = Tracker:ProviderCountForCode("enable_tsf") > 0
     local hasCC = Tracker:ProviderCountForCode("enable_cc") > 0
 
-    local buttstompIcon = Tracker:FindObjectForCode("buttstomp_unlock")
-    local copterIcon = Tracker:FindObjectForCode("copter_ears_unlock")
-    local sidekickIcon = Tracker:FindObjectForCode("sidekick_unlock")
+    -- local buttstompIcon = Tracker:FindObjectForCode("buttstomp_unlock")
+    -- local copterIcon = Tracker:FindObjectForCode("copter_ears_unlock")
+    -- local sidekickIcon = Tracker:FindObjectForCode("sidekick_unlock")
 
     if hasTSF or hasCC then
+        -- buttstompIcon.Icon = ImageReference:FromPackRelativePath('images/items/buttstomp_unlock_lori.png')
+        -- copterIcon.Icon = ImageReference:FromPackRelativePath('images/items/copter_ears_unlock_lori.png')
+        -- sidekickIcon.Icon = ImageReference:FromPackRelativePath('images/items/sidekick_unlock_lori.png')
+        -- Tracker:AddItems('items/items_movement.json')
         Tracker:AddLayouts("layouts/playable_character.json")
     else
+        -- buttstompIcon.Icon = ImageReference:FromPackRelativePath('images/items/buttstomp_unlock.png')
+        -- copterIcon.Icon = ImageReference:FromPackRelativePath('images/items/copter_ears_unlock.png')
+        -- sidekickIcon.Icon = ImageReference:FromPackRelativePath('images/items/sidekick_unlock.png')
+        -- Tracker:AddItems('items/items_movement_base_hh.json')
         Tracker:AddLayouts("layouts/playable_character_base_hh.json")
     end
 end
 
--- buttstompIcon.Icon = ImageReference:FromPackRelativePath('images/items/buttstomp_unlock_lori.png')
--- copterIcon.Icon = ImageReference:FromPackRelativePath('images/items/copter_ears_unlock_lori.png')
--- sidekickIcon.Icon = ImageReference:FromPackRelativePath('images/items/sidekick_unlock_lori.png')
--- Tracker:AddItems('items/items_movement.json')
--- buttstompIcon.Icon = ImageReference:FromPackRelativePath('images/items/buttstomp_unlock.png')
--- copterIcon.Icon = ImageReference:FromPackRelativePath('images/items/copter_ears_unlock.png')
--- sidekickIcon.Icon = ImageReference:FromPackRelativePath('images/items/sidekick_unlock.png')
--- Tracker:AddItems('items/items_movement_base_hh.json')
 function setupTSF()
     setupLevels()
     setupLori()

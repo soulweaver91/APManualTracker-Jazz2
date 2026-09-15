@@ -2,9 +2,9 @@
   {
     "name": "Frog Stomp",
     "access_rules": [
-      "frog_stomp_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "frog_stomp_unlock, $YamlDisabled|allow_levels_out_of_order, @Retro Rabbit/Exit",
-      "shareware_demo_progressive_level_unlock:3, @Retro Rabbit/Exit"
+      "$has_count_from_group|Playable Character|1, frog_stomp_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, frog_stomp_unlock, $YamlDisabled|allow_levels_out_of_order, @Retro Rabbit/Exit",
+      "$has_count_from_group|Playable Character|1, shareware_demo_progressive_level_unlock:3, @Retro Rabbit/Exit"
     ],
     "sections": [
       {

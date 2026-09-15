@@ -2,9 +2,9 @@
   {
     "name": "Beach Bunny Bingo",
     "access_rules": [
-      "beach_bunny_bingo_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "beach_bunny_bingo_unlock, $YamlDisabled|allow_levels_out_of_order, @Funky Grooveathon/Exit",
-      "jazz_in_time_progressive_level_unlock:5, @Funky Grooveathon/Exit"
+      "$has_count_from_group|Playable Character|1, beach_bunny_bingo_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, beach_bunny_bingo_unlock, $YamlDisabled|allow_levels_out_of_order, @Funky Grooveathon/Exit",
+      "$has_count_from_group|Playable Character|1, jazz_in_time_progressive_level_unlock:5, @Funky Grooveathon/Exit"
     ],
     "sections": [
       {

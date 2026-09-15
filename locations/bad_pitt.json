@@ -2,9 +2,9 @@
   {
     "name": "Bad Pitt",
     "access_rules": [
-      "bad_pitt_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "bad_pitt_unlock, $YamlDisabled|allow_levels_out_of_order, @Burnin Biscuits/Exit",
-      "funky_monkeys_progressive_level_unlock:6, @Burnin Biscuits/Exit"
+      "$has_count_from_group|Playable Character|1, bad_pitt_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, bad_pitt_unlock, $YamlDisabled|allow_levels_out_of_order, @Burnin Biscuits/Exit",
+      "$has_count_from_group|Playable Character|1, funky_monkeys_progressive_level_unlock:6, @Burnin Biscuits/Exit"
     ],
     "sections": [
       {

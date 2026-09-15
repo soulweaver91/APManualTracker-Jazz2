@@ -2,8 +2,8 @@
   {
     "name": "Thriller Gorilla",
     "access_rules": [
-      "thriller_gorilla_unlock",
-      "funky_monkeys_progressive_level_unlock:1"
+      "$has_count_from_group|Playable Character|1, thriller_gorilla_unlock",
+      "$has_count_from_group|Playable Character|1, funky_monkeys_progressive_level_unlock:1"
     ],
     "sections": [
       {

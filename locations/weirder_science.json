@@ -2,9 +2,9 @@
   {
     "name": "Weirder Science",
     "access_rules": [
-      "weirder_science_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "weirder_science_unlock, $YamlDisabled|allow_levels_out_of_order, @Carrot Juice/Exit",
-      "formerly_a_prince_progressive_level_unlock:6, @Carrot Juice/Exit"
+      "$has_count_from_group|Playable Character|1, weirder_science_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, weirder_science_unlock, $YamlDisabled|allow_levels_out_of_order, @Carrot Juice/Exit",
+      "$has_count_from_group|Playable Character|1, formerly_a_prince_progressive_level_unlock:6, @Carrot Juice/Exit"
     ],
     "sections": [
       {

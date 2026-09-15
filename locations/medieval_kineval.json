@@ -2,9 +2,9 @@
   {
     "name": "Medieval Kineval",
     "access_rules": [
-      "medieval_kineval_unlock, $YamlEnabled|allow_levels_out_of_order",
-      "medieval_kineval_unlock, $YamlDisabled|allow_levels_out_of_order, @Voltage Village/Exit",
-      "flashback_progressive_level_unlock:5, @Voltage Village/Exit"
+      "$has_count_from_group|Playable Character|1, medieval_kineval_unlock, $YamlEnabled|allow_levels_out_of_order",
+      "$has_count_from_group|Playable Character|1, medieval_kineval_unlock, $YamlDisabled|allow_levels_out_of_order, @Voltage Village/Exit",
+      "$has_count_from_group|Playable Character|1, flashback_progressive_level_unlock:5, @Voltage Village/Exit"
     ],
     "sections": [
       {
