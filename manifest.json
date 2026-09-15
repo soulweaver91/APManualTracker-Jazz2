@@ -13,5 +13,6 @@
     }
   },
   "versions_url": "https://raw.githubusercontent.com/soulweaver91/APManualTracker-Jazz2/refs/heads/last-release/versions.json",
+  "min_poptracker_version": "0.26.2",
   "target_poptracker_version": "0.35.4"
 }
