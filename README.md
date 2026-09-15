@@ -6,10 +6,9 @@ to be used with the [Jazz Jackrabbit 2 Archipelago Manual](
 same author as this pack. It supports automatic marker updates based on the
 multiworld state and sending checks from the map itself.
 
-The current implementation should be more or less feature complete, though
-some parts of the logic might perform a little poorly at the moment (mostly
-revolving around weapon access when TNT is the sole method for breaking
-blocks or trigger crates). This will hopefully be alleviated some time soon.
+N.B.: The current implementation should be more or less feature complete,
+but hasn't yet been fully tested in a real multiworld situation. If the
+squares look off, a sneaky logic bug may be lurking beneath.
 
 ## Installation
 Provided you already have PopTracker installed, this pack is installed the

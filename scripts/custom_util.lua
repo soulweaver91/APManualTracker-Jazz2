@@ -175,8 +175,8 @@ function canDestroySpeedBlocks()
     return Tracker:ProviderCountForCode('speed_destructible_scenery')
 end
 
-function canReachRegion(region)
-    local region = Tracker:FindObjectForCode(region)
+function canReachRegion(region_name)
+    local region = Tracker:FindObjectForCode(region_name)
     if region == nil then
         return false
     end
@@ -193,7 +193,7 @@ function hasContinuousLevelAccess(from_level, to_level)
 
     local cursor_index = end_index
     while cursor_index > 1 do
-        local cursor_index = cursor_index - 1
+        cursor_index = cursor_index - 1
         local prev_level = LEVEL_ORDER_LOOKUP[cursor_index]
 
         if prev_level == nil then
