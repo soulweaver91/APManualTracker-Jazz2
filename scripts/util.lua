@@ -1,3 +1,5 @@
+GOAL_LOCATION = 'Overview/Victory/All Levels Completed'
+
 -- Check to see if a relevant flag is set to "off"
 function negate(code)
     return Tracker:ProviderCountForCode(code) == 0
@@ -66,6 +68,24 @@ end
 
 function YamlCompare_GE(option, value)
     return Tracker:ProviderCountForCode(option) >= tonumber(value)
+end
+
+function to_snake_case(str)
+    local res = string.gsub(str, '([^a-zA-Z0-9]+)', '_')
+    return string.lower(res)
+end
+
+function table_find(table, value)
+    local pos = nil
+
+    for i, v in pairs(table) do
+        if v == value then
+            pos = i
+            break
+        end
+    end
+
+    return pos
 end
 
 function setupLevels()

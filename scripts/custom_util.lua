@@ -1,21 +1,3 @@
-function to_snake_case(str)
-    local res = string.gsub(str, '([^a-zA-Z0-9]+)', '_')
-    return string.lower(res)
-end
-
-function table_find(table, value)
-    local pos = nil
-
-    for i, v in pairs(table) do
-        if v == value then
-            pos = i
-            break
-        end
-    end
-
-    return pos
-end
-
 function hasMovementUnlock(name)
     if YamlDisabled('basic_movement_in_pool') then
         return true

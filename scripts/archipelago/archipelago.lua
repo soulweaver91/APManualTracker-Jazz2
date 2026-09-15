@@ -208,6 +208,28 @@ function onLocationSectionChanged(section)
 	if (section.AvailableChestCount == 0) then
         local apID = LOCATION_TO_ID_MAP[sectionID]
         if apID ~= nil then
+            if Archipelago.PlayerNumber == -1 then
+                print('Ignoring AP call, not currently connected')
+                return
+            end
+            if table_find(Archipelago.CheckedLocations, apID) ~= nil then
+                print("Ignored " .. tostring(apID) .. ", already collected")
+                return
+            end
+
+            -- JJ2 specific!
+            if sectionID == GOAL_LOCATION then
+                if all_episodes_complete() then
+                    print("Available victory location clicked, sending goal")
+                    Archipelago:StatusUpdate(Archipelago.ClientStatus.GOAL)
+                else
+                    print("Victory location clicked but not available, ignoring")
+                end
+
+                return
+            end
+            -- JJ2 specific part ends
+
             local res = Archipelago:LocationChecks({apID})
             if res then
                 print("Sent " .. tostring(apID) .. " for " .. tostring(sectionID))
