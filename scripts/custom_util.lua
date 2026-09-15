@@ -276,8 +276,80 @@ function hasWeaponAccess(level, weapon)
 end
 
 function canCollectEnoughCoins(level, cost)
-    print('warning: canCollectEnoughCoins not implemented')
-    return true
+    cost = tonumber(cost)
+
+    local coin_path = COIN_ACCESS_BY_LEVEL_LOOKUP[level]
+    if level == nil then
+        error('canCollectEnoughCoins: no coin data found for level ' .. level)
+        return false
+    end
+
+    if coin_path.minimum_coins > cost then
+        print('canCollectEnoughCoins: trivial case (min: ' .. coin_path.minimum_coins .. ', cost: ' .. cost .. ', level: ' .. level .. ')')
+        return true
+    end
+
+    function recurse_coin_path_group(group)
+        -- print('canCollectEnoughCoins: recurse group (' .. group.name .. ' branches: ' .. #group.branches .. ' sequence: ' .. #group.sequence .. ')')
+        local coins_collected = 0
+
+        for i, branch in pairs(group.branches) do
+            local available = false
+            if branch.character ~= nil then
+                if branch.character == 'Spaz' then
+                    available = available or (Tracker:ProviderCountForCode('spaz_unlock') > 0)
+                elseif branch.character == 'Jazz' then
+                    available = available or (Tracker:ProviderCountForCode('jazz_unlock') > 0) or (Tracker:ProviderCountForCode('lori_unlock') > 0)
+                end
+            else
+                available = true
+            end
+
+            if available == false then
+                -- print('canCollectEnoughCoins: ' .. branch.name .. ' inaccessible, requires locked character ' .. branch.character)
+            else
+                -- print('canCollectEnoughCoins: recurse into branch ' .. branch.name)
+                local branch_coins_collected = recurse_coin_path_group(branch)
+                -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. math.max(coins_collected, branch_coins_collected))
+                coins_collected = math.max(coins_collected, branch_coins_collected)
+
+                if coins_collected >= cost then
+                    print('canCollectEnoughCoins: target reached, exiting recursion branch')
+                    return coins_collected
+                end
+            end
+        end
+
+        for i, step in pairs(group.sequence) do
+            -- print('canCollectEnoughCoins: next sequence step')
+            if step.class_type == 'CoinPathGroup' then
+                -- print('canCollectEnoughCoins: recurse into step ' .. step.name)
+                local step_coins_collected = recurse_coin_path_group(step)
+                -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. (coins_collected + step_coins_collected))
+                coins_collected = coins_collected + step_coins_collected
+            else
+                if step.region == nil or canReachRegion('@' .. level .. '/' .. step.region) then
+                    -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. (coins_collected + step.amount) .. ' (region ' .. (step.region or 'none') .. ')')
+                    coins_collected = coins_collected + step.amount
+                else
+                    -- print('canCollectEnoughCoins: skip step (region ' .. step.region .. ' not reachable)')
+                end
+            end
+
+            if coins_collected >= cost then
+                print('canCollectEnoughCoins: target reached, exiting recursion branch')
+                return coins_collected
+            end
+        end
+
+        return coins_collected
+    end
+
+    print('canCollectEnoughCoins: starting main recurse (min: ' .. coin_path.minimum_coins .. ', cost: ' .. cost .. ', level: ' .. level .. ')')
+    coin_result = recurse_coin_path_group(coin_path)
+    print('canCollectEnoughCoins: final result (collected: ' .. coin_result .. ', cost: ' .. cost .. ', level: ' .. level .. ')')
+
+    return coin_result >= cost
 end
 
 
