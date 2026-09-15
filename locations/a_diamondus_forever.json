@@ -73,7 +73,7 @@
       {
         "name": "Jazz Silly Sign Detour Fourth Room",
         "access_rules": [
-          "@A Diamondus Forever/Jazz Silly Sign Detour First Room, $canDestroyTriggerCrates|Weirder Science|above/sides"
+          "@A Diamondus Forever/Jazz Silly Sign Detour First Room, $canDestroyTriggerCrates|A Diamondus Forever|above/sides"
         ],
         "comment": "R:A5"
       },
@@ -188,9 +188,9 @@
       {
         "name": "Gold Coins Beneath Horizontal Spring Secret",
         "access_rules": [
-          "@A Diamondus Forever/Shared Path Start, freezer_permit, $hasWeaponAccess|A Diamondus Forever|Freezer",
-          "@A Diamondus Forever/Shared Path Start, freezer_permit, @A Diamondus Forever/Freezer Ammo Above Trigger Scenery Secret"
-        ],
+          "@A Diamondus Forever/Shared Path Start, freezer_permit, @A Diamondus Forever/Freezer Ammo Above Trigger Scenery Secret",
+          "@A Diamondus Forever/Shared Path Start, freezer_permit, $hasWeaponAccess|A Diamondus Forever|Freezer"
+          ],
         "comment": "R:A12"
       },
       {
