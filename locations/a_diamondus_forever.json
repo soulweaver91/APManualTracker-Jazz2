@@ -38,7 +38,7 @@
       {
         "name": "Jazz Spring Tunnel Behind Destructible Blocks",
         "access_rules": [
-          "@A Diamondus Forever/Jazz Start, $canDestroyWildcardBlocks"
+          "@A Diamondus Forever/Jazz Start, $canDestroyWeaponBlocks|Bouncer"
         ],
         "comment": "R:J3"
       },
@@ -196,7 +196,7 @@
       {
         "name": "Bonus Warp Area",
         "access_rules": [
-          "@A Diamondus Forever/Shared Path Start"
+          "$canCollectEnoughCoins|A Diamondus Forever|50, @A Diamondus Forever/Shared Path Start"
         ],
         "comment": "R:B1"
       },

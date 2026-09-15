@@ -92,7 +92,7 @@
       {
         "name": "Bonus Warp Area",
         "access_rules": [
-          "$canCollectEnoughCoins|Burnin Biscuits|20, @Bad Pitt/Around Bonus Warp and Second Save Point"
+          "$canCollectEnoughCoins|Bad Pitt|20, @Bad Pitt/Around Bonus Warp and Second Save Point"
         ],
         "comment": "R:B1"
       },

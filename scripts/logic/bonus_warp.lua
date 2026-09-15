@@ -355,7 +355,7 @@ COIN_ACCESS_BY_LEVEL_LOOKUP = {
                 -- S3     gold:   (85, 46) (85, 47)
                 CN(10),
                 -- A8     gold:   (111, 58) (111, 59)
-                CN(10, 'Spaz Fruit, Gems and Two Gold Coins Secret')
+                CN(10, 'Spaz Fruit Gems and Two Gold Coins Secret')
             })
         ),
         CG('Shared path'):seq({
