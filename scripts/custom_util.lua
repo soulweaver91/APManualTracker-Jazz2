@@ -134,15 +134,15 @@ function canDestroySpecialMoveBlockOrTriggerCrate(level, directions)
             level_subdivision_index = level:sub(level_index_sep_pos + 1)
         end
 
-        if hasWeaponAccess(level, Weapons.TNT) then
+        if hasWeaponAccess(level_name, Weapons.TNT) then
             return true
         end
 
         local in_level_rule = IN_LEVEL_TNT_RULES[level_name .. '@' .. level_subdivision_index]
         if in_level_rule ~= nil then
             if type(in_level_rule) == 'table' then
-                for idx, region in in_level_rule do
-                    if canReachRegion('@' .. level .. '/' .. region) then
+                for idx, region in pairs(in_level_rule) do
+                    if canReachRegion('@' .. level_name .. '/' .. region) then
                         return true
                     end
                 end
@@ -215,13 +215,13 @@ end
 
 function hasWeaponAccess(level, weapon)
     if table_find(Weapons, weapon) == nil then
-        print('hasWeaponAccess: invalid weapon ' .. weapon)
+        error('hasWeaponAccess: invalid weapon ' .. weapon)
         return false
     end
 
     local end_index = table_find(LEVEL_ORDER_LOOKUP, level)
-    if level == nil then
-        print('hasWeaponAccess: invalid target level ' .. level)
+    if end_index == nil then
+        error('hasWeaponAccess: invalid target level ' .. level)
         return false
     end
 
@@ -244,7 +244,7 @@ function hasWeaponAccess(level, weapon)
                 break
             elseif type(weapon_regions) == 'table' then
                 for idx, region in pairs(weapon_regions) do
-                    conditional_last_locations:insert({ prev_level = region })
+                    conditional_last_regions:insert({ prev_level = region })
                 end
             end
         end
@@ -260,7 +260,7 @@ function hasWeaponAccess(level, weapon)
         print('hasWeaponAccess: no unconditional weapon ' .. weapon .. ' region available')
     end
 
-    for idx, item in pairs(conditional_last_locations) do
+    for idx, item in pairs(conditional_last_regions) do
         local weapon_level, region = item[1], item[2]
         if hasContinuousLevelAccess(weapon_level, region) then
             if CanReachRegion('@' .. weapon_level .. '/' .. region) then
