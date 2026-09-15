@@ -81,12 +81,15 @@ function canDestroyWildcardBlocks()
 end
 
 function canDestroyWeaponBlocks(weapon)
+    if Tracker:ProviderCountForCode(to_snake_case(weapon) .. '_permit') == 0 then
+        return false
+    end
+
     if YamlDisabled('block_destruction_in_pool') then
         return true
     end
 
-    return Tracker:ProviderCountForCode(to_snake_case(weapon) .. '_permit') > 0 and
-        Tracker:ProviderCountForCode(to_snake_case(weapon) .. '_destructible_scenery') > 0
+    return Tracker:ProviderCountForCode(to_snake_case(weapon) .. '_destructible_scenery') > 0
 end
 
 function canUseSpecialMoveByDirection(directions)
