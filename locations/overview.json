@@ -3,6 +3,25 @@
     "name": "Overview",
     "children": [
       {
+        "name": "Victory",
+        "access_rules": [
+          "all_episodes_complete"
+        ],
+        "sections": [
+          {
+            "name": "All Levels Completed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main_map",
+            "x": 76,
+            "y": 644,
+            "size": 36
+          }
+        ]
+      },
+      {
         "name": "Rabbit in Training",
         "access_rules": [],
         "sections": [
@@ -1164,11 +1183,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 433
+            "y": 457
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1200,11 +1216,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 458
+            "y": 482
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1244,11 +1257,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 483
+            "y": 507
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1292,11 +1302,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 508
+            "y": 532
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1332,11 +1339,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 533
+            "y": 557
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1360,11 +1364,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 558
+            "y": 582
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1420,11 +1421,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 583
+            "y": 607
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1448,7 +1446,7 @@
             "ref": "Suburbia Commando/Sign 3 (10, 114)/Sign"
           },
           {
-            "name": "Bonus Warp (Either)",
+            "name": "Bonus Warp (10 Coins)",
             "ref": "Suburbia Commando/Bonus Warp (10 Coins)/Ten Coin Bonus Area Entered"
           },
           {
@@ -1464,11 +1462,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 608
+            "y": 632
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1520,11 +1515,8 @@
           {
             "map": "main_map",
             "x": 884,
-            "y": 633
+            "y": 657
           }
-        ],
-        "visibility_rules": [
-          "enable_tsf"
         ]
       },
       {
@@ -1570,10 +1562,6 @@
             "x": 474,
             "y": 607
           }
-        ],
-        "visibility_rules": [
-          "enable_cc",
-          "enable_hh"
         ]
       },
       {
@@ -1623,10 +1611,6 @@
             "x": 474,
             "y": 632
           }
-        ],
-        "visibility_rules": [
-          "enable_cc",
-          "enable_hh"
         ]
       },
       {
@@ -1688,10 +1672,6 @@
             "x": 474,
             "y": 657
           }
-        ],
-        "visibility_rules": [
-          "enable_cc",
-          "enable_hh"
         ]
       }
     ]

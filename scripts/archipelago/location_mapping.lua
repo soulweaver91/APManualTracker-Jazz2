@@ -280,7 +280,7 @@ LOCATION_TO_ID_MAP = {
     ["Tinsel Town/Bonus Warp/Bonus Area Entered"] = 70390,
     ["Tinsel Town/Xmas Bilsy/Boss Defeated"] = 70398,
     ["Tinsel Town/Exit/Level Complete"] = 70399,
-    ["Victory/__start__/Victory"] = 990099,
+    ["Overview/Victory/All Levels Completed"] = 990099,
 }
 ID_TO_LOCATION_MAP = {
     [10000] = {"@Rabbit in Training/Save Point 1 (152, 47)/Save Point"},
@@ -563,5 +563,5 @@ ID_TO_LOCATION_MAP = {
     [70390] = {"@Tinsel Town/Bonus Warp/Bonus Area Entered"},
     [70398] = {"@Tinsel Town/Xmas Bilsy/Boss Defeated"},
     [70399] = {"@Tinsel Town/Exit/Level Complete"},
-    [990099] = {"@Victory/__start__/Victory"},
+    [990099] = {"@Overview/Victory/All Levels Completed"},
 }

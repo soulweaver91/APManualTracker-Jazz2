@@ -53,9 +53,11 @@ EPISODE_TOPLEFT = [
   (865,  35),
   ( 45, 334),
   (455, 309),
-  (865, 334),
+  (865, 358),
   (455, 508)
 ]
+
+VICTORY_TOPLEFT = (45, 608)
 
 def sort_key_for_location(location):
   name = location['name']
@@ -68,12 +70,12 @@ def sort_key_for_location(location):
     return int(index) + 20 - 1
   elif name.startswith('Bonus Warp'):
     return 90
-  elif name.endswith(' Defeated'):
-    return 98
+  #elif name.endswith(' Defeated'):
+  #  return 98
   elif name == 'Exit':
     return 99
-  else:
-    print(f'no rule matched for {name}')
+  #else:
+  #  print(f'no rule matched for {name}')
     
   return 200
 
@@ -146,6 +148,24 @@ if __name__ == '__main__':
   for item in result['children']:
     if 'level_sort_key' in item:
       del item['level_sort_key']
+
+  result['children'].insert(0, {
+    'name': 'Victory',
+    'access_rules': [ 'all_episodes_complete' ],
+    'sections': [
+      {
+        'name': 'All Levels Completed'
+      }
+    ],
+    'map_locations': [
+      {
+        'map': 'main_map',
+        'x': VICTORY_TOPLEFT[0] + 13 + 18,
+        'y': VICTORY_TOPLEFT[1] + 18 + 18,
+        'size': 36
+      }
+    ]
+  })
 
   target_file = f'generate_overview_result.json'
   if args.out_file is not None:
