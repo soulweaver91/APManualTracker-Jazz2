@@ -44,8 +44,8 @@
   {
     "name": "e1l6_map",
     "img": "images/maps/E1L6.png",
-    "location_size": 64,
-    "location_border_thickness": 8
+    "location_size": 32,
+    "location_border_thickness": 4
   },
   {
     "name": "e2l1_map",
@@ -116,8 +116,8 @@
   {
     "name": "e3l6_map",
     "img": "images/maps/E3L6.png",
-    "location_size": 32,
-    "location_border_thickness": 4
+    "location_size": 48,
+    "location_border_thickness": 6
   },
   {
     "name": "e3l7_map",
