@@ -313,11 +313,25 @@ function canCollectEnoughCoins(level, cost)
                 -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. (coins_collected + step_coins_collected))
                 coins_collected = coins_collected + step_coins_collected
             else
-                if step.region == nil or canReachRegion('@' .. level .. '/' .. step.region) then
-                    -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. (coins_collected + step.amount) .. ' (region ' .. (step.region or 'none') .. ')')
+                required_regions = nil
+                if type(step.region) == 'string' then
+                    required_regions = { step.region }
+                elseif type(step.region) == 'table' then
+                    required_regions = step.region
+                end
+
+                local required_regions_ok = true
+                if required_regions ~= nil then
+                    for i, region in pairs(required_regions) do
+                        required_regions_ok = required_regions_ok and canReachRegion('@' .. level .. '/' .. region)
+                    end
+                end
+
+                if required_regions_ok then
+                    -- print('canCollectEnoughCoins: update group coins collected from ' .. coins_collected .. ' to ' .. (coins_collected + step.amount) .. ' (regions ' .. table.concat(required_regions or { 'none' }, ', ') .. ')')
                     coins_collected = coins_collected + step.amount
                 else
-                    -- print('canCollectEnoughCoins: skip step (region ' .. step.region .. ' not reachable)')
+                    -- print('canCollectEnoughCoins: skip step (region list ' .. table.concat(required_regions, ', ') .. ' not fully reachable)')
                 end
             end
 

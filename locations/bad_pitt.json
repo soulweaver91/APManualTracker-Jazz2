@@ -43,7 +43,9 @@
       {
         "name": "After Destructible Blocks Obstructing Spring",
         "access_rules": [
-          "@Bad Pitt/After Upwards Destructible Blocks, $canDestroyWildcardBlocks"
+          "@Bad Pitt/After Upwards Destructible Blocks, $canDestroyWildcardBlocks",
+          "@Bad Pitt/After Upwards Destructible Blocks, $canDoubleJump",
+          "@Bad Pitt/After Upwards Destructible Blocks, $canUppercut"
         ],
         "comment": "R:M5"
       },

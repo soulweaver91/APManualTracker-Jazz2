@@ -63,6 +63,13 @@
         "comment": "R:A3"
       },
       {
+        "name": "East Gold Coin Area Gems and Fruit Accessed with Copter Secret",
+        "access_rules": [
+          "@Tossed Salad/East Gold Coin Area"
+        ],
+        "comment": "R:A6"
+      },
+      {
         "name": "After Main Path Trigger Crate",
         "access_rules": [
           "$canDestroyTriggerCrates|Tossed Salad|sides/above"
@@ -79,7 +86,7 @@
       {
         "name": "Under Jazz Section Bridge",
         "access_rules": [
-          "@Tossed Salad/Around Second Save Point, $canDestroyWildcardBlocks"
+          "@Tossed Salad/Around Second Save Point"
         ],
         "comment": "R:A5"
       },
@@ -103,6 +110,20 @@
           "@Tossed Salad/Around Second Save Point, $canCollectEnoughCoins|Tossed Salad|20"
         ],
         "comment": "R:B1"
+      },
+      {
+        "name": "Bonus Warp Area Exit Room",
+        "access_rules": [
+          "@Tossed Salad/Bonus Warp Area, $canDestroySpecialMoveBlocks|Tossed Salad|above"
+        ],
+        "comment": "R:B2"
+      },
+      {
+        "name": "Fruit on Ledge Accessible by Copter Secret",
+        "access_rules": [
+          "@Tossed Salad/Before Final Chute"
+        ],
+        "comment": "R:A7"
       },
       {
         "name": "Final Part",

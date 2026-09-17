@@ -28,7 +28,7 @@
         "comment": "R:A2"
       },
       {
-        "name": "After Either Trigger Crate or Vine",
+        "name": "After Trigger Crate Next to Breakable Pillars",
         "access_rules": [
           "$canGrabVines",
           "$canDestroyTriggerCrates|Medieval Kineval|above/sides",
@@ -39,21 +39,21 @@
       {
         "name": "Electro Blaster Ammo Above Vine",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine, $canGrabVines"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars, $canGrabVines"
         ],
         "comment": "R:A3"
       },
       {
         "name": "Green Gems Extra Life Crate and Gem Crate Behind Blocks Secret",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine, $canDestroyWildcardBlocks"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars, $canDestroyWildcardBlocks"
         ],
         "comment": "R:A4"
       },
       {
         "name": "Around Save Point",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars"
         ],
         "comment": "R:M2"
       },
@@ -88,14 +88,14 @@
       {
         "name": "Secret Level Exit",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars"
           ],
         "comment": "R:A9"
       },
       {
         "name": "After Return From Secret Level",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars"
           ],
         "comment": "R:C1"
       },
@@ -215,7 +215,7 @@
       {
         "name": "Sign 1 (178, 52)",
         "access_rules": [
-          "@Medieval Kineval/After Either Trigger Crate or Vine"
+          "@Medieval Kineval/After Trigger Crate Next to Breakable Pillars"
         ],
         "sections": [
           {

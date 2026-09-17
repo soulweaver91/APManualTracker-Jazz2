@@ -86,6 +86,10 @@ function CoinPathGroup:seq(sequence)
             for j, path in pairs(step.dependency_regions) do
                 table.insert(self.dependency_regions, path)
             end
+        elseif type(step.region) == 'table' then
+            for j, path in pairs(step.region) do
+                table.insert(self.dependency_regions, path)
+            end
         elseif step.region ~= nil then
             table.insert(self.dependency_regions, step.region)
         else
@@ -134,13 +138,33 @@ COIN_ACCESS_BY_LEVEL_LOOKUP = {
     }),
     [Levels.KNIGHT_CAP] = CG(Levels.KNIGHT_CAP):seq({
         CG('Start position branch', nil, true):branch(
-            CG('Jazz branch', 'Jazz'):seq({
-                -- J1     gold:   (112, 8) (112, 9) (189, 8)
-                CN(15),
-                -- A2     gold:   (163, 6)
-                CN(5, 'Jazz Only Gold Coin Secret'),
-                -- J3     gold:   (20, 23) (56, 31) (57, 31)
-                CN(15, 'Jazz Left Path Left Branch After Chute')
+            CG('Jazz branch', 'Jazz'):branch(
+                CG('Left path first'):seq({
+                    -- J3     gold:   (20, 23)
+                    CN(5, 'Jazz Left Path Left Branch After Chute'),
+                    -- J4     gold:   (56, 31) (57, 31)
+                    CN(10, 'Jazz Left Path Convergence'),
+
+                    -- J6     gold:   (112, 8) (112, 9)
+                    CN(5, 'Coin Path Virtual Region Loop Around Left Path'),
+                    -- A2     gold:   (163, 6)
+                    CN(5, { 'Coin Path Virtual Region Loop Around Left Path', 'Jazz Only Gold Coin Secret' }),         
+                })
+            ):branch(
+                CG('Right path first'):seq({
+                    -- J6     gold:   (112, 8) (112, 9)
+                    CN(5),
+                    -- A2     gold:   (163, 6)
+                    CN(5, 'Jazz Only Gold Coin Secret'),
+                    
+                    -- J3     gold:   (20, 23)
+                    CN(5, { 'Coin Path Virtual Region Loop Around Right Path', 'Jazz Left Path Left Branch After Chute' }),
+                    -- J4     gold:   (56, 31) (57, 31)
+                    CN(10, { 'Coin Path Virtual Region Loop Around Right Path', 'Jazz Left Path Convergence' }),
+                })
+            ):seq({
+                -- A14     gold:   (112, 8) (112, 9)
+                CN(10, 'Jazz Only Gold Coins Blocked by Spring Secret')
             })
         ):branch(
             CG('Spaz branch', 'Spaz'):seq({

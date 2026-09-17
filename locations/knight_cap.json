@@ -38,6 +38,13 @@
         "comment": "R:J3"
       },
       {
+        "name": "Jazz Only Gold Coins Blocked by Spring Secret",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, freezer_permit"
+        ],
+        "comment": "R:A1"
+      },
+      {
         "name": "Jazz Only Freezer Upgrade Secret",
         "access_rules": [
           "@Knight Cap/Jazz Main Area, $canDestroySpecialMoveBlocks|Knight Cap|below"
@@ -47,7 +54,7 @@
       {
         "name": "Jazz Only Gold Coin Secret",
         "access_rules": [
-          "@Knight Cap/Jazz Main Area, $canDestroyWildcardBlocks"
+          "@Knight Cap/Jazz Right Path Past Blue Spring, $canDestroyWildcardBlocks"
         ],
         "comment": "R:A2"
       },
@@ -65,6 +72,28 @@
           "@Knight Cap/Jazz Left Path Convergence"
         ],
         "comment": "R:J5"
+      },
+      {
+        "name": "Jazz Right Path Past Blue Spring",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area"
+        ],
+        "comment": "R:J6"
+      },
+      {
+        "name": "Coin Path Virtual Region Loop Around Left Path",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, bouncer_permit, $canDestroySpecialMoveBlocks|Knight Cap|below",
+          "@Knight Cap/Jazz Main Area, $canDestroySpecialMoveBlocks|Knight Cap|above"
+        ],
+        "comment": "R:V1"
+      },
+      {
+        "name": "Coin Path Virtual Region Loop Around Right Path",
+        "access_rules": [
+          "@Knight Cap/Jazz Main Area, freezer_permit"
+        ],
+        "comment": "R:V2"
       },
       {
         "name": "Jazz Only Red Gems Behind Trigger Scenery Secret",
@@ -133,7 +162,7 @@
       {
         "name": "Shared Path Start From Right",
         "access_rules": [
-          "@Knight Cap/Jazz Main Area",
+          "@Knight Cap/Jazz Right Path Past Blue Spring",
           "@Knight Cap/Shared Path Start From Left"
         ],
         "comment": "R:M2"
@@ -141,7 +170,6 @@
       {
         "name": "Shared Path Start",
         "access_rules": [
-          "@Knight Cap/Jazz Main Area",
           "@Knight Cap/Shared Path Start From Right"
         ],
         "comment": "R:M3"
