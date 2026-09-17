@@ -1,3 +1,12 @@
 {
-  "versions": []
+  "versions": [
+    {
+      "package_version": "0.1.0",
+      "download_url": "https://github.com/soulweaver91/APManualTracker-Jazz2/releases/download/v0.1.0/JJ2-AP-Tracker-0.1.0.zip",
+      "sha256": "ffd473706f9e476fd8fcae914d467d6e48b06683542771da9a3abc45f6ed94ab",
+      "changelog": [
+        "Initial release. Compatible with the unstable APWorld version v0.2.0-20260917154319."
+      ]
+    }
+  ]
 }
